@@ -58,13 +58,27 @@ module SwhCritical
           PRIMARY KEY (registry, purl)
         );
         CREATE INDEX IF NOT EXISTS packages_repository ON packages(repository_url);
+        CREATE TABLE IF NOT EXISTS repository_recoveries (
+          registry TEXT NOT NULL, purl TEXT NOT NULL, evidence TEXT NOT NULL,
+          PRIMARY KEY (registry, purl)
+        );
         CREATE TABLE IF NOT EXISTS objects (
           swhid TEXT PRIMARY KEY, status TEXT NOT NULL DEFAULT 'pending',
           checked_at TEXT, evidence TEXT, error TEXT
         );
         CREATE INDEX IF NOT EXISTS objects_status ON objects(status);
+        CREATE TABLE IF NOT EXISTS package_releases (
+          registry TEXT NOT NULL, purl TEXT NOT NULL, version TEXT, metadata_evidence TEXT,
+          match_status TEXT NOT NULL DEFAULT 'unchecked', tag_name TEXT,
+          target_swhid TEXT, release_swhid TEXT, match_data TEXT,
+          PRIMARY KEY (registry, purl)
+        );
+        CREATE TABLE IF NOT EXISTS tag_scans (
+          repository_url TEXT PRIMARY KEY, observed_at TEXT NOT NULL, evidence_file TEXT NOT NULL
+        );
         CREATE INDEX IF NOT EXISTS repositories_coverage ON repositories(coverage);
         CREATE INDEX IF NOT EXISTS repositories_head_status ON repositories(head_status);
+        CREATE INDEX IF NOT EXISTS repositories_head_swhid ON repositories(head_swhid);
       SQL
       set("created_at", Time.now.utc.iso8601) unless get("created_at")
     end

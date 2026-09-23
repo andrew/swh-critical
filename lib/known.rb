@@ -10,7 +10,14 @@ module SwhCritical
     end
 
     def run(limit: 1000)
-      identifiers = @db.execute("SELECT swhid FROM objects WHERE status IN ('pending', 'unknown') ORDER BY swhid LIMIT ?", [limit]).map { |row| row["swhid"] }
+      identifiers = @db.execute(<<~SQL, [limit]).map { |row| row["swhid"] }
+        SELECT o.swhid FROM objects o WHERE o.status IN ('pending', 'unknown')
+        ORDER BY EXISTS (SELECT 1 FROM repositories r WHERE r.head_swhid = o.swhid) DESC, o.swhid LIMIT ?
+      SQL
+      check(identifiers)
+    end
+
+    def check(identifiers)
       @output.puts "[#{Time.now.utc.iso8601}] START known selected=#{identifiers.size} batch_size=#{MAX_IDENTIFIERS}"
       checked = 0
       identifiers.each_slice(MAX_IDENTIFIERS) do |batch|

@@ -139,6 +139,11 @@ module SwhCritical
         INSERT INTO packages VALUES (?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(registry, purl) DO NOTHING
       SQL
+      if @db.changes.positive?
+        version = package["latest_release_number"].to_s.strip
+        @db.execute("INSERT OR IGNORE INTO package_releases(registry, purl, version, match_status, metadata_evidence) VALUES (?, ?, ?, ?, ?)",
+          [registry["name"], package["purl"], version.empty? ? nil : version, version.empty? ? "no_version" : "unchecked", JSON.generate("fetched_at" => fetched_at)])
+      end
     end
   end
 end

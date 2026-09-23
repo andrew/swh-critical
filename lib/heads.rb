@@ -48,16 +48,16 @@ module SwhCritical
       @output.flush
     end
 
-    def command(url)
+    def command(url, refs: ["HEAD"], maximum_bytes: 65_536)
       output = +""
       env = { "GIT_TERMINAL_PROMPT" => "0", "GIT_CONFIG_NOSYSTEM" => "1", "GIT_CONFIG_GLOBAL" => File::NULL }
-      Open3.popen2e(env, "git", "-c", "credential.helper=", "ls-remote", "--symref", "--", url, "HEAD", pgroup: true) do |input, stream, process|
+      Open3.popen2e(env, "git", "-c", "credential.helper=", "ls-remote", "--symref", "--", url, *refs, pgroup: true) do |input, stream, process|
         input.close
         begin
           Timeout.timeout(60) do
             loop do
               chunk = stream.readpartial(4096)
-              raise Error, "Git output limit reached" if output.bytesize + chunk.bytesize > 65_536
+              raise Error, "Git output limit reached" if output.bytesize + chunk.bytesize > maximum_bytes
               output << chunk
             rescue EOFError
               break

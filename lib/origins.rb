@@ -1,4 +1,5 @@
 require_relative "http"
+require_relative "release_gaps"
 
 module SwhCritical
   class Origins
@@ -10,7 +11,7 @@ module SwhCritical
       @db = store.db
     end
 
-    def run(limit: 100, missing_heads: false)
+    def run(limit: 100, missing_heads: false, missing_releases: false)
       @started = Process.clock_gettime(Process::CLOCK_MONOTONIC)
       @run_id = "#{Time.now.utc.strftime('%Y%m%dT%H%M%S%6N')}-#{Process.pid}"
       @counts = Hash.new(0)
@@ -21,10 +22,15 @@ module SwhCritical
       else
         ""
       end
-      rows = @db.execute("SELECT url, coverage FROM repositories WHERE coverage IN ('unchecked', 'unknown') #{scope} ORDER BY url LIMIT ?", [limit])
+      rows = if missing_releases
+        ReleaseGaps.rows(@db).select { |row| row["archive_status"] == "unresolved" }.first(limit)
+      else
+        @db.execute("SELECT url, coverage FROM repositories WHERE coverage IN ('unchecked', 'unknown') #{scope} ORDER BY url LIMIT ?", [limit])
+      end
       @selected = rows.size
       @processed = 0
-      log("START", "data=#{@store.path} scope=#{missing_heads ? 'missing_heads' : 'all'} selected=#{@selected} #{summary}")
+      scope_name = missing_releases ? "missing_releases_without_evidence" : (missing_heads ? "missing_heads" : "all")
+      log("START", "data=#{@store.path} scope=#{scope_name} selected=#{@selected} #{summary}")
       rows.each do |row|
         @store.guard.check!
         repository = row.fetch("url")
