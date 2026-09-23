@@ -1,0 +1,5 @@
+/data/
+/.bundle/
+/.env
+!/.env.example
+/.ruby-lsp/
