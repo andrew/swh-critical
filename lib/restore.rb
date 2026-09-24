@@ -53,6 +53,7 @@ module SwhCritical
         source = File.join(temporary, "source")
         restore_directory(directory, source)
         raise Error, "Restored directory hash mismatch" unless local_tree(source) == directory
+        validate_symlinks(source)
         if File.exist?(destination) || File.symlink?(destination)
           raise Error, "Existing restored directory differs; use a new investigation directory" unless File.directory?(destination) && !File.symlink?(destination) && local_tree(destination) == directory
         else
@@ -124,6 +125,35 @@ module SwhCritical
 
     def object_hash(type, bytes)
       Digest::SHA1.hexdigest("#{type} #{bytes.bytesize}\0".b + bytes.b)
+    end
+
+    def validate_symlinks(root)
+      @files.select { |file| file["mode"] == "120000" }.each do |file|
+        pending = file.fetch("path").split("/")
+        resolved = []
+        links = 0
+        until pending.empty?
+          part = pending.shift
+          case part
+          when "", "."
+            next
+          when ".."
+            raise Error, "Symlink escapes restored source" if resolved.empty?
+            resolved.pop
+          else
+            path = File.join(root, *resolved, part)
+            if File.symlink?(path)
+              links += 1
+              raise Error, "Symlink resolution limit reached" if links > 40
+              target = File.readlink(path)
+              raise Error, "Unsafe archived symlink" if target.start_with?("/")
+              pending = target.split("/") + pending
+            else
+              resolved << part
+            end
+          end
+        end
+      end
     end
 
     def local_tree(path)

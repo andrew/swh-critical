@@ -23,7 +23,12 @@ module SwhCritical
       processed = 0
       clones.each do |data, evidence|
         url = data.fetch("url")
-        next if @store.get("history_coverage:#{url}")&.fetch("status", nil) == "complete"
+        known = evidence.fetch("revisions").lines.map do |sha|
+          [sha.strip, objects["swh:1:rev:#{sha.strip}"]]
+        end
+        fingerprint = Digest::SHA256.hexdigest(JSON.generate(known))
+        saved = @store.get("history_coverage:#{url}")
+        next if saved && saved["status"] == "complete" && saved["known_fingerprint"] == fingerprint
         break if processed >= limit
 
         result = { "url" => url, "observed_at" => Time.now.utc.iso8601, "baseline_observed_at" => data["observed_at"] }
@@ -42,7 +47,8 @@ module SwhCritical
             Zlib::GzipWriter.open(path) { |gzip| gzip.write(JSON.generate(graph_data)) }
           end
           result.merge!(analyze(graph_data, evidence, objects))
-          result.merge!("status" => "complete", "evidence_file" => relative, "graph_observed_at" => graph_data["observed_at"])
+          result.merge!("status" => "complete", "evidence_file" => relative, "graph_observed_at" => graph_data["observed_at"],
+            "known_fingerprint" => fingerprint)
         rescue DiskSpaceError
           raise
         rescue Error => error

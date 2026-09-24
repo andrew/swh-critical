@@ -709,6 +709,53 @@ class CliTest < Test::Unit::TestCase
     end
   end
 
+  def test_history_refreshes_cached_analysis_after_known_checks_finish
+    seed
+    parent, head = %w[a b].map { |char| char * 40 }
+    graph = {
+      parent => { "parents" => [], "committed_at" => "2026-01-01T12:00:00Z" },
+      head => { "parents" => [parent], "committed_at" => "2026-01-02T12:00:00Z" }
+    }
+    clone = { "url" => REPO, "status" => "complete", "revision_swhid" => "swh:1:rev:#{head}",
+      "evidence_file" => "clone-evidence/fixture.json.gz" }
+    FileUtils.mkdir_p(File.join(@directory, "clone-evidence"))
+    FileUtils.mkdir_p(File.join(@directory, "history-evidence"))
+    Zlib::GzipWriter.open(File.join(@directory, clone["evidence_file"])) do |gzip|
+      gzip.write(JSON.generate("revisions" => "#{head}\n#{parent}\n", "refs" => "#{head} refs/heads/main\n"))
+    end
+    Zlib::GzipWriter.open(File.join(@directory, "history-evidence/#{Digest::SHA256.hexdigest(REPO)}.json.gz")) do |gzip|
+      gzip.write(JSON.generate("head" => head, "current_head" => head, "commits" => graph))
+    end
+    store = SwhCritical::Store.new(@directory, minimum_bytes: 0)
+    store.set("clone_check:#{REPO}", clone)
+    store.db.execute("INSERT INTO objects(swhid, status) VALUES (?, 'present')", ["swh:1:rev:#{parent}"])
+    store.db.execute("INSERT INTO objects(swhid) VALUES (?)", ["swh:1:rev:#{head}"])
+    store.close
+    assert_equal 0, cli("history", "--offline"), @err.string
+    first = JSON.parse(File.read(File.join(@directory, "out/history_coverage.json"))).first
+    assert_equal "incomplete", first["pattern"]
+    assert_equal 1, first["first_parent_present"]
+    stub_request(:post, "#{SWH}/known/").with(body: JSON.generate(["swh:1:rev:#{head}"]))
+      .to_return(response({ "swh:1:rev:#{head}" => { known: true } }))
+    assert_equal 0, cli("known"), @err.string
+    assert_equal 0, cli("history", "--offline"), @err.string
+    second = JSON.parse(File.read(File.join(@directory, "out/history_coverage.json"))).first
+    assert_equal "head_present", second["pattern"]
+    assert_equal 2, second["first_parent_present"]
+    assert_equal "swh:1:rev:#{head}", second["nearest_present_revision"]
+    assert_equal 0.0, second["commit_date_gap_days"]
+    assert_equal 0, cli("history", "--offline"), @err.string
+    assert_equal [second], JSON.parse(File.read(File.join(@directory, "out/history_coverage.json")))
+
+    store = SwhCritical::Store.new(@directory, minimum_bytes: 0)
+    store.set("history_coverage:#{REPO}", first.reject { |key, _| key == "known_fingerprint" })
+    store.close
+    assert_equal 0, cli("history", "--offline"), @err.string
+    refreshed = JSON.parse(File.read(File.join(@directory, "out/history_coverage.json"))).first
+    assert_equal "head_present", refreshed["pattern"]
+    assert_equal 2, refreshed["first_parent_present"]
+  end
+
   def test_trace_matches_archived_boundaries_through_paginated_snapshots
     seed
     head = "b" * 40
@@ -863,6 +910,36 @@ class CliTest < Test::Unit::TestCase
     assert_equal "unchecked", query("SELECT coverage FROM repositories").first["coverage"]
     assert_equal 0, cli("origin-search", "--offline"), @err.string
     assert_requested(:get, search, times: 1)
+  end
+
+  def test_origin_search_retries_unknown_visits_including_previously_completed_searches
+    seed
+    store = SwhCritical::Store.new(@directory, minimum_bytes: 0)
+    store.set("clone_check:#{REPO}", { "url" => REPO, "status" => "complete" })
+    store.close
+    search = "#{SWH}/origin/search/#{URI.encode_www_form_component('github.com/Example/Library')}/?limit=1000&use_ql=false"
+    visits = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100"
+    stub_request(:get, search).to_return(response([{ url: REPO }]))
+    stub_request(:get, visits).to_return({ status: 503 }, { status: 503 }, response([visit(REPO)]))
+    2.times do
+      assert_equal 0, cli("origin-search"), @err.string
+      result = JSON.parse(File.read(File.join(@directory, "out/origin_search.json"))).first
+      assert_equal "incomplete", result["status"]
+      assert_equal "unknown", result["matches"].first.dig("visit_check", "status")
+    end
+    assert_requested(:get, visits, times: 2)
+    store = SwhCritical::Store.new(@directory, minimum_bytes: 0)
+    saved = store.get("origin_search:#{REPO}")
+    store.set("origin_search:#{REPO}", saved.merge("status" => "complete"))
+    store.close
+    assert_equal 0, cli("origin-search"), @err.string
+    result = JSON.parse(File.read(File.join(@directory, "out/origin_search.json"))).first
+    assert_equal "complete", result["status"]
+    assert_equal "full", result["matches"].first.dig("visit_check", "status")
+    assert_requested(:get, visits, times: 3)
+    assert_requested(:get, search, times: 1)
+    assert_equal 0, cli("origin-search", "--offline"), @err.string
+    assert_equal [result], JSON.parse(File.read(File.join(@directory, "out/origin_search.json")))
   end
 
   def test_clone_known_batches_saved_history_and_resumes_without_rechecking_objects
@@ -1101,6 +1178,114 @@ class CliTest < Test::Unit::TestCase
     assert_include @out.string, reason
     assert_include data["incomplete_reasons"], reason
     assert_match(/END batch finished checked=1\/1 .*unknown=1 remaining=0/, @out.string)
+    assert_equal 8, data["observations"].size
+    assert_equal 0, cli("origins")
+    row = query("SELECT coverage, origin_data FROM repositories").first
+    resumed = JSON.parse(row["origin_data"])
+    assert_equal "origin_not_found", row["coverage"]
+    assert_equal resumed["candidates"].sort, resumed["observations"].map { |entry| entry["origin"] }.sort
+    assert_equal data["observations"], resumed["observations"].first(8)
+    assert_empty resumed["incomplete_reasons"]
+  end
+
+  def seed_origin_aliases
+    record = package("example").merge("latest_release_number" => "1.0")
+    record["repo_metadata"] = { "previous_names" => %w[Example/Old1 Example/Old2 Example/Old3 Example/Old4] }
+    seed([record])
+    stub_origins
+    query("SELECT url FROM aliases ORDER BY CASE source WHEN 'package' THEN 0 ELSE 1 END, url").map { |row| row["url"] }
+  end
+
+  def test_missing_head_origins_resume_to_a_snapshot_beyond_the_alias_limit
+    aliases = seed_origin_aliases
+    fake_git("#{SHA}\tHEAD\n") { assert_equal 0, cli("heads") }
+    stub_request(:post, "#{SWH}/known/").to_return(response({ SWHID => { known: false } }))
+    assert_equal 0, cli("known")
+    ninth = "#{SWH}/origin/#{URI.encode_www_form_component(aliases.fetch(8))}/visits/?per_page=100"
+    stub_request(:get, ninth).to_return(response([visit(aliases.fetch(8))]))
+    assert_equal 0, cli("origins", "--missing-heads")
+    assert_equal "unknown", query("SELECT coverage FROM repositories").first["coverage"]
+    assert_not_requested(:get, ninth)
+    assert_equal 0, cli("origins", "--missing-heads")
+    row = query("SELECT coverage, origin_data FROM repositories").first
+    observations = JSON.parse(row["origin_data"]).fetch("observations")
+    assert_equal "snapshot_found", row["coverage"]
+    assert_equal 9, observations.size
+    assert_equal "full", observations.last["status"]
+    assert_requested(:get, ninth, times: 1)
+    assert_equal 0, cli("report")
+    assert_equal({ "snapshot_found" => 1 }, JSON.parse(File.read(File.join(@directory, "out/summary.json")))["missing_heads_repository_coverage"])
+  end
+
+  def test_origin_resumption_checks_new_aliases_before_retrying_unknowns
+    aliases = seed_origin_aliases
+    failed = "#{SWH}/origin/#{URI.encode_www_form_component(aliases.first)}/visits/?per_page=100"
+    stub_request(:get, failed).to_return({ status: 503 }, { status: 503 }, response({ error: "not found" }, status: 404))
+    stub_request(:get, "#{SWH}/origin/#{URI.encode_www_form_component(aliases.last)}/visits/?per_page=100").to_return(response([]))
+    assert_equal 0, cli("origins")
+    assert_equal 0, cli("origins")
+    row = query("SELECT coverage, origin_data FROM repositories").first
+    data = JSON.parse(row["origin_data"])
+    assert_equal "unknown", row["coverage"]
+    assert_equal aliases.sort, data["observations"].map { |entry| entry["origin"] }.sort
+    assert_equal aliases.first, data["observations"].last["origin"]
+    assert_equal "unknown", data["observations"].last["status"]
+    assert_equal "no_snapshot", data["observations"].find { |entry| entry["origin"] == aliases.last }["status"]
+    assert_not_include data["incomplete_reasons"].join, "alias limit"
+    assert_equal 0, cli("origins")
+    assert_equal "no_snapshot", query("SELECT coverage FROM repositories").first["coverage"]
+    assert_requested(:get, failed, times: 3)
+  end
+
+  def test_origin_resumption_rotates_unknown_aliases
+    aliases = seed_origin_aliases
+    aliases.each do |origin|
+      stub_request(:get, "#{SWH}/origin/#{URI.encode_www_form_component(origin)}/visits/?per_page=100").to_return(status: 503)
+    end
+    3.times { assert_equal 0, cli("origins") }
+    assert_equal "unknown", query("SELECT coverage FROM repositories").first["coverage"]
+    aliases.each do |origin|
+      assert_requested(:get, "#{SWH}/origin/#{URI.encode_www_form_component(origin)}/visits/?per_page=100", at_least_times: 2)
+    end
+  end
+
+  def test_origin_resumption_saves_alias_progress_before_rate_limit
+    aliases = seed_origin_aliases
+    limited = "#{SWH}/origin/#{URI.encode_www_form_component(aliases.fetch(3))}/visits/?per_page=100"
+    stub_request(:get, limited).to_return(status: 429, headers: { "Retry-After" => "120" })
+    assert_equal 75, cli("origins")
+    row = query("SELECT coverage, origin_data FROM repositories").first
+    assert_equal "unknown", row["coverage"]
+    observations = JSON.parse(row["origin_data"]).fetch("observations")
+    assert_equal aliases.first(3), observations.map { |entry| entry["origin"] }
+    assert_equal 75, cli("origins")
+    assert_requested(:get, limited, times: 1)
+    assert_equal observations, JSON.parse(query("SELECT origin_data FROM repositories").first["origin_data"]).fetch("observations")
+  end
+
+  def test_release_gap_origins_resume_saved_aliases
+    seed_origin_aliases
+    fake_git("#{SHA}\trefs/tags/v1.0\n") { assert_equal 0, cli("tags") }
+    stub_request(:post, "#{SWH}/known/").to_return(response({ SWHID => { known: false } }))
+    assert_equal 0, cli("known")
+    assert_equal 0, cli("origins", "--missing-releases")
+    assert_equal "unknown", query("SELECT coverage FROM repositories").first["coverage"]
+    assert_equal 0, cli("origins", "--missing-releases")
+    assert_equal "origin_not_found", query("SELECT coverage FROM repositories").first["coverage"]
+  end
+
+  def test_origin_resumption_saves_alias_progress_before_interrupt
+    aliases = seed_origin_aliases
+    interrupted = "#{SWH}/origin/#{URI.encode_www_form_component(aliases.fetch(2))}/visits/?per_page=100"
+    stub_request(:get, interrupted).to_raise(Interrupt).then.to_return(response([visit(aliases.fetch(2))]))
+    assert_equal 130, cli("origins")
+    observations = JSON.parse(query("SELECT origin_data FROM repositories").first["origin_data"]).fetch("observations")
+    assert_equal aliases.first(2), observations.map { |entry| entry["origin"] }
+    assert_equal 0, cli("origins")
+    row = query("SELECT coverage, origin_data FROM repositories").first
+    assert_equal "snapshot_found", row["coverage"]
+    assert_equal observations, JSON.parse(row["origin_data"]).fetch("observations").first(2)
+    assert_requested(:get, interrupted, times: 2)
   end
 
   def test_rate_limit_logs_pause_without_reporting_completion

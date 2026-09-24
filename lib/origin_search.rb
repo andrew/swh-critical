@@ -9,7 +9,10 @@ module SwhCritical
 
     def run(limit: 100)
       clones = @store.db.execute("SELECT value FROM metadata WHERE key LIKE 'clone_check:%' ORDER BY key").map { |row| JSON.parse(row["value"]) }
-      clones.select! { |row| row["status"] == "complete" && @store.get("origin_search:#{row['url']}")&.fetch("status", nil) != "complete" }
+      clones.select! do |row|
+        saved = @store.get("origin_search:#{row['url']}")
+        row["status"] == "complete" && !(saved && saved["status"] == "complete" && visits_complete?(saved))
+      end
       clones.first(limit).each_with_index do |clone, index|
         url = clone.fetch("url")
         uri = URI(url)
@@ -46,7 +49,7 @@ module SwhCritical
             next_url = Http.next_url(response)
             break unless next_url
           end
-          data["status"] = next_url ? "incomplete" : "complete"
+          data["status"] = next_url || !visits_complete?(data) ? "incomplete" : "complete"
         rescue RateLimited, DiskSpaceError
           raise
         rescue Error => error
@@ -58,6 +61,10 @@ module SwhCritical
         report
       end
       report
+    end
+
+    def visits_complete?(data)
+      data.fetch("matches").none? { |match| match.dig("visit_check", "status") == "unknown" }
     end
 
     def report

@@ -111,6 +111,58 @@ class RestoreTest < Test::Unit::TestCase
     assert_empty Dir.glob(File.join(@directory, "restore-*"))
   end
 
+  def chained_symlink_fixture(target)
+    fixture
+    nested_link = git_hash("blob", "../safe")
+    outer_link = git_hash("blob", target)
+    { nested_link => "../safe", outer_link => target }.each do |id, bytes|
+      stub_request(:get, "#{SWH}/content/sha1_git:#{id}/raw/").to_return(
+        status: 200, body: bytes, headers: { "Content-Type" => "application/octet-stream" })
+    end
+    safe = directory([{ name: "run", type: "file", target: @blob, perms: 0o100644 }])
+    nested = directory([{ name: "link", type: "file", target: nested_link, perms: 0o120000 }])
+    root = directory([
+      { name: "escape", type: "file", target: outer_link, perms: 0o120000 },
+      { name: "nested", type: "dir", target: nested, perms: 0o040000 },
+      { name: "safe", type: "dir", target: safe, perms: 0o040000 }
+    ])
+    stub_request(:get, "#{SWH}/release/#{'c' * 40}/").to_return(json({ target_type: "directory", target: root }))
+  end
+
+  def test_rejects_chained_symlinks_that_escape_restored_source
+    chained_symlink_fixture("nested/link/../../outside")
+    outside = File.join(@directory, "outside")
+    File.write(outside, "outside restored tree")
+    assert_equal 1, cli, @err.string
+    assert_include @err.string, "Symlink escapes restored source"
+    assert_false File.exist?(File.join(@directory, "restored"))
+    assert_equal "outside restored tree", File.read(outside)
+    assert_equal "incomplete", JSON.parse(File.read(File.join(@directory, "out/recovery.json")))["status"]
+    assert_empty Dir.glob(File.join(@directory, "restore-*"))
+  end
+
+  def test_restores_safe_forward_symlink_chains_and_replays_offline
+    chained_symlink_fixture("nested/link/run")
+    assert_equal 0, cli, @err.string
+    assert_equal @bytes, File.binread(File.join(@directory, "restored/escape"))
+    assert_equal 0, cli("--offline"), @err.string
+  end
+
+  def test_restores_safe_dangling_symlink_chains
+    chained_symlink_fixture("nested/link/missing")
+    assert_equal 0, cli, @err.string
+    assert_true File.symlink?(File.join(@directory, "restored/escape"))
+    assert_false File.exist?(File.join(@directory, "restored/escape"))
+  end
+
+  def test_rejects_symlink_cycles_without_publishing_source
+    chained_symlink_fixture("escape")
+    assert_equal 1, cli, @err.string
+    assert_include @err.string, "Symlink resolution limit reached"
+    assert_false File.exist?(File.join(@directory, "restored"))
+    assert_empty Dir.glob(File.join(@directory, "restore-*"))
+  end
+
   def test_rejects_archived_path_traversal
     fixture
     stub_request(:get, "#{SWH}/directory/#{@root}/").to_return(json([@entries[1].merge(name: "../escape")]))

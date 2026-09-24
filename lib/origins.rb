@@ -25,7 +25,7 @@ module SwhCritical
       rows = if missing_releases
         ReleaseGaps.rows(@db).select { |row| row["archive_status"] == "unresolved" }.first(limit)
       else
-        @db.execute("SELECT url, coverage FROM repositories WHERE coverage IN ('unchecked', 'unknown') #{scope} ORDER BY url LIMIT ?", [limit])
+        @db.execute("SELECT url, coverage, origin_data FROM repositories WHERE coverage IN ('unchecked', 'unknown') #{scope} ORDER BY url LIMIT ?", [limit])
       end
       @selected = rows.size
       @processed = 0
@@ -36,34 +36,24 @@ module SwhCritical
         repository = row.fetch("url")
         @current_repository = repository
         candidates = @db.execute("SELECT url FROM aliases WHERE repository_url = ? ORDER BY CASE source WHEN 'package' THEN 0 ELSE 1 END, url", [repository]).map { |r| r["url"] }
-        observations = []
-        candidates.first(MAX_ORIGINS).each do |origin|
-          observation = lookup(origin)
-          observations << observation
-          break if %w[full partial].include?(observation["status"])
+        saved = JSON.parse(row["origin_data"] || "{}")
+        observations = saved.fetch("observations", []).select { |entry| candidates.include?(entry["origin"]) }.to_h { |entry| [entry.fetch("origin"), entry] }
+        pending = candidates.reject { |origin| observations.key?(origin) }
+        pending.concat(observations.values.select { |entry| entry["status"] == "unknown" }.map { |entry| entry.fetch("origin") })
+        attempted = 0
+        begin
+          pending.first(MAX_ORIGINS).each do |origin|
+            observation = lookup(origin)
+            observations.delete(origin)
+            observations[origin] = observation
+            attempted += 1
+            break if %w[full partial].include?(observation["status"])
+          end
+        rescue RateLimited, Interrupt
+          save_observations(row, candidates, observations.values) if attempted.positive?
+          raise
         end
-        covered = observations.select { |entry| %w[full partial].include?(entry["status"]) }
-        status = if covered.any?
-          "snapshot_found"
-        elsif candidates.empty? || candidates.size > MAX_ORIGINS || observations.any? { |entry| entry["status"] == "unknown" }
-          "unknown"
-        elsif observations.any? { |entry| entry["status"] == "no_snapshot" }
-          "no_snapshot"
-        else
-          "origin_not_found"
-        end
-        reasons = []
-        reasons << "alias limit: checked #{observations.size}/#{candidates.size} URLs" if covered.empty? && candidates.size > MAX_ORIGINS
-        reasons << "no candidate URLs" if candidates.empty?
-        observations.each do |observation|
-          reason = observation["error"]
-          reason ||= "incomplete origin lookup" if observation["status"] == "unknown"
-          reasons << "#{observation['origin']}: #{reason}" if reason
-        end
-        data = { "checked_at" => Time.now.utc.iso8601, "candidates" => candidates, "observations" => observations, "incomplete_reasons" => reasons }
-        @db.execute("UPDATE repositories SET coverage = ?, origin_data = ? WHERE url = ?", [status, JSON.generate(data), repository])
-        @counts[row.fetch("coverage")] -= 1
-        @counts[status] += 1
+        status, reasons = save_observations(row, candidates, observations.values, limit_reached: pending.size > MAX_ORIGINS)
         @processed += 1
         checked = @total - @counts["unchecked"]
         percentage = @total.zero? ? 100.0 : 100.0 * checked / @total
@@ -79,6 +69,35 @@ module SwhCritical
     rescue Error, Interrupt => error
       log(error.is_a?(Interrupt) ? "INTERRUPTED" : "ERROR", "#{error.message} current=#{@current_repository} #{summary}") if @counts
       raise
+    end
+
+    def save_observations(row, candidates, observations, limit_reached: false)
+      covered = observations.any? { |entry| %w[full partial].include?(entry["status"]) }
+      remaining = candidates - observations.map { |entry| entry.fetch("origin") }
+      status = if covered
+        "snapshot_found"
+      elsif candidates.empty? || remaining.any? || observations.any? { |entry| entry["status"] == "unknown" }
+        "unknown"
+      elsif observations.any? { |entry| entry["status"] == "no_snapshot" }
+        "no_snapshot"
+      else
+        "origin_not_found"
+      end
+      reasons = []
+      if !covered && remaining.any?
+        reasons << "#{limit_reached ? 'alias limit' : 'untried aliases'}: checked #{observations.size}/#{candidates.size} URLs"
+      end
+      reasons << "no candidate URLs" if candidates.empty?
+      observations.each do |observation|
+        reason = observation["error"]
+        reason ||= "incomplete origin lookup" if observation["status"] == "unknown"
+        reasons << "#{observation['origin']}: #{reason}" if reason
+      end
+      data = { "checked_at" => Time.now.utc.iso8601, "candidates" => candidates, "observations" => observations, "incomplete_reasons" => reasons }
+      @db.execute("UPDATE repositories SET coverage = ?, origin_data = ? WHERE url = ?", [status, JSON.generate(data), row.fetch("url")])
+      @counts[row.fetch("coverage")] -= 1
+      @counts[status] += 1
+      [status, reasons]
     end
 
     def summary
