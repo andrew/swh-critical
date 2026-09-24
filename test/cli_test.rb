@@ -1288,6 +1288,185 @@ class CliTest < Test::Unit::TestCase
     assert_requested(:get, interrupted, times: 2)
   end
 
+  def freshness_reports
+    assert_equal 0, cli("freshness"), @err.string
+    [JSON.parse(File.read(File.join(@directory, "out/freshness.json"))),
+      JSON.parse(File.read(File.join(@directory, "out/freshness_summary.json")))]
+  end
+
+  def test_freshness_compares_failed_attempt_with_older_partial_snapshot_from_cached_pages
+    seed([package("one"), package("two"), package("without-repository", nil)])
+    fake_git("#{SHA}\tHEAD\n") { assert_equal 0, cli("heads") }
+    stub_request(:post, "#{SWH}/known/").to_return(response({ SWHID => { known: false } }))
+    assert_equal 0, cli("known")
+    stub_origins
+    url = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100"
+    second = "#{SWH}/origin/#{REPO}/visits/?last_visit=3&per_page=100"
+    third = "#{SWH}/origin/#{REPO}/visits/?last_visit=2&per_page=100"
+    failed = visit(REPO, status: "failed", snapshot: nil).merge(visit: 3, date: "2026-09-20T12:00:00Z")
+    partial = visit(REPO, status: "partial").merge(visit: 2, date: "2026-09-10T12:00:00Z")
+    stub_request(:get, url).to_return(response([failed], link: "<#{second}>; rel=\"next\""))
+    stub_request(:get, second).to_return(response([partial], link: "<#{third}>; rel=\"next\""))
+    assert_equal 0, cli("origins")
+    before = query("SELECT * FROM repositories")
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    row = detail.fetch("repositories").first
+    assert_equal "failed", row.dig("latest_attempt", "status")
+    assert_equal "partial", row.dig("latest_snapshot", "status")
+    assert_equal REPO, row.dig("latest_snapshot", "origin")
+    assert_equal 10.0, row["attempt_snapshot_gap_days"]
+    assert_equal second, row.dig("latest_snapshot", "evidence", "url")
+    assert_not_nil row.dig("latest_attempt", "evidence", "fetched_at")
+    assert_in_delta((Time.iso8601(detail["reported_at"]) - Time.iso8601(partial[:date])) / 86_400,
+      row.dig("latest_snapshot", "age_days"), 0.01)
+    assert_equal true, row["checked_aliases_complete"]
+    assert_equal false, row["all_aliases_checked"]
+    assert_not_empty row["untried_aliases"]
+    assert_equal false, row.dig("observations", 0, "pagination_complete")
+    assert_equal third, row.dig("observations", 0, "next_url")
+    assert_equal 2, row.fetch("observations").first.fetch("pages").size
+    assert_equal 1, summary.dig("missing_heads", "repositories")
+    assert_equal 1, summary.dig("missing_heads", "latest_snapshot_age_days", "n")
+    assert_equal({ "failed" => 1 }, summary.dig("missing_heads", "latest_attempt_status"))
+    assert_equal 0, summary.dig("missing_heads", "local_git_errors")
+    assert_equal 1, summary.dig("by_forge", "github.com", "repositories")
+    assert_equal 2, summary.dig("by_registry", "rubygems.org", "packages")
+    assert_equal before, query("SELECT * FROM repositories")
+    assert_equal 0, cli("freshness", "--offline")
+    assert_not_requested(:any, /https:/)
+  end
+
+  def test_origin_pagination_rejects_another_origin_even_when_unescaped
+    seed
+    stub_origins
+    url = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100"
+    other = "#{SWH}/origin/https://github.com/example/unrelated/visits/?last_visit=1"
+    stub_request(:get, url).to_return(response([visit(REPO, status: "failed", snapshot: nil)], link: "<#{other}>; rel=\"next\""))
+    assert_equal 0, cli("origins")
+    row = query("SELECT coverage, origin_data FROM repositories").first
+    assert_equal "unknown", row["coverage"]
+    assert_include row["origin_data"], "Invalid pagination link"
+    assert_not_requested(:get, other)
+  end
+
+  def test_freshness_keeps_no_visits_not_found_unchecked_and_local_git_errors_separate
+    urls = %w[a b c].map { |name| "https://github.com/example/#{name}" }
+    seed(urls.each_with_index.map { |url, index| package(index.to_s, url) })
+    fake_git("") { assert_equal 0, cli("heads") }
+    stub_origins
+    url = "#{SWH}/origin/#{URI.encode_www_form_component(urls.first)}/visits/?per_page=100"
+    stub_request(:get, url).to_return(response([]))
+    assert_equal 0, cli("origins", "--limit", "2")
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    rows = detail.fetch("repositories")
+    assert_equal "no_visits", rows[0].dig("observations", 0, "status")
+    assert rows[1].fetch("observations").all? { |entry| entry["status"] == "not_found" }
+    assert_empty rows[2].fetch("observations")
+    assert_equal false, rows[2]["checked_aliases_complete"]
+    assert rows.all? { |row| row["local_git_error"] == "No SHA-1 HEAD returned" }
+    assert_equal 3, summary.dig("all", "local_git_errors")
+    assert_equal({ "unknown" => 3 }, summary.dig("all", "local_git_status"))
+    assert_equal 2, summary.dig("all", "checked_aliases_complete")
+    assert_equal 0, summary.dig("all", "latest_attempt_age_days", "n")
+    assert_nil summary.dig("all", "latest_snapshot_age_days", "median")
+    assert_equal 0, summary.dig("missing_heads", "repositories")
+    assert_not_requested(:any, /https:/)
+  end
+
+  def test_freshness_retains_latest_attempt_when_snapshot_page_is_not_cached
+    seed
+    stub_origins
+    url = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100"
+    second = url + "&last_visit=1"
+    stub_request(:get, url).to_return(response([visit(REPO, status: "failed", snapshot: nil)], link: "<#{second}>; rel=\"next\""))
+    stub_request(:get, second).to_return(status: 503)
+    assert_equal 0, cli("origins")
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    row = detail.fetch("repositories").first
+    observation = row.fetch("observations").find { |entry| entry["origin"] == REPO }
+    assert_equal "failed", row.dig("latest_attempt", "status")
+    assert_nil row["latest_snapshot"]
+    assert_equal false, row["checked_aliases_complete"]
+    assert_equal second, observation["next_url"]
+    assert_include observation["error"], "Not cached:"
+    assert_equal 1, summary.dig("all", "with_incomplete_lookups")
+    assert_equal 0, summary.dig("all", "latest_attempt_age_days", "n")
+    assert_not_requested(:any, /https:/)
+  end
+
+  def test_freshness_records_page_limit_without_concluding_no_snapshot
+    seed
+    stub_origins
+    url = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100"
+    pages = [url, url + "&last_visit=3", url + "&last_visit=2", url + "&last_visit=1"]
+    pages.first(3).each_with_index do |page, index|
+      failed = visit(REPO, status: "failed", snapshot: nil).merge(visit: 3 - index, date: "2026-09-#{20 - index}T00:00:00Z")
+      stub_request(:get, page).to_return(response([failed], link: "<#{pages[index + 1]}>; rel=\"next\""))
+    end
+    assert_equal 0, cli("origins")
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    observation = detail.fetch("repositories").first.fetch("observations").find { |entry| entry["origin"] == REPO }
+    assert_equal "incomplete", observation["status"]
+    assert_equal "Visit page limit reached", observation["error"]
+    assert_equal 3, observation["pages"].size
+    assert_equal pages.last, observation["next_url"]
+    assert_equal 1, summary.dig("all", "with_unread_visit_pages")
+    assert_equal 0, summary.dig("all", "latest_snapshot_age_days", "n")
+    assert_not_requested(:any, /https:/)
+  end
+
+  def test_freshness_chooses_latest_dates_across_aliases_and_keeps_registry_denominators
+    seed([package("one"), package("two", REPO.downcase)])
+    query("INSERT INTO packages SELECT 'pkg:gem/elsewhere', 'Gem.Coop', 'elsewhere', ecosystem, original_url, repository_url, fetched_at FROM packages LIMIT 1")
+    stub_origins
+    first = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100"
+    second = "#{SWH}/origin/#{URI.encode_www_form_component(REPO.downcase)}/visits/?per_page=100"
+    failed = visit(REPO, status: "failed", snapshot: nil).merge(date: "2026-09-20T00:00:00Z")
+    full = visit(REPO.downcase).merge(date: "2026-09-01T00:00:00Z")
+    stub_request(:get, first).to_return(response([failed]))
+    stub_request(:get, second).to_return(response([full]))
+    assert_equal 0, cli("origins")
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    row = detail.fetch("repositories").first
+    assert_equal REPO, row.dig("latest_attempt", "origin")
+    assert_equal REPO.downcase, row.dig("latest_snapshot", "origin")
+    assert_equal 19.0, row["attempt_snapshot_gap_days"]
+    assert_equal 1, summary.dig("all", "latest_attempt_after_snapshot")
+    assert_equal 3, summary.dig("all", "packages")
+    assert_equal 2, summary.dig("by_registry", "rubygems.org", "packages")
+    assert_equal 1, summary.dig("by_registry", "Gem.Coop", "packages")
+    assert_equal 1, summary.dig("by_registry", "Gem.Coop", "repositories")
+    assert_not_requested(:any, /https:/)
+  end
+
+  def test_freshness_rejects_unordered_visit_pages
+    seed
+    stub_origins
+    url = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100"
+    visits = [visit(REPO).merge(date: "2026-09-01T00:00:00Z"), visit(REPO).merge(visit: 2, date: "2026-09-20T00:00:00Z")]
+    stub_request(:get, url).to_return(response(visits))
+    assert_equal 0, cli("origins")
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    row = detail.fetch("repositories").first
+    assert_equal false, row["checked_aliases_complete"]
+    assert_nil row["latest_attempt"]
+    assert_include row.dig("observations", 0, "error"), "descending date order"
+    assert_equal 0, summary.dig("all", "latest_snapshot_age_days", "n")
+    assert_not_requested(:any, /https:/)
+  end
+
   def test_rate_limit_logs_pause_without_reporting_completion
     seed
     stub_origins

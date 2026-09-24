@@ -18,6 +18,8 @@ require_relative "candidate_origins"
 require_relative "content_coverage"
 require_relative "origin_contents"
 require_relative "restore"
+require_relative "freshness"
+require_relative "extrinsic_metadata"
 
 module SwhCritical
   class CLI
@@ -25,7 +27,7 @@ module SwhCritical
       Dotenv.load(env_file)
       options = { data: "data/default", limit: nil, registries: [], per_page: 100, pages_per_registry: nil, minimum_gib: 5.0, offline: false, missing_heads: false }
       parser = OptionParser.new do |opts|
-        opts.banner = "Usage: ruby swh-critical.rb COMMAND [options]\nCommands: collect, origins, heads, tags, known, recover, report, science, science-report, clones, clone-known, history, origin-search, trace, package-contents, origin-candidates, contents, origin-contents, restore"
+        opts.banner = "Usage: ruby swh-critical.rb COMMAND [options]\nCommands: collect, origins, heads, tags, known, recover, report, freshness, science, science-report, clones, clone-known, history, origin-search, trace, package-contents, origin-candidates, contents, origin-contents, restore, extrinsic-metadata"
         opts.on("--data PATH", "Investigation directory; use a new path for a fresh cohort") { |value| options[:data] = value }
         opts.on("--limit N", Integer, "Maximum repositories, identifiers, or science pages per source") { |value| options[:limit] = value }
         opts.on("--registry NAME", "Restrict collection; repeat for multiple registries") { |value| options[:registries] << value }
@@ -35,6 +37,7 @@ module SwhCritical
         opts.on("--cohort PATH", "Science report: read-only coverage investigation") { |value| options[:cohort] = value }
         opts.on("--swhid PATH", "Clones, package-contents or contents: swhid executable") { |value| options[:swhid] = value }
         opts.on("--repositories PATH", "Trace or content investigation: repository URLs, one per line") { |value| options[:repositories] = value }
+        opts.on("--targets PATH", "Extrinsic metadata: core SWHIDs, one per line") { |value| options[:targets] = value }
         opts.on("--pages-per-registry N", Integer, "Collection page limit per registry for a pilot") { |value| options[:pages_per_registry] = value }
         opts.on("--min-free-gib N", Float, "Minimum free disk space (default: 5)") { |value| options[:minimum_gib] = value }
         opts.on("--offline", "Use cached HTTP responses only") { options[:offline] = true }
@@ -46,7 +49,9 @@ module SwhCritical
       args = argv.dup
       parser.parse!(args)
       command = args.shift
-      raise Error, parser.to_s unless %w[collect origins heads tags known recover report science science-report clones clone-known history origin-search trace package-contents origin-candidates contents origin-contents restore].include?(command) && args.empty?
+      raise Error, parser.to_s unless %w[collect origins heads tags known recover report freshness science science-report clones clone-known history origin-search trace package-contents origin-candidates contents origin-contents restore extrinsic-metadata].include?(command) && args.empty?
+      raise Error, "extrinsic-metadata requires --targets" if command == "extrinsic-metadata" && !options[:targets]
+      raise Error, "--targets requires extrinsic-metadata" if options[:targets] && command != "extrinsic-metadata"
       raise Error, "restore requires one --registry and --package" if command == "restore" && (options[:registries].size != 1 || !options[:package])
       raise Error, "--package and --package-version require restore" if command != "restore" && (options[:package] || options[:package_version])
       raise Error, "#{command} requires --repositories" if %w[trace origin-candidates contents origin-contents].include?(command) && !options[:repositories]
@@ -85,6 +90,10 @@ module SwhCritical
         Known.new(store, http, out).run(limit: options[:limit] || 1000)
       when "report"
         Report.new(store, out).run
+      when "freshness"
+        Freshness.new(store, out).run
+      when "extrinsic-metadata"
+        ExtrinsicMetadata.new(store, http, out).run(File.readlines(options[:targets], chomp: true).map(&:strip).reject(&:empty?), limit: options[:limit] || 100)
       when "recover"
         Recovery.new(store, out).run(options[:mappings])
       when "science"

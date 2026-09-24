@@ -26,13 +26,15 @@ module SwhCritical
     def request(method, url, body: nil, raw: false)
       uri = URI(url)
       content_bytes = method == :get && uri.host == "archive.softwareheritage.org" && uri.path.match?(%r{\A/api/1/content/sha1_git:[0-9a-f]{40}/raw/\z})
+      metadata_bytes = method == :get && uri.host == "archive.softwareheritage.org" && uri.path.match?(%r{\A/api/1/raw-extrinsic-metadata/get/[0-9a-f]{40}/\z})
+      metadata_list = method == :get && uri.path.match?(%r{\A/api/1/raw-extrinsic-metadata/swhid/swh:1:(?:cnt|dir|rev|rel|snp):[0-9a-f]{40}/(?:authorities/)?\z})
       allowed = uri.scheme == "https" && uri.userinfo.nil? && uri.port == 443 && uri.fragment.nil?
       allowed &&= (uri.host == "packages.ecosyste.ms" && method == :get && uri.path.start_with?("/api/v1/")) ||
         (uri.host == "science.ecosyste.ms" && method == :get && %w[/api/v1/projects/search_seeds /api/v1/packages].include?(uri.path)) ||
         (uri.host == "archive.softwareheritage.org" &&
-          ((method == :get && uri.path.start_with?("/api/1/origin/", "/api/1/snapshot/", "/api/1/revision/", "/api/1/release/", "/api/1/directory/")) || content_bytes ||
+          ((method == :get && uri.path.start_with?("/api/1/origin/", "/api/1/snapshot/", "/api/1/revision/", "/api/1/release/", "/api/1/directory/")) || content_bytes || metadata_bytes || metadata_list ||
            (method == :post && uri.path == "/api/1/known/")))
-      allowed &&= !raw || content_bytes
+      allowed &&= !raw || content_bytes || metadata_bytes
       raise Error, "Request outside lookup allowlist: #{method} #{url}" unless allowed
 
       key = Digest::SHA256.hexdigest(JSON.generate(raw ? [method, url, body, "raw"] : [method, url, body]))
@@ -130,8 +132,12 @@ module SwhCritical
 
       target = URI.join(response.fetch("url"), next_link[/<([^>]+)>/, 1].to_s)
       source = URI(response.fetch("url"))
-      unless [target.scheme, target.host, target.port, target.path, target.userinfo] ==
-          [source.scheme, source.host, source.port, source.path, nil] && target.query && target.to_s != source.to_s
+      same_path = target.path == source.path
+      if source.host == "archive.softwareheritage.org" && source.path.start_with?("/api/1/origin/") && source.path.end_with?("/visits/")
+        same_path ||= URI::DEFAULT_PARSER.unescape(target.path) == URI::DEFAULT_PARSER.unescape(source.path)
+      end
+      unless [target.scheme, target.host, target.port, target.userinfo, target.fragment] ==
+          [source.scheme, source.host, source.port, nil, nil] && same_path && target.query && target.to_s != source.to_s
         raise Error, "Invalid pagination link"
       end
       target.to_s
