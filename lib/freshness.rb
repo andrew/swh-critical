@@ -1,4 +1,5 @@
 require_relative "origins"
+require_relative "repository_url"
 
 module SwhCritical
   class Freshness
@@ -18,10 +19,11 @@ module SwhCritical
       SQL
         candidates = aliases.fetch(row["url"], []).map { |entry| entry["url"] }
         saved = JSON.parse(row["origin_data"] || "{}")
-        checked = saved.fetch("observations", []).map { |entry| entry.fetch("origin") }.uniq & candidates
-        observations = checked.map { |origin| lookup(origin) }
-        latest_attempt = latest(observations.filter_map { |entry| entry["latest_attempt"] })
-        latest_snapshot = latest(observations.filter_map { |entry| entry["latest_snapshot"] })
+        checked = saved.fetch("observations", []).map { |entry| entry.fetch("origin") }
+        observations = candidates.map { |origin| lookup(origin) }.select do |entry|
+          checked.include?(entry["origin"]) || entry["pages"].any?
+        end
+        current, other = candidates.partition { |origin| RepositoryUrl.key(origin) == RepositoryUrl.key(row["url"]) }
         head = JSON.parse(row["head_data"] || "{}")
         {
           "url" => row["url"], "forge" => row["host"], "coverage" => row["coverage"],
@@ -29,19 +31,13 @@ module SwhCritical
           "local_git_status" => row["head_status"], "local_git_error" => head["error"],
           "local_git_observed_at" => head["observed_at"],
           "head_object_status" => row["head_status"] == "observed" ? (row["object_status"] || "pending") : row["head_status"],
-          "candidate_aliases" => candidates.size, "checked_aliases" => checked.size,
-          "untried_aliases" => candidates - checked,
-          "all_aliases_checked" => candidates.any? && candidates.size == checked.size,
-          "checked_aliases_complete" => observations.any? && observations.all? { |entry| entry["latest_complete"] },
-          "latest_attempt" => latest_attempt, "latest_snapshot" => latest_snapshot,
-          "attempt_snapshot_gap_days" => latest_attempt && latest_snapshot && days_between(latest_attempt["date"], latest_snapshot["date"]),
-          "observations" => observations
-        }
+          "current_origin" => scope(current, observations), "other_aliases" => scope(other, observations)
+        }.merge(scope(candidates, observations))
       end
       missing = rows.select { |row| row["local_git_status"] == "observed" && row["head_object_status"] == "missing" }
       summary = {
-        "reported_at" => @as_of.iso8601, "source" => "cached origin visit pages for previously checked aliases",
-        "scope" => "Latest dates cover checked aliases only. Untried aliases and uncached pages remain unresolved. Ages are days since visits, not commit ingestion lag.",
+        "reported_at" => @as_of.iso8601, "source" => "cached origin visit pages for candidate aliases",
+        "scope" => "Current-origin URLs normalize to the stored repository URL; other aliases may include historical URLs or mirrors. Top-level dates cover all checked aliases. Untried aliases and uncached pages remain unresolved. Ages are days since visits, not source freshness or commit ingestion lag.",
         "all" => summarize(rows), "missing_heads" => summarize(missing),
         "by_forge" => grouped(rows), "missing_heads_by_forge" => grouped(missing),
         "by_registry" => registries(rows), "missing_heads_by_registry" => registries(missing)
@@ -52,6 +48,22 @@ module SwhCritical
       File.write(File.join(directory, "freshness.json"), JSON.pretty_generate({ "reported_at" => @as_of.iso8601, "repositories" => rows }) + "\n")
       File.write(File.join(directory, "freshness_summary.json"), JSON.pretty_generate(summary) + "\n")
       @output.puts JSON.pretty_generate(summary.slice("reported_at", "all", "missing_heads"))
+    end
+
+    def scope(candidates, observations)
+      selected = observations.select { |entry| candidates.include?(entry["origin"]) }
+      checked = selected.map { |entry| entry["origin"] }
+      attempt = latest(selected.filter_map { |entry| entry["latest_attempt"] })
+      snapshot = latest(selected.filter_map { |entry| entry["latest_snapshot"] })
+      {
+        "candidate_aliases" => candidates.size, "checked_aliases" => checked.size,
+        "untried_aliases" => candidates - checked,
+        "all_aliases_checked" => candidates.any? && candidates.size == checked.size,
+        "checked_aliases_complete" => selected.any? && selected.all? { |entry| entry["latest_complete"] },
+        "latest_attempt" => attempt, "latest_snapshot" => snapshot,
+        "attempt_snapshot_gap_days" => attempt && snapshot && days_between(attempt["date"], snapshot["date"]),
+        "observations" => selected
+      }
     end
 
     def lookup(origin)
@@ -119,12 +131,19 @@ module SwhCritical
     end
 
     def summarize(rows)
+      summarize_scope(rows).merge(%w[current_origin other_aliases].to_h do |scope|
+        [scope, summarize_scope(rows.map { |row| row.merge(row.fetch(scope)) })]
+      end)
+    end
+
+    def summarize_scope(rows)
       complete = rows.select { |row| row["checked_aliases_complete"] }
       attempts = complete.filter_map { |row| row["latest_attempt"] }
       snapshots = complete.filter_map { |row| row["latest_snapshot"] }
       dates = rows.flat_map { |row| row["observations"].flat_map { |entry| entry["pages"].map { |page| page["fetched_at"] } } }.compact
       {
         "repositories" => rows.size, "packages" => rows.sum { |row| row["registries"].values.sum },
+        "with_candidate_aliases" => rows.count { |row| row["candidate_aliases"].positive? },
         "with_checked_aliases" => rows.count { |row| row["checked_aliases"].positive? },
         "checked_aliases_complete" => complete.size,
         "all_aliases_checked" => rows.count { |row| row["all_aliases_checked"] },
@@ -150,9 +169,8 @@ module SwhCritical
     def registries(rows)
       rows.flat_map { |row| row["registries"].keys }.uniq.sort.to_h do |registry|
         members = rows.select { |row| row["registries"].key?(registry) }
-        summary = summarize(members)
-        summary["packages"] = members.sum { |row| row["registries"].fetch(registry) }
-        [registry, summary]
+        scoped = members.map { |row| row.merge("registries" => { registry => row["registries"].fetch(registry) }) }
+        [registry, summarize(scoped)]
       end
     end
   end

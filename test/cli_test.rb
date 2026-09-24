@@ -1467,6 +1467,100 @@ class CliTest < Test::Unit::TestCase
     assert_not_requested(:any, /https:/)
   end
 
+  def cache_visits(origin, visits, status: 200, link: nil)
+    url = "#{SWH}/origin/#{URI.encode_www_form_component(origin)}/visits/?per_page=100"
+    stub_request(:get, url).to_return(response(visits, status: status, link: link))
+    store = SwhCritical::Store.new(@directory, minimum_bytes: 0)
+    SwhCritical::Http.new(store).request(:get, url)
+  ensure
+    store&.close
+  end
+
+  def test_freshness_separates_current_origin_from_newer_historical_alias_using_all_cached_candidates
+    current = "https://github.com/New/Finch"
+    old = "https://github.com/Old/Finch"
+    seed([package("finch", current).merge("repo_metadata" => { "previous_names" => [old] })])
+    query("INSERT INTO packages SELECT 'pkg:gem/elsewhere', 'Gem.Coop', 'elsewhere', ecosystem, original_url, repository_url, fetched_at FROM packages LIMIT 1")
+    fake_git("#{SHA}\tHEAD\n") { assert_equal 0, cli("heads") }
+    stub_request(:post, "#{SWH}/known/").to_return(response({ SWHID => { known: false } }))
+    assert_equal 0, cli("known")
+    cache_visits(current + ".git", [visit(current + ".git").merge(date: "2026-05-02T00:00:00Z")])
+    cache_visits(old, [visit(old, snapshot: "c" * 40).merge(date: "2026-08-25T00:00:00Z")])
+    before = query("SELECT * FROM repositories")
+    assert_nil before.first["origin_data"]
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    row = detail.fetch("repositories").first
+    assert_equal old, row.dig("latest_snapshot", "origin")
+    assert_equal current + ".git", row.dig("current_origin", "latest_snapshot", "origin")
+    assert_equal "2026-05-02T00:00:00Z", row.dig("current_origin", "latest_snapshot", "date")
+    assert_equal old, row.dig("other_aliases", "latest_snapshot", "origin")
+    assert_equal 1, row.dig("current_origin", "checked_aliases")
+    assert_equal 1, row.dig("other_aliases", "checked_aliases")
+    assert_equal 2, row["checked_aliases"]
+    assert_include row.dig("current_origin", "untried_aliases"), current.downcase
+    assert_equal true, row.dig("current_origin", "checked_aliases_complete")
+    assert_equal false, row.dig("current_origin", "all_aliases_checked")
+    %w[current_origin other_aliases].each do |scope|
+      assert_equal 1, summary.dig("all", scope, "latest_snapshot_age_days", "n")
+      assert_equal 1, summary.dig("missing_heads", scope, "latest_snapshot_age_days", "n")
+      assert_equal 1, summary.dig("by_forge", "github.com", scope, "with_checked_aliases")
+      assert_equal 1, summary.dig("by_registry", "Gem.Coop", scope, "packages")
+      assert_equal 1, summary.dig("by_registry", "rubygems.org", scope, "packages")
+    end
+    assert_equal before, query("SELECT * FROM repositories")
+    assert_not_requested(:any, /https:/)
+  end
+
+  def test_freshness_keeps_uncached_current_origin_distinct_from_cached_absence
+    old = "https://github.com/old/library"
+    seed([package("example").merge("repo_metadata" => { "previous_names" => [old] })])
+    cache_visits(old, [visit(old)])
+    WebMock.reset!
+    detail, summary = freshness_reports
+    current = detail.fetch("repositories").first.fetch("current_origin")
+    assert_equal 0, current["checked_aliases"]
+    assert_equal false, current["checked_aliases_complete"]
+    assert_nil current["latest_snapshot"]
+    assert_include current["untried_aliases"], REPO
+    assert_equal 0, summary.dig("all", "current_origin", "with_checked_aliases")
+    assert_equal 1, summary.dig("all", "other_aliases", "latest_snapshot_age_days", "n")
+    assert_not_requested(:any, /https:/)
+
+    cache_visits(REPO, { error: "not found" }, status: 404)
+    WebMock.reset!
+    detail, summary = freshness_reports
+    current = detail.fetch("repositories").first.fetch("current_origin")
+    assert_equal 1, current["checked_aliases"]
+    assert_equal true, current["checked_aliases_complete"]
+    assert_equal "not_found", current.dig("observations", 0, "status")
+    assert_nil current["latest_snapshot"]
+    assert_equal 1, summary.dig("all", "current_origin", "with_checked_aliases")
+    assert_equal 0, summary.dig("all", "current_origin", "latest_snapshot_age_days", "n")
+    assert_not_requested(:any, /https:/)
+  end
+
+  def test_freshness_scope_statistics_exclude_only_the_incomplete_scope
+    old = "https://github.com/old/library"
+    seed([package("example").merge("repo_metadata" => { "previous_names" => [old] })])
+    next_url = "#{SWH}/origin/#{URI.encode_www_form_component(REPO)}/visits/?per_page=100&last_visit=2"
+    cache_visits(REPO, [visit(REPO, status: "failed", snapshot: nil)], link: "<#{next_url}>; rel=\"next\"")
+    cache_visits(old, [visit(old).merge(date: "2026-08-01T00:00:00Z")])
+    WebMock.reset!
+
+    detail, summary = freshness_reports
+    row = detail.fetch("repositories").first
+    assert_equal false, row.dig("current_origin", "checked_aliases_complete")
+    assert_equal "failed", row.dig("current_origin", "latest_attempt", "status")
+    assert_include row.dig("current_origin", "observations", 0, "error"), "Not cached:"
+    assert_equal true, row.dig("other_aliases", "checked_aliases_complete")
+    assert_equal 0, summary.dig("all", "latest_snapshot_age_days", "n")
+    assert_equal 0, summary.dig("all", "current_origin", "latest_attempt_age_days", "n")
+    assert_equal 1, summary.dig("all", "other_aliases", "latest_snapshot_age_days", "n")
+    assert_not_requested(:any, /https:/)
+  end
+
   def test_rate_limit_logs_pause_without_reporting_completion
     seed
     stub_origins
