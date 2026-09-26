@@ -3,3 +3,5 @@
 /.env
 !/.env.example
 /.ruby-lsp/
+/.claude/
+.DS_Store
