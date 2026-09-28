@@ -1,0 +1,260 @@
+[
+  {
+    "url": "https://github.com/inspect-js/is-data-view",
+    "checked_at": "2026-09-23T21:47:08Z",
+    "origins": [
+      {
+        "url": "https://pkg.go.dev/github.com/inspect-js/is-data-view",
+        "visit": {
+          "origin": "https://pkg.go.dev/github.com/inspect-js/is-data-view",
+          "visit": 1,
+          "date": "2026-04-28T18:26:36.430000+00:00",
+          "status": "full",
+          "snapshot": "36ba012e6415c841c7fdc55717b29a0086626845",
+          "type": "golang",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://pkg.go.dev/github.com/inspect-js/is-data-view/visit/1/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/36ba012e6415c841c7fdc55717b29a0086626845/"
+        },
+        "snapshot_complete": true,
+        "release_count": 3,
+        "releases_limited": false,
+        "releases": [
+          {
+            "branch": "releases/v1.0.2",
+            "release_swhid": "swh:1:rel:0a445320bd99d6de8c2d0d84ae589941898096af",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "638a06bd2a1fecf4a8af5f82776b5be3b6a55043",
+              "363a1fa7d91709660f518a25bceaed92efea8881",
+              "7f90a00db94d5049c20802cc8952213b12143575",
+              "7dd2b2f20c7362335254037437e619ffd2655073"
+            ],
+            "matching_git_revisions": [
+              "e8a4943b72a33a075c6f9fd31f4e9e8a53e15b02"
+            ],
+            "saved_head_tree_matches": false
+          },
+          {
+            "branch": "releases/v1.0.0",
+            "release_swhid": "swh:1:rel:487440f1854de54da1270a7eef04f06995e06e18",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "d413c9ea1338f0bc1ac915cd6cadd64960f60ad6",
+              "f185ec28ff820567b9f1c53844fdf65f33969305",
+              "948f4becd126e9ee6671abaf5fadd625708564a3",
+              "4053560ec9d71342db78d5f93e21109fc52fa6e9"
+            ],
+            "matching_git_revisions": [
+              "684361510ea1ac6ccbdd7b1fe5940d828af8fb76"
+            ],
+            "saved_head_tree_matches": false
+          },
+          {
+            "branch": "releases/v1.0.1",
+            "release_swhid": "swh:1:rel:1c1ac44274054b1718e014996d468d43292b6da6",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "24582f9c48ea48b04c0db1688fe98df0e07ecc89",
+              "bacb83150a1047f7c173101bc2bad147a09a1dd2",
+              "836c5770ae2e5f40be628ffe8c23ca9a0c1f4ecc",
+              "b152fc3e2d95551f24abc9bb46d934ec7b3df547"
+            ],
+            "matching_git_revisions": [
+              "2a35354be23b672154070c766bdf857eb4e8990b"
+            ],
+            "saved_head_tree_matches": false
+          }
+        ]
+      }
+    ],
+    "saved_head": "bd9c914704dfdcea50dc61fc5c4e43d30e50e34d",
+    "saved_head_tree": "dce170caa1f09ad465e46c948031dfe2bb2e0b21",
+    "status": "complete"
+  },
+  {
+    "url": "https://github.com/jhpratt/num-conv",
+    "checked_at": "2026-09-23T21:47:15Z",
+    "origins": [
+      {
+        "url": "https://pkg.go.dev/github.com/jhpratt/num-conv",
+        "visit": {
+          "origin": "https://pkg.go.dev/github.com/jhpratt/num-conv",
+          "visit": 1,
+          "date": "2026-06-25T05:22:04.818000+00:00",
+          "status": "full",
+          "snapshot": "c6c828a8d581e72b9f02a35b3d9f485c6f84efed",
+          "type": "golang",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://pkg.go.dev/github.com/jhpratt/num-conv/visit/1/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/c6c828a8d581e72b9f02a35b3d9f485c6f84efed/"
+        },
+        "snapshot_complete": true,
+        "release_count": 4,
+        "releases_limited": false,
+        "releases": [
+          {
+            "branch": "releases/v0.2.2",
+            "release_swhid": "swh:1:rel:e7d74b87dfd3b98e4a23ff873ec83b231a8f84a2",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "41378d129a579a07d61e3e972b273cf8152cf1a6",
+              "7c3cdd1947cbdd6a9e454b0b7d9f3fcd173c02b0",
+              "acf10c166f3974b550ed66da1aeba9b8bde7d39c",
+              "b3761cfb4a36bc20448a309f0b7cfaaf33c1682a"
+            ],
+            "matching_git_revisions": [
+              "b022fe87ac3ad5b0d7606ea7465549eaa92efe97"
+            ],
+            "saved_head_tree_matches": false
+          },
+          {
+            "branch": "releases/v0.1.0",
+            "release_swhid": "swh:1:rel:84df02742e50109c20c26294b877a2785309f01e",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "7e783622d47e64339666aaf8b29f1d2d8cecaf8e",
+              "38ace32fab1e229394664eb49c936fc9fc943feb",
+              "41557aa3eaa6049da7a44017d1a517de1411ea2a",
+              "c14bc480ab69940a82df0b5b09f6498f5d306359"
+            ],
+            "matching_git_revisions": [
+              "b6606e5c451f5fb2bffc085a6d8d9530f3d44a48"
+            ],
+            "saved_head_tree_matches": false
+          },
+          {
+            "branch": "releases/v0.2.0",
+            "release_swhid": "swh:1:rel:ff5cde5fa2a50a7fe7f375b595802b3734c6f9ce",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "f7f0e51bfe9603a9ac2fe1188a213c7c6be3d115",
+              "a35036ddd1e097ebca59c5bf74d3999d5173ca53",
+              "5969a97adf3796396e2bd9fe7b2fb9a2e49a6ccb",
+              "70fa0e914365ca1f56cf40f1949706c1b70bd8b8"
+            ],
+            "matching_git_revisions": [
+              "b43655fc31333d287f0c397ba18d08b658426d65"
+            ],
+            "saved_head_tree_matches": false
+          },
+          {
+            "branch": "releases/v0.2.1",
+            "release_swhid": "swh:1:rel:e4e9c7844a4ca6021d62336e7fbe82610e73782f",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "0c1cc1c38add6c2731be34c6ad7df54bb430dcee",
+              "45116daba43eb766f71012634281d978261cdd36",
+              "e2058c960dbe39ac3934f622229fc019db7e48a3",
+              "69f31910457ab3264b3db530d58d12d0951a5edd"
+            ],
+            "matching_git_revisions": [
+              "b9371fe8891cc474a321a5c2e78c7368abf27cc1"
+            ],
+            "saved_head_tree_matches": false
+          }
+        ]
+      }
+    ],
+    "saved_head": "67f41e3300be24184fb63855819cd87a5d1de6d1",
+    "saved_head_tree": "54ad24817da373dbabaacee3b77991057eea1a02",
+    "status": "complete"
+  },
+  {
+    "url": "https://github.com/mgeisler/smawk",
+    "checked_at": "2026-09-23T21:47:25Z",
+    "origins": [
+      {
+        "url": "https://pkg.go.dev/github.com/mgeisler/smawk",
+        "visit": {
+          "origin": "https://pkg.go.dev/github.com/mgeisler/smawk",
+          "visit": 1,
+          "date": "2026-06-30T19:02:18.240000+00:00",
+          "status": "full",
+          "snapshot": "895edbcea192072392229cc546d1b55bf23703f8",
+          "type": "golang",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://pkg.go.dev/github.com/mgeisler/smawk/visit/1/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/895edbcea192072392229cc546d1b55bf23703f8/"
+        },
+        "snapshot_complete": true,
+        "release_count": 1,
+        "releases_limited": false,
+        "releases": [
+          {
+            "branch": "releases/v0.0.0-20260628165907-5687f27dc0f0",
+            "release_swhid": "swh:1:rel:aae3ac45bf0b94fab1a952ef601562dc41ba687e",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "5ec1d68268ba8e1261802d08919bf5d1f0df2aee",
+              "a5b1fd53b1f036ef66ea3e14b9404aa3bf34cec4",
+              "265bd3d49cdb7ad6e7a524c0b4019744e97bde7e",
+              "a360cc9d23e3e13276ad76a7ef9bbe46e710c826"
+            ],
+            "matching_git_revisions": [
+              "5687f27dc0f0af81e27c5a739fa9b15396f2719a",
+              "41fe6b2d0460f78e481e588e3965a260fd100653"
+            ],
+            "saved_head_tree_matches": false
+          }
+        ]
+      }
+    ],
+    "saved_head": "e064361ff9159e24ba2ecb467664212851d0c089",
+    "saved_head_tree": "c87a8c659a525ac9253f8305a7ae77e999080382",
+    "status": "complete"
+  },
+  {
+    "url": "https://github.com/sinclairzx81/sinclair-typebox",
+    "checked_at": "2026-09-23T21:47:28Z",
+    "origins": [
+      {
+        "url": "https://pkg.go.dev/github.com/sinclairzx81/sinclair-typebox",
+        "visit": {
+          "origin": "https://pkg.go.dev/github.com/sinclairzx81/sinclair-typebox",
+          "visit": 1,
+          "date": "2026-06-08T15:36:03.092000+00:00",
+          "status": "full",
+          "snapshot": "69f3c57c2ba4db056d4fd0f7b7f19c66b3907a9f",
+          "type": "golang",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://pkg.go.dev/github.com/sinclairzx81/sinclair-typebox/visit/1/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/69f3c57c2ba4db056d4fd0f7b7f19c66b3907a9f/"
+        },
+        "snapshot_complete": true,
+        "release_count": 1,
+        "releases_limited": false,
+        "releases": [
+          {
+            "branch": "releases/v0.0.0-20260328040716-b661bb693f65",
+            "release_swhid": "swh:1:rel:3885642d4ac4c9a9c60d8ad31f3167a01533f2de",
+            "synthetic": true,
+            "target_type": "directory",
+            "directory_chain": [
+              "f107adbf9ae61996055382bee9595a33dee5516e",
+              "1b694397f4ebc3cc9757566a4494d3cec6afc134",
+              "fe2b0114dd3dab4f661847812458b801001a188a",
+              "dd2ac4b372fcc44f5fa244eea3d7bb648f578b51"
+            ],
+            "matching_git_revisions": [
+              "b661bb693f65046b8e5a7c5f4dcd6d465a90ac4c",
+              "98cf092bdecbfa2c09e348e881f2fbb97ef3fc45"
+            ],
+            "saved_head_tree_matches": false
+          }
+        ]
+      }
+    ],
+    "saved_head": "20f9f9bdf04b84742fa8a5872bca5a24d9575598",
+    "saved_head_tree": "87f2103a58865be2957eccbe11660ffde19b7d59",
+    "status": "complete"
+  }
+]

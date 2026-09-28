@@ -1,0 +1,715 @@
+{
+  "started_at": "2026-09-23T22:41:56Z",
+  "registry": "npmjs.org",
+  "package": "possible-typed-array-names",
+  "status": "complete",
+  "metadata_evidence": [
+    {
+      "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names",
+      "fetched_at": "2026-09-23T22:29:55Z",
+      "cache_file": "e43114085851b85d034a7a43cd1a7dc08825445a869805d24daecfb11da58e03.json.gz"
+    },
+    {
+      "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/versions/1.1.0",
+      "fetched_at": "2026-09-23T22:29:55Z",
+      "cache_file": "336fd49c1ca6d4cc6c5951458005f9cf7947430080515dc64abad57a79b64de4.json.gz"
+    }
+  ],
+  "version": "1.1.0",
+  "purl": "pkg:npm/possible-typed-array-names@1.1.0",
+  "repository_url": "https://github.com/ljharb/possible-typed-array-names",
+  "download_url": "https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz",
+  "package_metadata": {
+    "id": 8892764,
+    "name": "possible-typed-array-names",
+    "ecosystem": "npm",
+    "description": "A simple list of possible Typed Array names.",
+    "homepage": "https://github.com/ljharb/possible-typed-array-names#readme",
+    "licenses": "MIT",
+    "normalized_licenses": [
+      "MIT"
+    ],
+    "repository_url": "https://github.com/ljharb/possible-typed-array-names",
+    "keywords_array": [
+      "typed",
+      "array",
+      "typedarray",
+      "Float32Array",
+      "Float64Array",
+      "Int8Array",
+      "Int16Array",
+      "Int32Array",
+      "Uint8Array",
+      "Uint8ClampedArray",
+      "Uint16Array",
+      "Uint32Array",
+      "BigInt64Array",
+      "BigUint64Array"
+    ],
+    "namespace": null,
+    "versions_count": 2,
+    "first_release_published_at": "2024-02-19T22:32:51.701Z",
+    "latest_release_published_at": "2025-02-07T05:04:15.221Z",
+    "latest_release_number": "1.1.0",
+    "last_synced_at": "2026-09-23T00:50:08.838Z",
+    "created_at": "2024-02-19T22:35:13.783Z",
+    "updated_at": "2026-09-23T00:50:08.839Z",
+    "registry_url": "https://www.npmjs.com/package/possible-typed-array-names",
+    "install_command": "npm install possible-typed-array-names",
+    "documentation_url": null,
+    "metadata": {
+      "funding": null,
+      "dist-tags": {
+        "latest": "1.1.0"
+      },
+      "contentPolicy": null
+    },
+    "repo_metadata": {
+      "id": 223371416,
+      "uuid": "760136716",
+      "full_name": "ljharb/possible-typed-array-names",
+      "owner": "ljharb",
+      "description": "A simple list of possible Typed Array names.",
+      "archived": false,
+      "fork": false,
+      "pushed_at": "2026-01-13T19:32:47.000Z",
+      "size": 29,
+      "stargazers_count": 0,
+      "open_issues_count": 1,
+      "forks_count": 1,
+      "subscribers_count": 1,
+      "default_branch": "main",
+      "last_synced_at": "2026-09-11T00:34:34.948Z",
+      "etag": null,
+      "topics": [],
+      "latest_commit_sha": null,
+      "homepage": "",
+      "language": "JavaScript",
+      "has_issues": true,
+      "has_wiki": null,
+      "has_pages": null,
+      "mirror_url": null,
+      "source_name": null,
+      "license": "mit",
+      "status": null,
+      "scm": "git",
+      "pull_requests_enabled": true,
+      "icon_url": "https://github.com/ljharb.png",
+      "metadata": {
+        "files": {
+          "readme": "README.md",
+          "changelog": "CHANGELOG.md",
+          "contributing": null,
+          "funding": ".github/FUNDING.yml",
+          "license": "LICENSE",
+          "code_of_conduct": null,
+          "threat_model": null,
+          "audit": null,
+          "citation": null,
+          "codeowners": null,
+          "security": null,
+          "support": null,
+          "governance": null,
+          "roadmap": null,
+          "authors": null,
+          "dei": null,
+          "publiccode": null,
+          "codemeta": null,
+          "zenodo": null,
+          "notice": null,
+          "maintainers": null,
+          "copyright": null,
+          "agents": null,
+          "dco": null,
+          "cla": null
+        },
+        "funding": {
+          "github": [
+            "ljharb"
+          ],
+          "patreon": null,
+          "open_collective": null,
+          "ko_fi": "ljharb",
+          "tidelift": null,
+          "community_bridge": null,
+          "liberapay": null,
+          "issuehunt": null,
+          "otechie": null,
+          "polar": null,
+          "buy_me_a_coffee": null,
+          "thanks_dev": "ljharb",
+          "custom": null
+        }
+      },
+      "created_at": "2024-02-19T21:10:57.000Z",
+      "updated_at": "2026-08-20T20:52:37.000Z",
+      "dependencies_parsed_at": "2025-01-08T16:58:19.849Z",
+      "dependency_job_id": "ffcb0872-610b-4fb5-940e-c7f0b94e21f6",
+      "html_url": "https://github.com/ljharb/possible-typed-array-names",
+      "commit_stats": {
+        "total_commits": 11,
+        "total_committers": 1,
+        "mean_commits": 11.0,
+        "dds": 0.0,
+        "last_synced_commit": "b5b808cebf0bc0bdb8636f4981cc8ffabb58bbbb"
+      },
+      "previous_names": [
+        "ljharb/possible-typed-array-names"
+      ],
+      "tags_count": 2,
+      "template": false,
+      "template_full_name": null,
+      "purl": "pkg:github/ljharb/possible-typed-array-names",
+      "repository_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names",
+      "tags_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/tags",
+      "releases_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/releases",
+      "manifests_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/manifests",
+      "owner_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/ljharb",
+      "download_url": "https://codeload.github.com/ljharb/possible-typed-array-names/tar.gz/refs/heads/main",
+      "sbom_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/sbom",
+      "scorecard": null,
+      "host": {
+        "name": "GitHub",
+        "url": "https://github.com",
+        "kind": "github",
+        "repositories_count": 341189360,
+        "owners_count": 37350794,
+        "icon_url": "https://github.com/github.png",
+        "version": null,
+        "created_at": "2022-05-30T11:31:42.601Z",
+        "updated_at": "2026-08-22T15:14:58.755Z",
+        "status": "online",
+        "status_checked_at": "2026-09-16T02:00:06.638Z",
+        "response_time": 96,
+        "last_error": null,
+        "robots_txt_status": "success",
+        "robots_txt_updated_at": "2025-07-24T06:49:26.215Z",
+        "robots_txt_url": "https://github.com/robots.txt",
+        "online": true,
+        "can_crawl_api": true,
+        "host_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub",
+        "repositories_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories",
+        "repository_names_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repository_names",
+        "owners_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners"
+      },
+      "owner_record": {
+        "login": "ljharb",
+        "name": "Jordan Harband",
+        "uuid": "45469",
+        "kind": "user",
+        "description": "software engineer/nerd/teacher/will try anything once; surgeon with git rebase. @TC39 ex @Coinbase @Airbnb @Twitter @MobBase. Fav punctuation ⸮, scent petrichor",
+        "email": "",
+        "website": "https://linkedin.com/in/ljharb",
+        "location": "Hillsborough, CA",
+        "twitter": "LJHarb",
+        "company": "@socketdev @tc39 @ecma-tc54",
+        "icon_url": "https://avatars.githubusercontent.com/u/45469?u=6ab74b3b934f9659a90b588062c2c4328e40c6be&v=4",
+        "repositories_count": 312,
+        "last_synced_at": "2026-09-21T00:46:56.242Z",
+        "metadata": {
+          "has_sponsors_listing": true,
+          "funding": {
+            "github": [
+              "ljharb"
+            ],
+            "patreon": null,
+            "open_collective": null,
+            "ko_fi": "ljharb",
+            "tidelift": null,
+            "community_bridge": null,
+            "liberapay": null,
+            "issuehunt": null,
+            "otechie": null,
+            "polar": null,
+            "buy_me_a_coffee": null,
+            "thanks_dev": "ljharb",
+            "custom": null
+          }
+        },
+        "html_url": "https://github.com/ljharb",
+        "funding_links": [
+          "https://github.com/sponsors/ljharb",
+          "https://ko-fi.com/ljharb",
+          "https://thanks.dev/ljharb"
+        ],
+        "total_stars": 11552,
+        "followers": 8298,
+        "following": 396,
+        "created_at": "2022-11-02T16:19:00.017Z",
+        "updated_at": "2026-09-21T00:46:56.343Z",
+        "owner_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/ljharb",
+        "repositories_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/owners/ljharb/repositories"
+      },
+      "tags": [
+        {
+          "name": "v1.1.0",
+          "sha": "2f74e2d3a02309b48fa6d6d48f8fd3359681707f",
+          "kind": "tag",
+          "published_at": "2025-02-07T05:02:28.000Z",
+          "download_url": "https://codeload.github.com/ljharb/possible-typed-array-names/tar.gz/v1.1.0",
+          "html_url": "https://github.com/ljharb/possible-typed-array-names/releases/tag/v1.1.0",
+          "dependencies_parsed_at": null,
+          "dependency_job_id": null,
+          "purl": "pkg:github/ljharb/possible-typed-array-names@v1.1.0",
+          "tag_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/tags/v1.1.0",
+          "manifests_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/tags/v1.1.0/manifests"
+        },
+        {
+          "name": "v1.0.0",
+          "sha": "38d28dd7ec26af8da42034a6e02d14b8101a1f3d",
+          "kind": "tag",
+          "published_at": "2024-02-19T22:32:44.000Z",
+          "download_url": "https://codeload.github.com/ljharb/possible-typed-array-names/tar.gz/v1.0.0",
+          "html_url": "https://github.com/ljharb/possible-typed-array-names/releases/tag/v1.0.0",
+          "dependencies_parsed_at": null,
+          "dependency_job_id": null,
+          "purl": "pkg:github/ljharb/possible-typed-array-names@v1.0.0",
+          "tag_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/tags/v1.0.0",
+          "manifests_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/tags/v1.0.0/manifests"
+        }
+      ]
+    },
+    "repo_metadata_updated_at": "2026-09-22T02:09:51.469Z",
+    "dependent_packages_count": 0,
+    "downloads": 332790320,
+    "downloads_period": "last-month",
+    "dependent_repos_count": 0,
+    "rankings": {
+      "downloads": null,
+      "dependent_repos_count": 33.84122022412571,
+      "dependent_packages_count": 48.33621272234291,
+      "stargazers_count": null,
+      "forks_count": null,
+      "docker_downloads_count": null,
+      "average": 41.088716473234314
+    },
+    "purl": "pkg:npm/possible-typed-array-names",
+    "advisories": [],
+    "docker_usage_url": "https://docker.ecosyste.ms/usage/npm/possible-typed-array-names",
+    "docker_dependents_count": 7,
+    "docker_downloads_count": 1189,
+    "usage_url": "https://repos.ecosyste.ms/usage/npm/possible-typed-array-names",
+    "dependent_repositories_url": "https://repos.ecosyste.ms/api/v1/usage/npm/possible-typed-array-names/dependencies",
+    "status": null,
+    "funding_links": [
+      "https://github.com/sponsors/ljharb",
+      "https://ko-fi.com/ljharb",
+      "https://thanks.dev/ljharb"
+    ],
+    "critical": true,
+    "issue_metadata": {
+      "last_synced_at": "2026-09-21T11:59:09.362Z",
+      "issues_count": 1,
+      "pull_requests_count": 0,
+      "avg_time_to_close_issue": null,
+      "avg_time_to_close_pull_request": null,
+      "issues_closed_count": 0,
+      "pull_requests_closed_count": 0,
+      "pull_request_authors_count": 0,
+      "issue_authors_count": 1,
+      "avg_comments_per_issue": 0.0,
+      "avg_comments_per_pull_request": null,
+      "merged_pull_requests_count": 0,
+      "bot_issues_count": 1,
+      "bot_pull_requests_count": 0,
+      "past_year_issues_count": 0,
+      "past_year_pull_requests_count": 0,
+      "past_year_avg_time_to_close_issue": null,
+      "past_year_avg_time_to_close_pull_request": null,
+      "past_year_issues_closed_count": 0,
+      "past_year_pull_requests_closed_count": 0,
+      "past_year_pull_request_authors_count": 0,
+      "past_year_issue_authors_count": 0,
+      "past_year_avg_comments_per_issue": null,
+      "past_year_avg_comments_per_pull_request": null,
+      "past_year_bot_issues_count": 0,
+      "past_year_bot_pull_requests_count": 0,
+      "past_year_merged_pull_requests_count": 0,
+      "issues_url": "https://issues.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/issues",
+      "maintainers": [],
+      "active_maintainers": []
+    },
+    "versions_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/versions",
+    "version_numbers_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/version_numbers",
+    "latest_version_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/latest_version",
+    "dependent_packages_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/dependent_packages",
+    "related_packages_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/related_packages",
+    "codemeta_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/codemeta",
+    "maintainers": [
+      {
+        "uuid": "ljharb",
+        "login": "ljharb",
+        "name": null,
+        "email": "ljharb@gmail.com",
+        "url": null,
+        "packages_count": 567,
+        "html_url": "https://www.npmjs.com/~ljharb",
+        "role": null,
+        "created_at": "2024-02-19T22:35:14.407Z",
+        "updated_at": "2024-02-19T22:35:14.407Z",
+        "packages_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/maintainers/ljharb/packages"
+      }
+    ]
+  },
+  "version_metadata": {
+    "id": 130859327,
+    "number": "1.1.0",
+    "published_at": "2025-02-07T05:04:15.221Z",
+    "licenses": "MIT",
+    "integrity": "sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==",
+    "status": null,
+    "download_url": "https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz",
+    "registry_url": "https://www.npmjs.com/package/possible-typed-array-names/v/1.1.0",
+    "documentation_url": null,
+    "install_command": "npm install possible-typed-array-names@1.1.0",
+    "immutable": null,
+    "metadata": {
+      "deprecated": null,
+      "_npmUser": {
+        "name": "ljharb",
+        "email": "ljharb@gmail.com"
+      },
+      "dist": {
+        "integrity": "sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==",
+        "shasum": "93e3582bc0e5426586d9d07b79ee40fc841de4ae",
+        "tarball": "https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz",
+        "fileCount": 10,
+        "unpackedSize": 9698,
+        "signatures": [
+          {
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+            "sig": "MEQCIGBIPNoeXUkQTKuFjXKNSmk9oxzbLdXRlm8GkNUZZru8AiAsVrV5YsDG7ie9VkS4+WAKkCNgdidaUWTtmXtN6O35Iw=="
+          }
+        ]
+      },
+      "gitHead": "2f74e2d3a02309b48fa6d6d48f8fd3359681707f",
+      "main": "index.js",
+      "scripts": {
+        "prepack": "npmignore --auto --commentLines=autogenerated",
+        "prepublishOnly": "safe-publish-latest",
+        "prepublish": "not-in-publish || npm run prepublishOnly",
+        "pretest": "npm run lint",
+        "test": "npm run tests-only",
+        "tests-only": "nyc tape 'test/**/*.js'",
+        "posttest": "npx npm@'>= 10.2' audit --production",
+        "prelint": "evalmd README.md && eclint check $(git ls-files | xargs find 2> /dev/null | grep -vE 'node_modules|\\.git' | grep -v dist/)",
+        "lint": "eslint --ext=js,mjs .",
+        "postlint": "tsc && attw -P",
+        "version": "auto-changelog && git add CHANGELOG.md",
+        "postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
+      },
+      "_npmVersion": "10.9.2",
+      "_nodeVersion": "23.7.0",
+      "_hasShrinkwrap": false,
+      "directories": {},
+      "engines": {
+        "node": ">= 0.4"
+      },
+      "exports": {
+        ".": "./index.js",
+        "./package.json": "./package.json"
+      },
+      "browserify": null
+    },
+    "created_at": "2025-02-07T05:04:52.976Z",
+    "updated_at": "2026-09-23T00:50:08.767Z",
+    "purl": "pkg:npm/possible-typed-array-names@1.1.0",
+    "related_tag": {
+      "name": "v1.1.0",
+      "sha": "2f74e2d3a02309b48fa6d6d48f8fd3359681707f",
+      "kind": "tag",
+      "published_at": "2025-02-07T05:02:28.000Z",
+      "download_url": "https://codeload.github.com/ljharb/possible-typed-array-names/tar.gz/v1.1.0",
+      "html_url": "https://github.com/ljharb/possible-typed-array-names/releases/tag/v1.1.0",
+      "dependencies_parsed_at": null,
+      "dependency_job_id": null,
+      "purl": "pkg:github/ljharb/possible-typed-array-names@v1.1.0",
+      "tag_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/tags/v1.1.0",
+      "manifests_url": "https://repos.ecosyste.ms/api/v1/hosts/GitHub/repositories/ljharb%2Fpossible-typed-array-names/tags/v1.1.0/manifests"
+    },
+    "latest": true,
+    "version_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/versions/1.1.0",
+    "codemeta_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/versions/1.1.0/codemeta",
+    "dependencies": [
+      {
+        "id": 1490752798,
+        "ecosystem": "npm",
+        "package_name": "@arethetypeswrong/cli",
+        "requirements": "^0.17.3",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752799,
+        "ecosystem": "npm",
+        "package_name": "@ljharb/eslint-config",
+        "requirements": "^21.1.1",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752800,
+        "ecosystem": "npm",
+        "package_name": "@ljharb/tsconfig",
+        "requirements": "^0.2.3",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752801,
+        "ecosystem": "npm",
+        "package_name": "@types/tape",
+        "requirements": "^5.8.1",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752802,
+        "ecosystem": "npm",
+        "package_name": "auto-changelog",
+        "requirements": "^2.5.0",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752803,
+        "ecosystem": "npm",
+        "package_name": "eclint",
+        "requirements": "^2.8.1",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752804,
+        "ecosystem": "npm",
+        "package_name": "eslint",
+        "requirements": "=8.8.0",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752805,
+        "ecosystem": "npm",
+        "package_name": "evalmd",
+        "requirements": "^0.0.19",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752806,
+        "ecosystem": "npm",
+        "package_name": "in-publish",
+        "requirements": "^2.0.1",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752807,
+        "ecosystem": "npm",
+        "package_name": "npmignore",
+        "requirements": "^0.3.1",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752808,
+        "ecosystem": "npm",
+        "package_name": "nyc",
+        "requirements": "^10.3.2",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752809,
+        "ecosystem": "npm",
+        "package_name": "safe-publish-latest",
+        "requirements": "^2.0.0",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752810,
+        "ecosystem": "npm",
+        "package_name": "tape",
+        "requirements": "^5.9.0",
+        "kind": "Development",
+        "optional": false
+      },
+      {
+        "id": 1490752811,
+        "ecosystem": "npm",
+        "package_name": "typescript",
+        "requirements": "next",
+        "kind": "Development",
+        "optional": false
+      }
+    ],
+    "package_url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names"
+  },
+  "package_git_revision": {
+    "swhid": "swh:1:rev:2f74e2d3a02309b48fa6d6d48f8fd3359681707f",
+    "result": {
+      "known": false
+    },
+    "evidence": {
+      "url": "https://archive.softwareheritage.org/api/1/known/",
+      "fetched_at": "2026-09-23T22:29:55Z",
+      "cache_file": "89aad4556cc4cee5ac3678d4dee196d37b113c5b9b2a15788d654a0b331c5300.json.gz"
+    }
+  },
+  "origin": "https://www.npmjs.com/package/possible-typed-array-names",
+  "visit_check": {
+    "origin": "https://www.npmjs.com/package/possible-typed-array-names",
+    "status": "full",
+    "visit": {
+      "origin": "https://www.npmjs.com/package/possible-typed-array-names",
+      "visit": 3,
+      "date": "2026-08-16T02:22:24.140000+00:00",
+      "status": "full",
+      "snapshot": "c27c32c37a55e02e1c715db23a66eefa3b1fe61f",
+      "type": "npm",
+      "metadata": {},
+      "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://www.npmjs.com/package/possible-typed-array-names/visit/3/",
+      "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/c27c32c37a55e02e1c715db23a66eefa3b1fe61f/"
+    },
+    "evidence": [
+      {
+        "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fpossible-typed-array-names/visits/?per_page=100",
+        "fetched_at": "2026-09-23T22:29:56Z",
+        "cache_file": "c5eda59291baa8dbf4a2c1ab75b61b250fefcd23321873d414aa8cbc992e11b9.json.gz",
+        "status": 200
+      }
+    ]
+  },
+  "snapshot_swhid": "swh:1:snp:c27c32c37a55e02e1c715db23a66eefa3b1fe61f",
+  "snapshot_complete": true,
+  "branch": "releases/1.1.0",
+  "object_chain": [
+    {
+      "type": "release",
+      "id": "79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2"
+    },
+    {
+      "type": "directory",
+      "id": "1699d70237ee0c610b97ae94741aa7a5247ec690"
+    }
+  ],
+  "directory_swhid": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+  "completed_at": "2026-09-23T22:41:56Z",
+  "destination": "restored",
+  "files": [
+    {
+      "path": "package/.eslintrc",
+      "swhid": "swh:1:cnt:3b5d9e90ec405f85dd7f9066656efccc51193697",
+      "bytes": 43,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:3b5d9e90ec405f85dd7f9066656efccc51193697/raw/",
+        "fetched_at": "2026-09-23T22:38:26Z",
+        "cache_file": "23abe62e640565d6c97cfb5a78c1dfb205b3805014de537ab1d81e31ea4e603a.json.gz"
+      }
+    },
+    {
+      "path": "package/.github/FUNDING.yml",
+      "swhid": "swh:1:cnt:7afce20a601453355c418aa338f7065b6159518d",
+      "bytes": 572,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:7afce20a601453355c418aa338f7065b6159518d/raw/",
+        "fetched_at": "2026-09-23T22:38:27Z",
+        "cache_file": "3cd22294797e18970397f2400acf9df291862680fe1a35acf4b77326d90bfb8f.json.gz"
+      }
+    },
+    {
+      "path": "package/CHANGELOG.md",
+      "swhid": "swh:1:cnt:e3bf2a10ce2b10f40fbcd6fb6087ae1f7fb074ad",
+      "bytes": 2439,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:e3bf2a10ce2b10f40fbcd6fb6087ae1f7fb074ad/raw/",
+        "fetched_at": "2026-09-23T22:38:28Z",
+        "cache_file": "b8032ac03d5a5bdd5e5e526340d4c50d33ae348e10bf7ef1f4b116a7065b526f.json.gz"
+      }
+    },
+    {
+      "path": "package/LICENSE",
+      "swhid": "swh:1:cnt:f82f38963b0d282b529f64def2bcd40be3a9a947",
+      "bytes": 1071,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:f82f38963b0d282b529f64def2bcd40be3a9a947/raw/",
+        "fetched_at": "2026-09-23T22:38:29Z",
+        "cache_file": "f9f613f1071e31d0bcfcc363eff332c253c6cfc7ccf7ab0419724449beac543d.json.gz"
+      }
+    },
+    {
+      "path": "package/README.md",
+      "swhid": "swh:1:cnt:0580d2f7102cb88d0d49e8686d145e338e208166",
+      "bytes": 2156,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:0580d2f7102cb88d0d49e8686d145e338e208166/raw/",
+        "fetched_at": "2026-09-23T22:38:29Z",
+        "cache_file": "61f5833660f4a9947b4246eb07a3884e46c2d8a47e8a7e604292b0ffcb3664bb.json.gz"
+      }
+    },
+    {
+      "path": "package/index.d.ts",
+      "swhid": "swh:1:cnt:9213159650b64548b763b9a7af695bef5d860151",
+      "bytes": 242,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:9213159650b64548b763b9a7af695bef5d860151/raw/",
+        "fetched_at": "2026-09-23T22:38:30Z",
+        "cache_file": "4f662e105789dd4153fc7e23413aa64c61d9e1f87355757b5102919d46139273.json.gz"
+      }
+    },
+    {
+      "path": "package/index.js",
+      "swhid": "swh:1:cnt:5551ab60218825c866c50a2dce4397f630825ecc",
+      "bytes": 264,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:5551ab60218825c866c50a2dce4397f630825ecc/raw/",
+        "fetched_at": "2026-09-23T22:38:31Z",
+        "cache_file": "6a73ba9e158f406bc134df01ae30517a7c52b6dec8bdcc17382b39ef3c4d2402.json.gz"
+      }
+    },
+    {
+      "path": "package/package.json",
+      "swhid": "swh:1:cnt:5285efa4046b81159f8f57003341817776a5fa75",
+      "bytes": 2325,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:5285efa4046b81159f8f57003341817776a5fa75/raw/",
+        "fetched_at": "2026-09-23T22:38:32Z",
+        "cache_file": "0d68e99cd4354d1d06e9c80059ee9602e08ea668d8a164c71d7ad44ea4e79ade.json.gz"
+      }
+    },
+    {
+      "path": "package/test/index.js",
+      "swhid": "swh:1:cnt:e115695a454f3a96733d8169760d7759cbd09a9d",
+      "bytes": 470,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:e115695a454f3a96733d8169760d7759cbd09a9d/raw/",
+        "fetched_at": "2026-09-23T22:38:34Z",
+        "cache_file": "967ea5a94647626a03b17102be9c0d724e3c24b8650c00974f7c1ffa48254fdc.json.gz"
+      }
+    },
+    {
+      "path": "package/tsconfig.json",
+      "swhid": "swh:1:cnt:4e940905aca80584442a169936c89e8645ff78bd",
+      "bytes": 116,
+      "mode": "100644",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:4e940905aca80584442a169936c89e8645ff78bd/raw/",
+        "fetched_at": "2026-09-23T22:38:35Z",
+        "cache_file": "4abfa7744128de182085a8c7e9caee4091fecc9611daed11e180c076e588ff82.json.gz"
+      }
+    }
+  ],
+  "file_count": 10,
+  "bytes": 9698,
+  "directories": 4
+}

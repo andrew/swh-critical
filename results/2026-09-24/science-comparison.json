@@ -1,0 +1,273 @@
+{
+  "reported_at": "2026-09-24T08:46:46Z",
+  "sources": {
+    "projects": {
+      "status": "complete",
+      "pages": 842,
+      "started_at": "2026-09-23T18:31:31Z",
+      "next_url": null,
+      "updated_at": "2026-09-23T20:09:26Z"
+    },
+    "dependencies": {
+      "status": "complete",
+      "pages": 99,
+      "started_at": "2026-09-23T18:31:34Z",
+      "next_url": null,
+      "updated_at": "2026-09-24T08:38:49Z"
+    }
+  },
+  "groups": {
+    "projects": {
+      "packages": 450,
+      "repositories": 367,
+      "packages_without_repository": 0,
+      "current_commit_coverage": {
+        "present": 245,
+        "missing": 122
+      },
+      "repository_coverage": {
+        "unchecked": 297,
+        "snapshot_found": 63,
+        "origin_not_found": 7
+      },
+      "latest_release_tag_matching": {
+        "matched": 377,
+        "unmatched": 71,
+        "unknown": 2
+      },
+      "tag_target_revision_coverage": {
+        "present": 352,
+        "revision_not_found": 25
+      },
+      "annotated_release_coverage": {
+        "present": 141,
+        "missing": 8
+      },
+      "rates": {
+        "head_missing_among_resolved": {
+          "count": 122,
+          "denominator": 367,
+          "percent": 33.2
+        },
+        "head_unresolved_among_repositories": {
+          "count": 0,
+          "denominator": 367,
+          "percent": 0.0
+        },
+        "packages_without_repository": {
+          "count": 0,
+          "denominator": 450,
+          "percent": 0.0
+        },
+        "tag_matched_among_packages": {
+          "count": 377,
+          "denominator": 450,
+          "percent": 83.8
+        },
+        "tag_revision_missing_among_resolved": {
+          "count": 25,
+          "denominator": 377,
+          "percent": 6.6
+        },
+        "annotated_release_missing_among_resolved": {
+          "count": 8,
+          "denominator": 149,
+          "percent": 5.4
+        }
+      }
+    },
+    "dependencies": {
+      "packages": 924,
+      "repositories": 701,
+      "packages_without_repository": 163,
+      "current_commit_coverage": {
+        "present": 466,
+        "missing": 223,
+        "unknown": 8,
+        "unchecked": 4
+      },
+      "repository_coverage": {
+        "unchecked": 548,
+        "snapshot_found": 129,
+        "origin_not_found": 24
+      },
+      "latest_release_tag_matching": {
+        "matched": 573,
+        "no_repository": 163,
+        "unmatched": 169,
+        "unknown": 17,
+        "no_version": 2
+      },
+      "tag_target_revision_coverage": {
+        "present": 520,
+        "revision_not_found": 53
+      },
+      "annotated_release_coverage": {
+        "present": 202,
+        "missing": 19
+      },
+      "rates": {
+        "head_missing_among_resolved": {
+          "count": 223,
+          "denominator": 689,
+          "percent": 32.4
+        },
+        "head_unresolved_among_repositories": {
+          "count": 12,
+          "denominator": 701,
+          "percent": 1.7
+        },
+        "packages_without_repository": {
+          "count": 163,
+          "denominator": 924,
+          "percent": 17.6
+        },
+        "tag_matched_among_packages": {
+          "count": 573,
+          "denominator": 924,
+          "percent": 62.0
+        },
+        "tag_revision_missing_among_resolved": {
+          "count": 53,
+          "denominator": 573,
+          "percent": 9.2
+        },
+        "annotated_release_missing_among_resolved": {
+          "count": 19,
+          "denominator": 221,
+          "percent": 8.6
+        }
+      }
+    },
+    "not_matched": {
+      "packages": 8803,
+      "repositories": 6252,
+      "packages_without_repository": 380,
+      "current_commit_coverage": {
+        "present": 4499,
+        "missing": 1577,
+        "unknown": 124,
+        "unchecked": 52
+      },
+      "repository_coverage": {
+        "snapshot_found": 1221,
+        "unchecked": 4931,
+        "origin_not_found": 82,
+        "no_snapshot": 17,
+        "unknown": 1
+      },
+      "latest_release_tag_matching": {
+        "matched": 6302,
+        "unmatched": 1844,
+        "no_repository": 380,
+        "unknown": 223,
+        "ambiguous": 12,
+        "no_version": 42
+      },
+      "tag_target_revision_coverage": {
+        "present": 5649,
+        "revision_not_found": 653
+      },
+      "annotated_release_coverage": {
+        "present": 2855,
+        "missing": 354
+      },
+      "rates": {
+        "head_missing_among_resolved": {
+          "count": 1577,
+          "denominator": 6076,
+          "percent": 26.0
+        },
+        "head_unresolved_among_repositories": {
+          "count": 176,
+          "denominator": 6252,
+          "percent": 2.8
+        },
+        "packages_without_repository": {
+          "count": 380,
+          "denominator": 8803,
+          "percent": 4.3
+        },
+        "tag_matched_among_packages": {
+          "count": 6302,
+          "denominator": 8803,
+          "percent": 71.6
+        },
+        "tag_revision_missing_among_resolved": {
+          "count": 653,
+          "denominator": 6302,
+          "percent": 10.4
+        },
+        "annotated_release_missing_among_resolved": {
+          "count": 354,
+          "denominator": 3209,
+          "percent": 11.0
+        }
+      }
+    }
+  },
+  "overlap": {
+    "packages": 354,
+    "repositories": 336,
+    "package_union": 1020,
+    "repository_union": 732
+  },
+  "project_match_basis": {
+    "purl_supported": 441,
+    "repository_only": 9
+  },
+  "unmatched_packages_in_matched_repositories": 438,
+  "registry_package_counts": {
+    "projects": {
+      "clojars.org": 2,
+      "cocoapods.org": 1,
+      "conda-forge.org": 79,
+      "cran.r-project.org": 207,
+      "crates.io": 8,
+      "formulae.brew.sh": 11,
+      "hackage.haskell.org": 1,
+      "juliahub.com": 34,
+      "proxy.golang.org": 2,
+      "pypi.org": 102,
+      "repo1.maven.org": 2,
+      "rubygems.org": 1
+    },
+    "dependencies": {
+      "bower.io": 6,
+      "clojars.org": 3,
+      "cocoapods.org": 1,
+      "cran.r-project.org": 290,
+      "crates.io": 33,
+      "formulae.brew.sh": 40,
+      "github actions": 1,
+      "hackage.haskell.org": 60,
+      "hex.pm": 3,
+      "hub.docker.com": 28,
+      "juliahub.com": 60,
+      "metacpan.org": 1,
+      "npmjs.org": 54,
+      "nuget.org": 1,
+      "packagist.org": 7,
+      "proxy.golang.org": 53,
+      "pypi.org": 173,
+      "repo1.maven.org": 88,
+      "swiftpackageindex.com": 2,
+      "pub.dev": 1,
+      "rubygems.org": 19
+    }
+  },
+  "evidence": [
+    {
+      "path": "data/science/out/science_summary.json",
+      "sha256": "6628388056212fa6f34962226fe4b065378ba7bea8abefa017365654bf52fa32"
+    },
+    {
+      "path": "data/science/out/science_packages.csv",
+      "sha256": "8935a258e5e865fe0fb6ad4fce223dd4f6a798c8707ee765f85146642d495acf"
+    },
+    {
+      "path": "data/science/out/science_matches.csv",
+      "sha256": "0d9be9b90b40b023b065fcd0908baedc8b45b24e3d9686f2851c298884f72966"
+    }
+  ]
+}

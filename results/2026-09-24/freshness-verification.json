@@ -1,0 +1,108 @@
+{
+  "rows": 6984,
+  "verified_visits": 3952,
+  "original_report_unchanged": true,
+  "examples": [
+    {
+      "url": "https://github.com/sneako/finch",
+      "scopes": {
+        "current_origin": {
+          "latest_snapshot": {
+            "origin": "https://github.com/sneako/finch",
+            "date": "2026-05-02T03:01:54.381000+00:00"
+          },
+          "checked": 2,
+          "complete": true,
+          "observations": [
+            {
+              "origin": "https://github.com/sneako/finch",
+              "status": "snapshot_found"
+            },
+            {
+              "origin": "https://github.com/sneako/finch.git",
+              "status": "not_found"
+            }
+          ]
+        },
+        "other_aliases": {
+          "latest_snapshot": {
+            "origin": "https://github.com/keathley/finch",
+            "date": "2026-08-25T16:30:42.720000+00:00"
+          },
+          "checked": 2,
+          "complete": true,
+          "observations": [
+            {
+              "origin": "https://github.com/keathley/finch",
+              "status": "snapshot_found"
+            },
+            {
+              "origin": "https://github.com/keathley/finch.git",
+              "status": "not_found"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://codeberg.org/xsc/lein-ancient",
+      "scopes": {
+        "current_origin": {
+          "latest_snapshot": null,
+          "checked": 2,
+          "complete": true,
+          "observations": [
+            {
+              "origin": "https://codeberg.org/xsc/lein-ancient",
+              "status": "not_found"
+            },
+            {
+              "origin": "https://codeberg.org/xsc/lein-ancient.git",
+              "status": "not_found"
+            }
+          ]
+        },
+        "other_aliases": {
+          "latest_snapshot": {
+            "origin": "https://github.com/xsc/lein-ancient",
+            "date": "2026-08-04T01:25:21.457000+00:00"
+          },
+          "checked": 2,
+          "complete": true,
+          "observations": [
+            {
+              "origin": "https://github.com/xsc/lein-ancient",
+              "status": "snapshot_found"
+            },
+            {
+              "origin": "https://github.com/xsc/lein-ancient.git",
+              "status": "not_found"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "missing_heads": {
+    "current_origin": {
+      "with_checked_aliases": 1616,
+      "checked_aliases_complete": 1616,
+      "latest_snapshot_age_days": {
+        "n": 1490,
+        "min": 0.17,
+        "median": 21.8,
+        "max": 2899.3
+      }
+    },
+    "other_aliases": {
+      "with_checked_aliases": 325,
+      "checked_aliases_complete": 325,
+      "latest_snapshot_age_days": {
+        "n": 254,
+        "min": 0.3,
+        "median": 420.82,
+        "max": 2939.89
+      }
+    }
+  }
+}

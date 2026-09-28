@@ -1,0 +1,65 @@
+{
+  "created_at": "2026-09-23T15:22:37Z",
+  "reported_at": "2026-09-24T10:26:24Z",
+  "registries_discovered": true,
+  "registries": {
+    "complete": 110
+  },
+  "packages": 9823,
+  "packages_without_repository": 543,
+  "packages_with_recovered_repository": 254,
+  "repositories": 6984,
+  "repository_coverage": {
+    "no_snapshot": 17,
+    "origin_not_found": 114,
+    "snapshot_found": 1923,
+    "unchecked": 4930
+  },
+  "current_commit_coverage": {
+    "missing": 1817,
+    "present": 4979,
+    "unchecked": 56,
+    "unknown": 132
+  },
+  "missing_heads_repository_coverage": {
+    "no_snapshot": 9,
+    "origin_not_found": 80,
+    "snapshot_found": 1728
+  },
+  "distinct_objects": {
+    "missing": 10098,
+    "present": 30600
+  },
+  "latest_release_tag_matching": {
+    "ambiguous": 12,
+    "matched": 6958,
+    "no_repository": 543,
+    "no_version": 44,
+    "unknown": 241,
+    "unmatched": 2025
+  },
+  "tag_target_revision_coverage": {
+    "present": 6252,
+    "revision_not_found": 706
+  },
+  "annotated_release_coverage": {
+    "missing": 373,
+    "present": 3108
+  },
+  "cohort_complete": true,
+  "release_gap_repositories": {
+    "repositories": 534,
+    "archive_status": {
+      "no_snapshot_at_checked_origins": 46,
+      "archived_evidence_found": 488
+    },
+    "repository_coverage": {
+      "origin_not_found": 44,
+      "snapshot_found": 467,
+      "no_snapshot": 2,
+      "unchecked": 21
+    },
+    "missing_tag_target_revision": 502,
+    "missing_annotated_release": 277
+  }
+}

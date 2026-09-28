@@ -1,0 +1,2017 @@
+{
+  "origin": "https://codeberg.org/xsc/lein-ancient",
+  "git_observed_at": "2026-09-24T12:23:57Z",
+  "tags": {
+    "v1.0.0": {
+      "id": "a3a74789ad397f6fc2b5616b86656e5d1694b474",
+      "peeled": "186c2d5d8533ba5e6ba617d8f84ec9c12934e18a",
+      "types": {
+        "a3a74789ad397f6fc2b5616b86656e5d1694b474": "tag",
+        "186c2d5d8533ba5e6ba617d8f84ec9c12934e18a": "commit"
+      },
+      "objects": {
+        "a3a74789ad397f6fc2b5616b86656e5d1694b474": "object 186c2d5d8533ba5e6ba617d8f84ec9c12934e18a\ntype commit\ntag v1.0.0\ntagger Yannick Scherer <code@xsc.dev> 1778927564 +0200\n\nRelease 1.0.0\n-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEJd+woKmYOKg418FvJQxlrO1PuIQFAmoIR8wACgkQJQxlrO1P\nuIT8MxAAzTKqzDsToeomk5PYTUloYnmGcV7ZTreYmQDIioroJHkKpCvxZz/rdn4Z\nbHgvRicwnPK4IcKLzItsGv7knr5eg9lllmDxDHyIois8kCGchEX7mH25o1K0Kzec\nGyHuCxqN19lnjAHHHQKAIRmMRwJl6IDZVpNaD/HkJbgg8Y3JCGA8w14E4eq/Lzuu\nKJVWwUCd+Ag63UodWCsi5ndgBOa/DVQhPnoIDbUIOXdxed5FyCR4vzC0HxsR1igy\nB1T7CeTrAkAQTfT6rWsUw8w6X3DgMH1ivmwKUibaFVQEhTZW5bWgihKdohmU8a/H\nQsNJ2elo+XG11+H4NDe5RomZKyNR8qr4oxjgh+YsWhcaNKaOsaEx4H5cRND9//7Y\nwTKRq266YixoRf+RK2roPiWrIOQmzhtciV/FWP/Sn6v25Btng7VuWoCXyiw6II7K\naP3NPfoFjAEwDtWrMQ9v91wb3QCTFv0QyXjWGykYuZMcBW4k8nDcHbHjbwfbEtIH\nh2/hwoGIT8DLu8LFwDT8LhMlwSbG6FTWYqV9I9n2FiJuJ8nr/EghBQnTHJ9H2908\n8h+LlwfDrlGdgz2VUoZePepIbJzlUAn0GiR+/C8h2mMUSirVRlV3gEzVWC46g3Bz\nMalpz3Can7VSYULCiEyEGLSSAivTquNPJ5VLl2vR56adYRG64CU=\n=dG08\n-----END PGP SIGNATURE-----\n",
+        "186c2d5d8533ba5e6ba617d8f84ec9c12934e18a": "tree 8269c0d0eb010d5a22635d8b09ebc16ac4b8b1e2\nparent 39e7e38014654847f33ddf50f0cc3444204d83cd\nauthor Yannick Scherer <code@xsc.dev> 1778927562 +0200\ncommitter Yannick Scherer <code@xsc.dev> 1778927562 +0200\n\nVersion 1.0.0\n"
+      },
+      "tagger_at": "2026-05-16T10:32:44Z",
+      "committed_at": "2026-05-16T10:32:42Z"
+    },
+    "v1.0.0-RC3": {
+      "id": "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330",
+      "peeled": "3d59e1e6447732116c0339d6e3ca6b379590848a",
+      "types": {
+        "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330": "tag",
+        "3d59e1e6447732116c0339d6e3ca6b379590848a": "commit"
+      },
+      "objects": {
+        "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330": "object 3d59e1e6447732116c0339d6e3ca6b379590848a\ntype commit\ntag v1.0.0-RC3\ntagger Yannick Scherer <yannick.scherer@futurice.com> 1613590622 +0100\n\nRelease 1.0.0-RC3\n-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEERQKN2eEgYbUQT+fO/PFuXCfiom8FAmAtcF4ACgkQ/PFuXCfi\nom98Cg/+N9fVxUdKYnF5VAF+OseeM8n52LCb5nSST2mT+IclYAqTARtnznz7+Tmw\ninBw69LLvTdUz1c7CUjcGb48K/F7zkr06KUGpPgPOVcnG9sDlfzKtXQ8kesBJTpr\nUMh+jZg5QkMWm+SZk07zSpTxbv47zDBenbk4ypXC+U6c2k5JWAbHPK2akb+dsGSF\nI66ercwEEfxgUMuNuLce0Ff24DJAUZmGmVr2z55MurExIm1cNj0AD59utSHUac27\nk08xCSfmrTU0IZ3ohkMVn9TnquzS0HEgjHksydhfkseAaotxVj901xUiU7vV1ABi\ntbboLQ50tiMXUf8WUgoLixbtDnIoGJ4ozxFOD5j+kCW66O8DTmr+UB4lAgjxN7Bi\nCV0NxOpW+2T63SoXF1NZAlzAfiG+KHZ+cb2RmkWMIsTbIT61e6SWy/1oky0WaHg4\nZJjx/mI21oRKh1cnZjXKQWbQA2P0CjVN0tEj6z4cqidfaBdRzR89pxVnwKDR7PbN\nv1SyDoFwEV4ie/lukpitDwb4laO1SqZBcsmVTdinLjaG1iB1lfoEM8eqLd6xvNJ/\njazgYb7EfEDsYPCtsymtfjqi2/Bp8oMF2cCjifYeuNER4lYyq5BXGpxRWwCHy0rQ\nvaGj0rxwbkj8Dht957wU/UO405iXgj8DFWQdfhyInKWuQDxtuqg=\n=ruA5\n-----END PGP SIGNATURE-----\n",
+        "3d59e1e6447732116c0339d6e3ca6b379590848a": "tree c9bb35cd45e27cd511da93b8fd368032888e9401\nparent 2b49a4d8c7ff8eb6b52ea2ad10841039ac00a629\nauthor Yannick Scherer <yannick.scherer@futurice.com> 1613590618 +0100\ncommitter Yannick Scherer <yannick.scherer@futurice.com> 1613590618 +0100\n\nVersion 1.0.0-RC3\n"
+      },
+      "tagger_at": "2021-02-17T19:37:02Z",
+      "committed_at": "2021-02-17T19:36:58Z"
+    }
+  },
+  "reported_publication": "2026-05-16T10:33:16.000Z",
+  "origins": [
+    {
+      "origin": "https://codeberg.org/xsc/lein-ancient",
+      "status": "not_found",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fcodeberg.org%2Fxsc%2Flein-ancient/visits/?per_page=100",
+        "status": 404,
+        "fetched_at": "2026-09-23T15:43:48Z",
+        "cache_file": "9a6dc715de85a452a60c02170b43b9ec6d9354d15023e2dd2df7a44ec27c1eab.json.gz"
+      }
+    },
+    {
+      "origin": "https://codeberg.org/xsc/lein-ancient.git",
+      "status": "not_found",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fcodeberg.org%2Fxsc%2Flein-ancient.git/visits/?per_page=100",
+        "status": 404,
+        "fetched_at": "2026-09-23T15:43:49Z",
+        "cache_file": "7d238cfcd2ee42a5cdf7a0d237595bb9078d122838868fa53db313695aee807e.json.gz"
+      }
+    },
+    {
+      "origin": "https://github.com/xsc/lein-ancient",
+      "status": "found",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fgithub.com%2Fxsc%2Flein-ancient/visits/?per_page=100",
+        "status": 200,
+        "fetched_at": "2026-09-23T15:43:49Z",
+        "cache_file": "261afa7bf66935466a8a5b4a60260de42082b02dac24f3f04ee394255a6d62de.json.gz"
+      },
+      "visits": [
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 57,
+          "date": "2026-09-04T03:25:18.220000+00:00",
+          "status": "not_found",
+          "snapshot": null,
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/57/",
+          "snapshot_url": null
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 56,
+          "date": "2026-08-04T01:25:21.457000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/56/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 55,
+          "date": "2026-07-27T00:54:06.337000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/55/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 54,
+          "date": "2026-05-19T10:33:40.992000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/54/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 53,
+          "date": "2026-04-02T20:26:02.831000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/53/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 52,
+          "date": "2026-03-12T08:05:33.302000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/52/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 51,
+          "date": "2026-02-15T16:56:52.248000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/51/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 50,
+          "date": "2026-01-27T19:26:22.337000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/50/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 49,
+          "date": "2025-12-18T01:57:07.133000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/49/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 48,
+          "date": "2025-11-18T05:47:48.337000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/48/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 47,
+          "date": "2025-10-19T07:51:07.623000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/47/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 46,
+          "date": "2025-09-25T05:25:51.231000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/46/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 45,
+          "date": "2025-08-19T00:44:45.112000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/45/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 44,
+          "date": "2025-07-15T06:58:17.586000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/44/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 43,
+          "date": "2024-02-20T08:52:51.950000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/43/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 42,
+          "date": "2023-09-18T21:14:21.720000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/42/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 41,
+          "date": "2023-08-30T15:14:27.127000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/41/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 40,
+          "date": "2023-05-27T05:58:07.823000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/40/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 39,
+          "date": "2023-05-19T10:38:32.941000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/39/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 38,
+          "date": "2023-04-28T16:03:11.024000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/38/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 37,
+          "date": "2023-04-16T05:20:27.336000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/37/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 36,
+          "date": "2023-03-27T21:01:33.795000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/36/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 35,
+          "date": "2023-03-23T14:18:10.537000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/35/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 34,
+          "date": "2023-03-06T03:38:32.909000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/34/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 33,
+          "date": "2023-02-25T17:57:05.295000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/33/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 32,
+          "date": "2023-02-10T01:26:40.309000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/32/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 31,
+          "date": "2023-01-28T18:26:37.113000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/31/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 30,
+          "date": "2023-01-21T22:13:06.554000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/30/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 29,
+          "date": "2023-01-04T03:26:48.676000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/29/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 28,
+          "date": "2023-01-01T23:38:35.537000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/28/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 27,
+          "date": "2022-12-26T08:23:27.857000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/27/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 26,
+          "date": "2022-12-24T08:09:43.079000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/26/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 25,
+          "date": "2022-12-15T04:06:05.984000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/25/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 24,
+          "date": "2022-12-11T09:05:21.941000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/24/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 23,
+          "date": "2022-02-12T19:50:40.628000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/23/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 22,
+          "date": "2021-10-27T12:31:53.684000+00:00",
+          "status": "full",
+          "snapshot": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/22/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 21,
+          "date": "2021-05-23T03:17:20.715000+00:00",
+          "status": "full",
+          "snapshot": "3f03ddaab3a11dae8263d94e81e7b218184b829f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/21/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/3f03ddaab3a11dae8263d94e81e7b218184b829f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 20,
+          "date": "2020-04-05T02:00:29.514000+00:00",
+          "status": "full",
+          "snapshot": "b549ddd7e5da98bace75df54aa4ce4ef1eadbd92",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/20/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/b549ddd7e5da98bace75df54aa4ce4ef1eadbd92/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 19,
+          "date": "2018-02-11T03:59:41.639000+00:00",
+          "status": "full",
+          "snapshot": "63ece07d22f420522b0f8bc280e4ce6db1de2b08",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/19/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/63ece07d22f420522b0f8bc280e4ce6db1de2b08/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 18,
+          "date": "2017-11-19T13:33:38.274000+00:00",
+          "status": "full",
+          "snapshot": "9d0cc454eebf7bd3274e6935bc0b7aa4fdd6bd1b",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/18/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/9d0cc454eebf7bd3274e6935bc0b7aa4fdd6bd1b/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 17,
+          "date": "2017-11-05T10:28:16.734000+00:00",
+          "status": "full",
+          "snapshot": "9d0cc454eebf7bd3274e6935bc0b7aa4fdd6bd1b",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/17/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/9d0cc454eebf7bd3274e6935bc0b7aa4fdd6bd1b/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 16,
+          "date": "2017-10-17T11:23:07.732000+00:00",
+          "status": "full",
+          "snapshot": "79ffbcff41ca3b6a8fa8e60e2b15f6e6646e4981",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/16/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/79ffbcff41ca3b6a8fa8e60e2b15f6e6646e4981/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 15,
+          "date": "2017-10-06T23:47:38.701000+00:00",
+          "status": "full",
+          "snapshot": "79ffbcff41ca3b6a8fa8e60e2b15f6e6646e4981",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/15/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/79ffbcff41ca3b6a8fa8e60e2b15f6e6646e4981/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 14,
+          "date": "2017-10-02T11:48:56.295000+00:00",
+          "status": "full",
+          "snapshot": "79ffbcff41ca3b6a8fa8e60e2b15f6e6646e4981",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/14/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/79ffbcff41ca3b6a8fa8e60e2b15f6e6646e4981/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 13,
+          "date": "2017-09-10T03:08:55.546000+00:00",
+          "status": "full",
+          "snapshot": "fe11680a546b2378b5515d487ce863fdaeb25b88",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/13/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/fe11680a546b2378b5515d487ce863fdaeb25b88/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 12,
+          "date": "2017-09-02T03:04:39.902000+00:00",
+          "status": "full",
+          "snapshot": "18845b9d7e90cbb26046f624fc640d3babe3158e",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/12/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/18845b9d7e90cbb26046f624fc640d3babe3158e/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 11,
+          "date": "2017-08-03T15:37:28.565000+00:00",
+          "status": "full",
+          "snapshot": "18845b9d7e90cbb26046f624fc640d3babe3158e",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/11/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/18845b9d7e90cbb26046f624fc640d3babe3158e/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 10,
+          "date": "2017-07-02T15:34:58.073000+00:00",
+          "status": "full",
+          "snapshot": "7a1a4345e8c9b00346de32e61e45ca3b73386bbf",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/10/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/7a1a4345e8c9b00346de32e61e45ca3b73386bbf/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 9,
+          "date": "2017-04-25T16:05:46.989000+00:00",
+          "status": "full",
+          "snapshot": "7f7470e26d057bdd42291fe7fd991dbd4fe836c4",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/9/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/7f7470e26d057bdd42291fe7fd991dbd4fe836c4/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 8,
+          "date": "2016-12-13T05:31:34.314000+00:00",
+          "status": "full",
+          "snapshot": "7f7470e26d057bdd42291fe7fd991dbd4fe836c4",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/8/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/7f7470e26d057bdd42291fe7fd991dbd4fe836c4/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 7,
+          "date": "2016-08-16T19:47:09.156000+00:00",
+          "status": "full",
+          "snapshot": "7f7470e26d057bdd42291fe7fd991dbd4fe836c4",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/7/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/7f7470e26d057bdd42291fe7fd991dbd4fe836c4/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 6,
+          "date": "2016-07-27T23:55:45.910000+00:00",
+          "status": "full",
+          "snapshot": "7f7470e26d057bdd42291fe7fd991dbd4fe836c4",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/6/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/7f7470e26d057bdd42291fe7fd991dbd4fe836c4/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 5,
+          "date": "2016-06-02T07:24:57.228000+00:00",
+          "status": "full",
+          "snapshot": "7f7470e26d057bdd42291fe7fd991dbd4fe836c4",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/5/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/7f7470e26d057bdd42291fe7fd991dbd4fe836c4/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 4,
+          "date": "2016-04-04T04:13:17.101000+00:00",
+          "status": "full",
+          "snapshot": "7f7470e26d057bdd42291fe7fd991dbd4fe836c4",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/4/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/7f7470e26d057bdd42291fe7fd991dbd4fe836c4/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 3,
+          "date": "2016-03-21T13:05:03.918000+00:00",
+          "status": "full",
+          "snapshot": "6fef533097adeabf0c3f979c117e287aa36cd12f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/3/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/6fef533097adeabf0c3f979c117e287aa36cd12f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 2,
+          "date": "2016-03-06T13:59:43.924000+00:00",
+          "status": "full",
+          "snapshot": "6fef533097adeabf0c3f979c117e287aa36cd12f",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/2/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/6fef533097adeabf0c3f979c117e287aa36cd12f/"
+        },
+        {
+          "origin": "https://github.com/xsc/lein-ancient",
+          "visit": 1,
+          "date": "2015-08-08T03:46:37.871000+00:00",
+          "status": "full",
+          "snapshot": "67324e265e8bc015f09d7e223c70a699c9af72f1",
+          "type": "git",
+          "metadata": {},
+          "origin_visit_url": "https://archive.softwareheritage.org/api/1/origin/https://github.com/xsc/lein-ancient/visit/1/",
+          "snapshot_url": "https://archive.softwareheritage.org/api/1/snapshot/67324e265e8bc015f09d7e223c70a699c9af72f1/"
+        }
+      ],
+      "next_url": null
+    },
+    {
+      "origin": "https://github.com/xsc/lein-ancient.git",
+      "status": "not_found",
+      "evidence": {
+        "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fgithub.com%2Fxsc%2Flein-ancient.git/visits/?per_page=100",
+        "status": 404,
+        "fetched_at": "2026-09-23T15:43:50Z",
+        "cache_file": "da35643533e380f269fcf25a10768d0f3b7fc72ccf3353a49c69615bf708079d.json.gz"
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "dd1d45d5511da981b2f46f4325be58b46c4b442f",
+      "branches": {
+        "HEAD": {
+          "target": "refs/heads/master",
+          "target_type": "alias",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/b22a770be9f488557efe2d921dc8a68c845088ff/"
+        },
+        "refs/heads/fix/leiningen-2.8.0-compatibility": {
+          "target": "efb2fdf44cbc7ac368145a8ba2b331c82133c08b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/efb2fdf44cbc7ac368145a8ba2b331c82133c08b/"
+        },
+        "refs/heads/master": {
+          "target": "b22a770be9f488557efe2d921dc8a68c845088ff",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/b22a770be9f488557efe2d921dc8a68c845088ff/"
+        },
+        "refs/pull/105/head": {
+          "target": "8f00fd914b41caf4728f763c4a4cf31fe4e24736",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/8f00fd914b41caf4728f763c4a4cf31fe4e24736/"
+        },
+        "refs/pull/106/head": {
+          "target": "d307254e9a38e68a77946edc8f72960d559c7d99",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/d307254e9a38e68a77946edc8f72960d559c7d99/"
+        },
+        "refs/pull/112/head": {
+          "target": "a3a7b7c117e87e6912a1388a86f7dd9e349e1d72",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a3a7b7c117e87e6912a1388a86f7dd9e349e1d72/"
+        },
+        "refs/pull/114/head": {
+          "target": "0609978b0199381cf50cf2215a6c25c1cb93389a",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/0609978b0199381cf50cf2215a6c25c1cb93389a/"
+        },
+        "refs/pull/116/head": {
+          "target": "e308e454bef2c654ce3470930dc289032bcfcef6",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/e308e454bef2c654ce3470930dc289032bcfcef6/"
+        },
+        "refs/pull/117/head": {
+          "target": "a892a1c658136ab46ba58cece8293fde9a0bb4d2",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a892a1c658136ab46ba58cece8293fde9a0bb4d2/"
+        },
+        "refs/pull/118/head": {
+          "target": "243f07c9fa8c8f6a70bee9fd44e929832cf8ffea",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/243f07c9fa8c8f6a70bee9fd44e929832cf8ffea/"
+        },
+        "refs/pull/120/head": {
+          "target": "17b1b0296258f22c4f60529f749857c3a4135b0e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/17b1b0296258f22c4f60529f749857c3a4135b0e/"
+        },
+        "refs/pull/121/head": {
+          "target": "816928d19a692d0dcaf5546c55fb395d0764cedc",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/816928d19a692d0dcaf5546c55fb395d0764cedc/"
+        },
+        "refs/pull/124/head": {
+          "target": "5a725ecebe19e16713b438d1de65475f48db6f6a",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5a725ecebe19e16713b438d1de65475f48db6f6a/"
+        },
+        "refs/pull/17/head": {
+          "target": "b4cd331c05e0904637143295c80a4d2887c4b67b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/b4cd331c05e0904637143295c80a4d2887c4b67b/"
+        },
+        "refs/pull/32/head": {
+          "target": "18c3a62ea1df70a71642a3c0754477f8bc5f6589",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/18c3a62ea1df70a71642a3c0754477f8bc5f6589/"
+        },
+        "refs/pull/35/head": {
+          "target": "9cf08955a6121de5e4baa1f4cb20a25f8e842bda",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9cf08955a6121de5e4baa1f4cb20a25f8e842bda/"
+        },
+        "refs/pull/36/head": {
+          "target": "c0de2ab9ccc5c1e0a304c5cf2a929943d5ad3a57",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/c0de2ab9ccc5c1e0a304c5cf2a929943d5ad3a57/"
+        },
+        "refs/pull/59/head": {
+          "target": "3ee8fdcbd5013941e4d5d355b4894d98be51e429",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/3ee8fdcbd5013941e4d5d355b4894d98be51e429/"
+        },
+        "refs/pull/60/head": {
+          "target": "d39defeea634bfde0c5a46cdd4cb3720843f1cd6",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/d39defeea634bfde0c5a46cdd4cb3720843f1cd6/"
+        },
+        "refs/pull/63/head": {
+          "target": "17b4069033a84036b73fa9d21abbdffc840be5ff",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/17b4069033a84036b73fa9d21abbdffc840be5ff/"
+        },
+        "refs/pull/78/head": {
+          "target": "9c973ce589f09c1ef026a92d112e5ad74911e881",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9c973ce589f09c1ef026a92d112e5ad74911e881/"
+        },
+        "refs/pull/79/head": {
+          "target": "9deb7e762e210bc0b88d168a3661f7aa7d69e0ed",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9deb7e762e210bc0b88d168a3661f7aa7d69e0ed/"
+        },
+        "refs/pull/81/head": {
+          "target": "efb2fdf44cbc7ac368145a8ba2b331c82133c08b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/efb2fdf44cbc7ac368145a8ba2b331c82133c08b/"
+        },
+        "refs/pull/84/head": {
+          "target": "264a645769d86e6f14a071cf6641630f2912fcb4",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/264a645769d86e6f14a071cf6641630f2912fcb4/"
+        },
+        "refs/pull/88/head": {
+          "target": "c3538bed423feae13c668340773b6030bef50188",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/c3538bed423feae13c668340773b6030bef50188/"
+        },
+        "refs/pull/93/head": {
+          "target": "5fd556bbc755b36d1d882a3d74a3a729e9270100",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5fd556bbc755b36d1d882a3d74a3a729e9270100/"
+        },
+        "refs/pull/94/head": {
+          "target": "a5424580f7265823f7c52710d90dda548643c222",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a5424580f7265823f7c52710d90dda548643c222/"
+        },
+        "refs/pull/97/head": {
+          "target": "989b0b9216869d65394f87aab0154395ac2c377d",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/989b0b9216869d65394f87aab0154395ac2c377d/"
+        },
+        "refs/tags/clojars-0.1.1": {
+          "target": "9d842080ce6146e2484dcfd0ef078962399d15be",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/9d842080ce6146e2484dcfd0ef078962399d15be/"
+        },
+        "refs/tags/clojars-0.1.2": {
+          "target": "ddd8cffe3173b284ef7a53a83b1dc39fe56c0f1e",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ddd8cffe3173b284ef7a53a83b1dc39fe56c0f1e/"
+        },
+        "refs/tags/clojars-0.2.0": {
+          "target": "411f0b4763d8ded9934bc70fffa3a65dcc79ad41",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/411f0b4763d8ded9934bc70fffa3a65dcc79ad41/"
+        },
+        "refs/tags/clojars-0.3.0": {
+          "target": "2b71466fb5bc7420a6341d8e9a10d754ca216ebb",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/2b71466fb5bc7420a6341d8e9a10d754ca216ebb/"
+        },
+        "refs/tags/clojars-0.3.1": {
+          "target": "5590e66e94499d84d5222f1a503103d8e6f24d99",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/5590e66e94499d84d5222f1a503103d8e6f24d99/"
+        },
+        "refs/tags/clojars-0.3.2": {
+          "target": "a3c59e6253c67778d02025cb062a6d314dc4f7fa",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a3c59e6253c67778d02025cb062a6d314dc4f7fa/"
+        },
+        "refs/tags/clojars-0.3.3": {
+          "target": "aaf6e1d23888516db62d3e75ab88ff46befb2182",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/aaf6e1d23888516db62d3e75ab88ff46befb2182/"
+        },
+        "refs/tags/clojars-0.3.4": {
+          "target": "ad54f0b41f57597d5b3a5926c49f0d2242a555d5",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ad54f0b41f57597d5b3a5926c49f0d2242a555d5/"
+        },
+        "refs/tags/clojars-0.3.5": {
+          "target": "00001f6155aadca28e6bf5c12f486460b4329aad",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/00001f6155aadca28e6bf5c12f486460b4329aad/"
+        },
+        "refs/tags/clojars-0.3.6": {
+          "target": "244bbbfd922f20b8cf5abbe77df2fb8f04c603f3",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/244bbbfd922f20b8cf5abbe77df2fb8f04c603f3/"
+        },
+        "refs/tags/clojars-0.4.0": {
+          "target": "8964af41b557c66a5b7e426ebbe4a50141fa019f",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/8964af41b557c66a5b7e426ebbe4a50141fa019f/"
+        },
+        "refs/tags/clojars-0.4.1": {
+          "target": "27b32c9c8df14b49fe2fe7bf09c8f4fcad848a39",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/27b32c9c8df14b49fe2fe7bf09c8f4fcad848a39/"
+        },
+        "refs/tags/clojars-0.4.2": {
+          "target": "4ba02e45d43bed443d8731dce74fc7b54d909024",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/4ba02e45d43bed443d8731dce74fc7b54d909024/"
+        },
+        "refs/tags/clojars-0.4.3": {
+          "target": "a9790d37313aad5cf393c6d788a405356947d8fa",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a9790d37313aad5cf393c6d788a405356947d8fa/"
+        },
+        "refs/tags/clojars-0.4.4": {
+          "target": "be4ada70e2c0a8a1feaeb8d16dccb271c462d1f8",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/be4ada70e2c0a8a1feaeb8d16dccb271c462d1f8/"
+        },
+        "refs/tags/clojars-0.5.0-RC1": {
+          "target": "77045c8ecbcba353c2e24a4c93776662f77e235e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/77045c8ecbcba353c2e24a4c93776662f77e235e/"
+        },
+        "refs/tags/clojars-0.5.0-alpha2": {
+          "target": "f0e592205f95fb3a29e758c488bddf0e09984824",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/f0e592205f95fb3a29e758c488bddf0e09984824/"
+        },
+        "refs/tags/clojars-0.5.0-alpha3": {
+          "target": "5168d1b45f9bf6ee1e7ed6df99d00b5fc8c5b09e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5168d1b45f9bf6ee1e7ed6df99d00b5fc8c5b09e/"
+        },
+        "refs/tags/clojars-0.5.1": {
+          "target": "520fe0b15af6cfc7ec9102579dc96612264a9839",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/520fe0b15af6cfc7ec9102579dc96612264a9839/"
+        },
+        "refs/tags/clojars-0.5.2": {
+          "target": "28b2f8b1948f6b27757f281b9564e560d90c065b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/28b2f8b1948f6b27757f281b9564e560d90c065b/"
+        },
+        "refs/tags/clojars-0.5.3": {
+          "target": "32cadbd07c610fba627df737dae2e5fee6889e9b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/32cadbd07c610fba627df737dae2e5fee6889e9b/"
+        },
+        "refs/tags/clojars-0.5.4": {
+          "target": "fee91be09c73b33d9a3c85dfcffad3e825f91dba",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/fee91be09c73b33d9a3c85dfcffad3e825f91dba/"
+        },
+        "refs/tags/clojars-0.5.5": {
+          "target": "5ea6ab1bb376a89179ba3a118a5e1acfeef8969d",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5ea6ab1bb376a89179ba3a118a5e1acfeef8969d/"
+        },
+        "refs/tags/clojars-0.6.0": {
+          "target": "20a7b7fbcb3b7613bb959a652e021f7c32887238",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/20a7b7fbcb3b7613bb959a652e021f7c32887238/"
+        },
+        "refs/tags/clojars-0.6.1": {
+          "target": "8b6b9a384b772e5bd031be6f8eca31d286038cb5",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/8b6b9a384b772e5bd031be6f8eca31d286038cb5/"
+        },
+        "refs/tags/clojars-0.6.10": {
+          "target": "5dbd905e16bd83e3054b4305caed2683151a35b2",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/5dbd905e16bd83e3054b4305caed2683151a35b2/"
+        },
+        "refs/tags/clojars-0.6.11": {
+          "target": "738b25860e2ce1a50f657bab17ff2b60995d13dc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/738b25860e2ce1a50f657bab17ff2b60995d13dc/"
+        },
+        "refs/tags/clojars-0.6.12": {
+          "target": "80e090aefa84f7ed4a9bbed5865dd044b16e445c",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/80e090aefa84f7ed4a9bbed5865dd044b16e445c/"
+        },
+        "refs/tags/clojars-0.6.13": {
+          "target": "a1ef3cacaf55594681145d88a68952a98e656cb6",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a1ef3cacaf55594681145d88a68952a98e656cb6/"
+        },
+        "refs/tags/clojars-0.6.14": {
+          "target": "71c946139c46414cdb315d6a7f32a802b3a5e4c8",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/71c946139c46414cdb315d6a7f32a802b3a5e4c8/"
+        },
+        "refs/tags/clojars-0.6.15": {
+          "target": "b55c861fb1ef9e42b25640ba4e328c42b6332967",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/b55c861fb1ef9e42b25640ba4e328c42b6332967/"
+        },
+        "refs/tags/clojars-0.6.2": {
+          "target": "ebfa0500383b9ccab64275e58e40ccb72292d32a",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ebfa0500383b9ccab64275e58e40ccb72292d32a/"
+        },
+        "refs/tags/clojars-0.6.3": {
+          "target": "d1f91eb7a5ec1641edc82c7b9ba706983d0a081a",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/d1f91eb7a5ec1641edc82c7b9ba706983d0a081a/"
+        },
+        "refs/tags/clojars-0.6.4": {
+          "target": "89090beb5ca2f063ef949ad939506153a52edb14",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/89090beb5ca2f063ef949ad939506153a52edb14/"
+        },
+        "refs/tags/clojars-0.6.5": {
+          "target": "b19ac9b84e4b80acbe8ea698990041e74b683f05",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/b19ac9b84e4b80acbe8ea698990041e74b683f05/"
+        },
+        "refs/tags/clojars-0.6.6": {
+          "target": "a55f93ee303300a16688cc55197467b1f6ba74bc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a55f93ee303300a16688cc55197467b1f6ba74bc/"
+        },
+        "refs/tags/clojars-0.6.7": {
+          "target": "366c9c170d4808a82ac322da613fc8ec2baf8a47",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/366c9c170d4808a82ac322da613fc8ec2baf8a47/"
+        },
+        "refs/tags/clojars-0.6.8": {
+          "target": "c17fd0bfd5a5732aaba09c3dfee8e4ee31465ef9",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/c17fd0bfd5a5732aaba09c3dfee8e4ee31465ef9/"
+        },
+        "refs/tags/clojars-0.6.9": {
+          "target": "a88e3cfd0cfec1936752cda87e34f1791a23bffc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a88e3cfd0cfec1936752cda87e34f1791a23bffc/"
+        },
+        "refs/tags/v0.7.0": {
+          "target": "60bf76b2b2032de11e01dd5a6297b7c063794001",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/60bf76b2b2032de11e01dd5a6297b7c063794001/"
+        },
+        "refs/tags/v1.0.0-RC1": {
+          "target": "0a010c9246a4f47b45ad6dcef55ae4e6d38876ba",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/0a010c9246a4f47b45ad6dcef55ae4e6d38876ba/"
+        },
+        "refs/tags/v1.0.0-RC3": {
+          "target": "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330/"
+        }
+      },
+      "complete": true,
+      "pages": [
+        {
+          "url": "https://archive.softwareheritage.org/api/1/snapshot/dd1d45d5511da981b2f46f4325be58b46c4b442f/?branches_count=1000",
+          "fetched_at": "2026-09-24T11:59:02Z",
+          "cache_file": "de31e66a47071c081429c0202dbe70ae9c390a91e62505b4ed4471508dca7bb5.json.gz"
+        }
+      ],
+      "selected_tags": {
+        "v1.0.0": null,
+        "v1.0.0-RC3": {
+          "target": "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330/"
+        }
+      },
+      "head": {
+        "target": "b22a770be9f488557efe2d921dc8a68c845088ff",
+        "target_type": "revision",
+        "target_url": "https://archive.softwareheritage.org/api/1/revision/b22a770be9f488557efe2d921dc8a68c845088ff/"
+      },
+      "objects": [
+        {
+          "type": "release",
+          "body": {
+            "name": "v1.0.0-RC3",
+            "message": "Release 1.0.0-RC3\n-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEERQKN2eEgYbUQT+fO/PFuXCfiom8FAmAtcF4ACgkQ/PFuXCfi\nom98Cg/+N9fVxUdKYnF5VAF+OseeM8n52LCb5nSST2mT+IclYAqTARtnznz7+Tmw\ninBw69LLvTdUz1c7CUjcGb48K/F7zkr06KUGpPgPOVcnG9sDlfzKtXQ8kesBJTpr\nUMh+jZg5QkMWm+SZk07zSpTxbv47zDBenbk4ypXC+U6c2k5JWAbHPK2akb+dsGSF\nI66ercwEEfxgUMuNuLce0Ff24DJAUZmGmVr2z55MurExIm1cNj0AD59utSHUac27\nk08xCSfmrTU0IZ3ohkMVn9TnquzS0HEgjHksydhfkseAaotxVj901xUiU7vV1ABi\ntbboLQ50tiMXUf8WUgoLixbtDnIoGJ4ozxFOD5j+kCW66O8DTmr+UB4lAgjxN7Bi\nCV0NxOpW+2T63SoXF1NZAlzAfiG+KHZ+cb2RmkWMIsTbIT61e6SWy/1oky0WaHg4\nZJjx/mI21oRKh1cnZjXKQWbQA2P0CjVN0tEj6z4cqidfaBdRzR89pxVnwKDR7PbN\nv1SyDoFwEV4ie/lukpitDwb4laO1SqZBcsmVTdinLjaG1iB1lfoEM8eqLd6xvNJ/\njazgYb7EfEDsYPCtsymtfjqi2/Bp8oMF2cCjifYeuNER4lYyq5BXGpxRWwCHy0rQ\nvaGj0rxwbkj8Dht957wU/UO405iXgj8DFWQdfhyInKWuQDxtuqg=\n=ruA5\n-----END PGP SIGNATURE-----\n",
+            "target": "3d59e1e6447732116c0339d6e3ca6b379590848a",
+            "target_type": "revision",
+            "synthetic": false,
+            "author": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "date": "2021-02-17T20:37:02+01:00",
+            "id": "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330",
+            "target_url": "https://archive.softwareheritage.org/api/1/revision/3d59e1e6447732116c0339d6e3ca6b379590848a/"
+          },
+          "evidence": {
+            "url": "https://archive.softwareheritage.org/api/1/release/fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330/",
+            "status": 200,
+            "fetched_at": "2026-09-24T12:25:14Z",
+            "cache_file": "b577b626a6080ae2f747ae6823b6dc2b07cf19fe16d3a92a979c7587a1d57a1b.json.gz"
+          },
+          "reachable_in_current_repository": null
+        },
+        {
+          "type": "revision",
+          "body": {
+            "message": "Update LICENSE\n",
+            "author": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "committer": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "date": "2021-10-26T08:21:55+02:00",
+            "committer_date": "2021-10-26T08:21:55+02:00",
+            "type": "git",
+            "directory": "24184b377ca492cd1f4596acf968fe9afdbba55e",
+            "synthetic": false,
+            "metadata": {},
+            "parents": [
+              {
+                "id": "b08fc2bf24dd978140ec6cb0e2cd07f1a79c87ca",
+                "url": "https://archive.softwareheritage.org/api/1/revision/b08fc2bf24dd978140ec6cb0e2cd07f1a79c87ca/"
+              }
+            ],
+            "id": "b22a770be9f488557efe2d921dc8a68c845088ff",
+            "extra_headers": [],
+            "merge": false,
+            "url": "https://archive.softwareheritage.org/api/1/revision/b22a770be9f488557efe2d921dc8a68c845088ff/",
+            "history_url": "https://archive.softwareheritage.org/api/1/revision/b22a770be9f488557efe2d921dc8a68c845088ff/log/",
+            "directory_url": "https://archive.softwareheritage.org/api/1/directory/24184b377ca492cd1f4596acf968fe9afdbba55e/"
+          },
+          "evidence": {
+            "url": "https://archive.softwareheritage.org/api/1/revision/b22a770be9f488557efe2d921dc8a68c845088ff/",
+            "status": 200,
+            "fetched_at": "2026-09-24T12:25:14Z",
+            "cache_file": "8069d85741ae60a7066335f6a69c6baec6febc91ff1429983da2d594931d1000.json.gz"
+          },
+          "reachable_in_current_repository": true
+        }
+      ]
+    },
+    {
+      "id": "3f03ddaab3a11dae8263d94e81e7b218184b829f",
+      "branches": {
+        "HEAD": {
+          "target": "refs/heads/master",
+          "target_type": "alias",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/ddcb0a1d655eda37daa47bea63e5eee72985a1ed/"
+        },
+        "refs/heads/fix/leiningen-2.8.0-compatibility": {
+          "target": "efb2fdf44cbc7ac368145a8ba2b331c82133c08b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/efb2fdf44cbc7ac368145a8ba2b331c82133c08b/"
+        },
+        "refs/heads/master": {
+          "target": "ddcb0a1d655eda37daa47bea63e5eee72985a1ed",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/ddcb0a1d655eda37daa47bea63e5eee72985a1ed/"
+        },
+        "refs/pull/105/head": {
+          "target": "8f00fd914b41caf4728f763c4a4cf31fe4e24736",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/8f00fd914b41caf4728f763c4a4cf31fe4e24736/"
+        },
+        "refs/pull/106/head": {
+          "target": "d307254e9a38e68a77946edc8f72960d559c7d99",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/d307254e9a38e68a77946edc8f72960d559c7d99/"
+        },
+        "refs/pull/112/head": {
+          "target": "a3a7b7c117e87e6912a1388a86f7dd9e349e1d72",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a3a7b7c117e87e6912a1388a86f7dd9e349e1d72/"
+        },
+        "refs/pull/114/head": {
+          "target": "0609978b0199381cf50cf2215a6c25c1cb93389a",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/0609978b0199381cf50cf2215a6c25c1cb93389a/"
+        },
+        "refs/pull/116/head": {
+          "target": "e308e454bef2c654ce3470930dc289032bcfcef6",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/e308e454bef2c654ce3470930dc289032bcfcef6/"
+        },
+        "refs/pull/117/head": {
+          "target": "a892a1c658136ab46ba58cece8293fde9a0bb4d2",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a892a1c658136ab46ba58cece8293fde9a0bb4d2/"
+        },
+        "refs/pull/118/head": {
+          "target": "243f07c9fa8c8f6a70bee9fd44e929832cf8ffea",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/243f07c9fa8c8f6a70bee9fd44e929832cf8ffea/"
+        },
+        "refs/pull/120/head": {
+          "target": "17b1b0296258f22c4f60529f749857c3a4135b0e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/17b1b0296258f22c4f60529f749857c3a4135b0e/"
+        },
+        "refs/pull/121/head": {
+          "target": "816928d19a692d0dcaf5546c55fb395d0764cedc",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/816928d19a692d0dcaf5546c55fb395d0764cedc/"
+        },
+        "refs/pull/17/head": {
+          "target": "b4cd331c05e0904637143295c80a4d2887c4b67b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/b4cd331c05e0904637143295c80a4d2887c4b67b/"
+        },
+        "refs/pull/32/head": {
+          "target": "18c3a62ea1df70a71642a3c0754477f8bc5f6589",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/18c3a62ea1df70a71642a3c0754477f8bc5f6589/"
+        },
+        "refs/pull/35/head": {
+          "target": "9cf08955a6121de5e4baa1f4cb20a25f8e842bda",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9cf08955a6121de5e4baa1f4cb20a25f8e842bda/"
+        },
+        "refs/pull/36/head": {
+          "target": "c0de2ab9ccc5c1e0a304c5cf2a929943d5ad3a57",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/c0de2ab9ccc5c1e0a304c5cf2a929943d5ad3a57/"
+        },
+        "refs/pull/59/head": {
+          "target": "3ee8fdcbd5013941e4d5d355b4894d98be51e429",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/3ee8fdcbd5013941e4d5d355b4894d98be51e429/"
+        },
+        "refs/pull/60/head": {
+          "target": "d39defeea634bfde0c5a46cdd4cb3720843f1cd6",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/d39defeea634bfde0c5a46cdd4cb3720843f1cd6/"
+        },
+        "refs/pull/63/head": {
+          "target": "17b4069033a84036b73fa9d21abbdffc840be5ff",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/17b4069033a84036b73fa9d21abbdffc840be5ff/"
+        },
+        "refs/pull/78/head": {
+          "target": "9c973ce589f09c1ef026a92d112e5ad74911e881",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9c973ce589f09c1ef026a92d112e5ad74911e881/"
+        },
+        "refs/pull/79/head": {
+          "target": "9deb7e762e210bc0b88d168a3661f7aa7d69e0ed",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9deb7e762e210bc0b88d168a3661f7aa7d69e0ed/"
+        },
+        "refs/pull/81/head": {
+          "target": "efb2fdf44cbc7ac368145a8ba2b331c82133c08b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/efb2fdf44cbc7ac368145a8ba2b331c82133c08b/"
+        },
+        "refs/pull/84/head": {
+          "target": "264a645769d86e6f14a071cf6641630f2912fcb4",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/264a645769d86e6f14a071cf6641630f2912fcb4/"
+        },
+        "refs/pull/88/head": {
+          "target": "c3538bed423feae13c668340773b6030bef50188",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/c3538bed423feae13c668340773b6030bef50188/"
+        },
+        "refs/pull/93/head": {
+          "target": "5fd556bbc755b36d1d882a3d74a3a729e9270100",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5fd556bbc755b36d1d882a3d74a3a729e9270100/"
+        },
+        "refs/pull/94/head": {
+          "target": "a5424580f7265823f7c52710d90dda548643c222",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a5424580f7265823f7c52710d90dda548643c222/"
+        },
+        "refs/pull/97/head": {
+          "target": "989b0b9216869d65394f87aab0154395ac2c377d",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/989b0b9216869d65394f87aab0154395ac2c377d/"
+        },
+        "refs/tags/clojars-0.1.1": {
+          "target": "9d842080ce6146e2484dcfd0ef078962399d15be",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/9d842080ce6146e2484dcfd0ef078962399d15be/"
+        },
+        "refs/tags/clojars-0.1.2": {
+          "target": "ddd8cffe3173b284ef7a53a83b1dc39fe56c0f1e",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ddd8cffe3173b284ef7a53a83b1dc39fe56c0f1e/"
+        },
+        "refs/tags/clojars-0.2.0": {
+          "target": "411f0b4763d8ded9934bc70fffa3a65dcc79ad41",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/411f0b4763d8ded9934bc70fffa3a65dcc79ad41/"
+        },
+        "refs/tags/clojars-0.3.0": {
+          "target": "2b71466fb5bc7420a6341d8e9a10d754ca216ebb",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/2b71466fb5bc7420a6341d8e9a10d754ca216ebb/"
+        },
+        "refs/tags/clojars-0.3.1": {
+          "target": "5590e66e94499d84d5222f1a503103d8e6f24d99",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/5590e66e94499d84d5222f1a503103d8e6f24d99/"
+        },
+        "refs/tags/clojars-0.3.2": {
+          "target": "a3c59e6253c67778d02025cb062a6d314dc4f7fa",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a3c59e6253c67778d02025cb062a6d314dc4f7fa/"
+        },
+        "refs/tags/clojars-0.3.3": {
+          "target": "aaf6e1d23888516db62d3e75ab88ff46befb2182",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/aaf6e1d23888516db62d3e75ab88ff46befb2182/"
+        },
+        "refs/tags/clojars-0.3.4": {
+          "target": "ad54f0b41f57597d5b3a5926c49f0d2242a555d5",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ad54f0b41f57597d5b3a5926c49f0d2242a555d5/"
+        },
+        "refs/tags/clojars-0.3.5": {
+          "target": "00001f6155aadca28e6bf5c12f486460b4329aad",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/00001f6155aadca28e6bf5c12f486460b4329aad/"
+        },
+        "refs/tags/clojars-0.3.6": {
+          "target": "244bbbfd922f20b8cf5abbe77df2fb8f04c603f3",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/244bbbfd922f20b8cf5abbe77df2fb8f04c603f3/"
+        },
+        "refs/tags/clojars-0.4.0": {
+          "target": "8964af41b557c66a5b7e426ebbe4a50141fa019f",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/8964af41b557c66a5b7e426ebbe4a50141fa019f/"
+        },
+        "refs/tags/clojars-0.4.1": {
+          "target": "27b32c9c8df14b49fe2fe7bf09c8f4fcad848a39",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/27b32c9c8df14b49fe2fe7bf09c8f4fcad848a39/"
+        },
+        "refs/tags/clojars-0.4.2": {
+          "target": "4ba02e45d43bed443d8731dce74fc7b54d909024",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/4ba02e45d43bed443d8731dce74fc7b54d909024/"
+        },
+        "refs/tags/clojars-0.4.3": {
+          "target": "a9790d37313aad5cf393c6d788a405356947d8fa",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a9790d37313aad5cf393c6d788a405356947d8fa/"
+        },
+        "refs/tags/clojars-0.4.4": {
+          "target": "be4ada70e2c0a8a1feaeb8d16dccb271c462d1f8",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/be4ada70e2c0a8a1feaeb8d16dccb271c462d1f8/"
+        },
+        "refs/tags/clojars-0.5.0-RC1": {
+          "target": "77045c8ecbcba353c2e24a4c93776662f77e235e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/77045c8ecbcba353c2e24a4c93776662f77e235e/"
+        },
+        "refs/tags/clojars-0.5.0-alpha2": {
+          "target": "f0e592205f95fb3a29e758c488bddf0e09984824",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/f0e592205f95fb3a29e758c488bddf0e09984824/"
+        },
+        "refs/tags/clojars-0.5.0-alpha3": {
+          "target": "5168d1b45f9bf6ee1e7ed6df99d00b5fc8c5b09e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5168d1b45f9bf6ee1e7ed6df99d00b5fc8c5b09e/"
+        },
+        "refs/tags/clojars-0.5.1": {
+          "target": "520fe0b15af6cfc7ec9102579dc96612264a9839",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/520fe0b15af6cfc7ec9102579dc96612264a9839/"
+        },
+        "refs/tags/clojars-0.5.2": {
+          "target": "28b2f8b1948f6b27757f281b9564e560d90c065b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/28b2f8b1948f6b27757f281b9564e560d90c065b/"
+        },
+        "refs/tags/clojars-0.5.3": {
+          "target": "32cadbd07c610fba627df737dae2e5fee6889e9b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/32cadbd07c610fba627df737dae2e5fee6889e9b/"
+        },
+        "refs/tags/clojars-0.5.4": {
+          "target": "fee91be09c73b33d9a3c85dfcffad3e825f91dba",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/fee91be09c73b33d9a3c85dfcffad3e825f91dba/"
+        },
+        "refs/tags/clojars-0.5.5": {
+          "target": "5ea6ab1bb376a89179ba3a118a5e1acfeef8969d",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5ea6ab1bb376a89179ba3a118a5e1acfeef8969d/"
+        },
+        "refs/tags/clojars-0.6.0": {
+          "target": "20a7b7fbcb3b7613bb959a652e021f7c32887238",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/20a7b7fbcb3b7613bb959a652e021f7c32887238/"
+        },
+        "refs/tags/clojars-0.6.1": {
+          "target": "8b6b9a384b772e5bd031be6f8eca31d286038cb5",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/8b6b9a384b772e5bd031be6f8eca31d286038cb5/"
+        },
+        "refs/tags/clojars-0.6.10": {
+          "target": "5dbd905e16bd83e3054b4305caed2683151a35b2",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/5dbd905e16bd83e3054b4305caed2683151a35b2/"
+        },
+        "refs/tags/clojars-0.6.11": {
+          "target": "738b25860e2ce1a50f657bab17ff2b60995d13dc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/738b25860e2ce1a50f657bab17ff2b60995d13dc/"
+        },
+        "refs/tags/clojars-0.6.12": {
+          "target": "80e090aefa84f7ed4a9bbed5865dd044b16e445c",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/80e090aefa84f7ed4a9bbed5865dd044b16e445c/"
+        },
+        "refs/tags/clojars-0.6.13": {
+          "target": "a1ef3cacaf55594681145d88a68952a98e656cb6",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a1ef3cacaf55594681145d88a68952a98e656cb6/"
+        },
+        "refs/tags/clojars-0.6.14": {
+          "target": "71c946139c46414cdb315d6a7f32a802b3a5e4c8",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/71c946139c46414cdb315d6a7f32a802b3a5e4c8/"
+        },
+        "refs/tags/clojars-0.6.15": {
+          "target": "b55c861fb1ef9e42b25640ba4e328c42b6332967",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/b55c861fb1ef9e42b25640ba4e328c42b6332967/"
+        },
+        "refs/tags/clojars-0.6.2": {
+          "target": "ebfa0500383b9ccab64275e58e40ccb72292d32a",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ebfa0500383b9ccab64275e58e40ccb72292d32a/"
+        },
+        "refs/tags/clojars-0.6.3": {
+          "target": "d1f91eb7a5ec1641edc82c7b9ba706983d0a081a",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/d1f91eb7a5ec1641edc82c7b9ba706983d0a081a/"
+        },
+        "refs/tags/clojars-0.6.4": {
+          "target": "89090beb5ca2f063ef949ad939506153a52edb14",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/89090beb5ca2f063ef949ad939506153a52edb14/"
+        },
+        "refs/tags/clojars-0.6.5": {
+          "target": "b19ac9b84e4b80acbe8ea698990041e74b683f05",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/b19ac9b84e4b80acbe8ea698990041e74b683f05/"
+        },
+        "refs/tags/clojars-0.6.6": {
+          "target": "a55f93ee303300a16688cc55197467b1f6ba74bc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a55f93ee303300a16688cc55197467b1f6ba74bc/"
+        },
+        "refs/tags/clojars-0.6.7": {
+          "target": "366c9c170d4808a82ac322da613fc8ec2baf8a47",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/366c9c170d4808a82ac322da613fc8ec2baf8a47/"
+        },
+        "refs/tags/clojars-0.6.8": {
+          "target": "c17fd0bfd5a5732aaba09c3dfee8e4ee31465ef9",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/c17fd0bfd5a5732aaba09c3dfee8e4ee31465ef9/"
+        },
+        "refs/tags/clojars-0.6.9": {
+          "target": "a88e3cfd0cfec1936752cda87e34f1791a23bffc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a88e3cfd0cfec1936752cda87e34f1791a23bffc/"
+        },
+        "refs/tags/v0.7.0": {
+          "target": "60bf76b2b2032de11e01dd5a6297b7c063794001",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/60bf76b2b2032de11e01dd5a6297b7c063794001/"
+        },
+        "refs/tags/v1.0.0-RC1": {
+          "target": "0a010c9246a4f47b45ad6dcef55ae4e6d38876ba",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/0a010c9246a4f47b45ad6dcef55ae4e6d38876ba/"
+        },
+        "refs/tags/v1.0.0-RC3": {
+          "target": "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330/"
+        }
+      },
+      "complete": true,
+      "pages": [
+        {
+          "url": "https://archive.softwareheritage.org/api/1/snapshot/3f03ddaab3a11dae8263d94e81e7b218184b829f/?branches_count=1000",
+          "fetched_at": "2026-09-24T12:25:15Z",
+          "cache_file": "0d8b9a57703d26131a37632d8d7d7d144d25790a7eba7a110daaa30246f88f5a.json.gz"
+        }
+      ],
+      "selected_tags": {
+        "v1.0.0": null,
+        "v1.0.0-RC3": {
+          "target": "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330/"
+        }
+      },
+      "head": {
+        "target": "ddcb0a1d655eda37daa47bea63e5eee72985a1ed",
+        "target_type": "revision",
+        "target_url": "https://archive.softwareheritage.org/api/1/revision/ddcb0a1d655eda37daa47bea63e5eee72985a1ed/"
+      },
+      "objects": [
+        {
+          "type": "release",
+          "body": {
+            "name": "v1.0.0-RC3",
+            "message": "Release 1.0.0-RC3\n-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEERQKN2eEgYbUQT+fO/PFuXCfiom8FAmAtcF4ACgkQ/PFuXCfi\nom98Cg/+N9fVxUdKYnF5VAF+OseeM8n52LCb5nSST2mT+IclYAqTARtnznz7+Tmw\ninBw69LLvTdUz1c7CUjcGb48K/F7zkr06KUGpPgPOVcnG9sDlfzKtXQ8kesBJTpr\nUMh+jZg5QkMWm+SZk07zSpTxbv47zDBenbk4ypXC+U6c2k5JWAbHPK2akb+dsGSF\nI66ercwEEfxgUMuNuLce0Ff24DJAUZmGmVr2z55MurExIm1cNj0AD59utSHUac27\nk08xCSfmrTU0IZ3ohkMVn9TnquzS0HEgjHksydhfkseAaotxVj901xUiU7vV1ABi\ntbboLQ50tiMXUf8WUgoLixbtDnIoGJ4ozxFOD5j+kCW66O8DTmr+UB4lAgjxN7Bi\nCV0NxOpW+2T63SoXF1NZAlzAfiG+KHZ+cb2RmkWMIsTbIT61e6SWy/1oky0WaHg4\nZJjx/mI21oRKh1cnZjXKQWbQA2P0CjVN0tEj6z4cqidfaBdRzR89pxVnwKDR7PbN\nv1SyDoFwEV4ie/lukpitDwb4laO1SqZBcsmVTdinLjaG1iB1lfoEM8eqLd6xvNJ/\njazgYb7EfEDsYPCtsymtfjqi2/Bp8oMF2cCjifYeuNER4lYyq5BXGpxRWwCHy0rQ\nvaGj0rxwbkj8Dht957wU/UO405iXgj8DFWQdfhyInKWuQDxtuqg=\n=ruA5\n-----END PGP SIGNATURE-----\n",
+            "target": "3d59e1e6447732116c0339d6e3ca6b379590848a",
+            "target_type": "revision",
+            "synthetic": false,
+            "author": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "date": "2021-02-17T20:37:02+01:00",
+            "id": "fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330",
+            "target_url": "https://archive.softwareheritage.org/api/1/revision/3d59e1e6447732116c0339d6e3ca6b379590848a/"
+          },
+          "evidence": {
+            "url": "https://archive.softwareheritage.org/api/1/release/fbaa4d6a864ea7db15feaff74dd1d7fd50ff7330/",
+            "status": 200,
+            "fetched_at": "2026-09-24T12:25:14Z",
+            "cache_file": "b577b626a6080ae2f747ae6823b6dc2b07cf19fe16d3a92a979c7587a1d57a1b.json.gz"
+          },
+          "reachable_in_current_repository": null
+        },
+        {
+          "type": "revision",
+          "body": {
+            "message": "Upgrade 'version-clj'\n",
+            "author": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "committer": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "date": "2021-02-23T10:53:58+01:00",
+            "committer_date": "2021-02-23T10:53:58+01:00",
+            "type": "git",
+            "directory": "5c27fe4f7dacbc4ec38ffaa60e51c0af8ddb0f32",
+            "synthetic": false,
+            "metadata": {},
+            "parents": [
+              {
+                "id": "591f050d9938a053fa6954ad34f36925a866fe11",
+                "url": "https://archive.softwareheritage.org/api/1/revision/591f050d9938a053fa6954ad34f36925a866fe11/"
+              }
+            ],
+            "id": "ddcb0a1d655eda37daa47bea63e5eee72985a1ed",
+            "extra_headers": [],
+            "merge": false,
+            "url": "https://archive.softwareheritage.org/api/1/revision/ddcb0a1d655eda37daa47bea63e5eee72985a1ed/",
+            "history_url": "https://archive.softwareheritage.org/api/1/revision/ddcb0a1d655eda37daa47bea63e5eee72985a1ed/log/",
+            "directory_url": "https://archive.softwareheritage.org/api/1/directory/5c27fe4f7dacbc4ec38ffaa60e51c0af8ddb0f32/"
+          },
+          "evidence": {
+            "url": "https://archive.softwareheritage.org/api/1/revision/ddcb0a1d655eda37daa47bea63e5eee72985a1ed/",
+            "status": 200,
+            "fetched_at": "2026-09-24T12:25:15Z",
+            "cache_file": "0f56513a4c958362c93db924fabb6278f431f72b6c8c17cecba3f449571d8c2a.json.gz"
+          },
+          "reachable_in_current_repository": true
+        }
+      ]
+    },
+    {
+      "id": "b549ddd7e5da98bace75df54aa4ce4ef1eadbd92",
+      "branches": {
+        "HEAD": {
+          "target": "refs/heads/master",
+          "target_type": "alias",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/e8ae7ea54cc082fa087bd477b47793247a853994/"
+        },
+        "refs/heads/fix/leiningen-2.8.0-compatibility": {
+          "target": "efb2fdf44cbc7ac368145a8ba2b331c82133c08b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/efb2fdf44cbc7ac368145a8ba2b331c82133c08b/"
+        },
+        "refs/heads/master": {
+          "target": "e8ae7ea54cc082fa087bd477b47793247a853994",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/e8ae7ea54cc082fa087bd477b47793247a853994/"
+        },
+        "refs/pull/105/head": {
+          "target": "8f00fd914b41caf4728f763c4a4cf31fe4e24736",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/8f00fd914b41caf4728f763c4a4cf31fe4e24736/"
+        },
+        "refs/pull/106/head": {
+          "target": "d307254e9a38e68a77946edc8f72960d559c7d99",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/d307254e9a38e68a77946edc8f72960d559c7d99/"
+        },
+        "refs/pull/112/head": {
+          "target": "a3a7b7c117e87e6912a1388a86f7dd9e349e1d72",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a3a7b7c117e87e6912a1388a86f7dd9e349e1d72/"
+        },
+        "refs/pull/114/head": {
+          "target": "0609978b0199381cf50cf2215a6c25c1cb93389a",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/0609978b0199381cf50cf2215a6c25c1cb93389a/"
+        },
+        "refs/pull/17/head": {
+          "target": "b4cd331c05e0904637143295c80a4d2887c4b67b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/b4cd331c05e0904637143295c80a4d2887c4b67b/"
+        },
+        "refs/pull/32/head": {
+          "target": "18c3a62ea1df70a71642a3c0754477f8bc5f6589",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/18c3a62ea1df70a71642a3c0754477f8bc5f6589/"
+        },
+        "refs/pull/35/head": {
+          "target": "9cf08955a6121de5e4baa1f4cb20a25f8e842bda",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9cf08955a6121de5e4baa1f4cb20a25f8e842bda/"
+        },
+        "refs/pull/36/head": {
+          "target": "c0de2ab9ccc5c1e0a304c5cf2a929943d5ad3a57",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/c0de2ab9ccc5c1e0a304c5cf2a929943d5ad3a57/"
+        },
+        "refs/pull/59/head": {
+          "target": "3ee8fdcbd5013941e4d5d355b4894d98be51e429",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/3ee8fdcbd5013941e4d5d355b4894d98be51e429/"
+        },
+        "refs/pull/60/head": {
+          "target": "d39defeea634bfde0c5a46cdd4cb3720843f1cd6",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/d39defeea634bfde0c5a46cdd4cb3720843f1cd6/"
+        },
+        "refs/pull/63/head": {
+          "target": "17b4069033a84036b73fa9d21abbdffc840be5ff",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/17b4069033a84036b73fa9d21abbdffc840be5ff/"
+        },
+        "refs/pull/78/head": {
+          "target": "9c973ce589f09c1ef026a92d112e5ad74911e881",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9c973ce589f09c1ef026a92d112e5ad74911e881/"
+        },
+        "refs/pull/79/head": {
+          "target": "9deb7e762e210bc0b88d168a3661f7aa7d69e0ed",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/9deb7e762e210bc0b88d168a3661f7aa7d69e0ed/"
+        },
+        "refs/pull/81/head": {
+          "target": "efb2fdf44cbc7ac368145a8ba2b331c82133c08b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/efb2fdf44cbc7ac368145a8ba2b331c82133c08b/"
+        },
+        "refs/pull/84/head": {
+          "target": "264a645769d86e6f14a071cf6641630f2912fcb4",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/264a645769d86e6f14a071cf6641630f2912fcb4/"
+        },
+        "refs/pull/88/head": {
+          "target": "c3538bed423feae13c668340773b6030bef50188",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/c3538bed423feae13c668340773b6030bef50188/"
+        },
+        "refs/pull/93/head": {
+          "target": "5fd556bbc755b36d1d882a3d74a3a729e9270100",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5fd556bbc755b36d1d882a3d74a3a729e9270100/"
+        },
+        "refs/pull/94/head": {
+          "target": "a5424580f7265823f7c52710d90dda548643c222",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a5424580f7265823f7c52710d90dda548643c222/"
+        },
+        "refs/pull/97/head": {
+          "target": "989b0b9216869d65394f87aab0154395ac2c377d",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/989b0b9216869d65394f87aab0154395ac2c377d/"
+        },
+        "refs/tags/clojars-0.1.1": {
+          "target": "9d842080ce6146e2484dcfd0ef078962399d15be",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/9d842080ce6146e2484dcfd0ef078962399d15be/"
+        },
+        "refs/tags/clojars-0.1.2": {
+          "target": "ddd8cffe3173b284ef7a53a83b1dc39fe56c0f1e",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ddd8cffe3173b284ef7a53a83b1dc39fe56c0f1e/"
+        },
+        "refs/tags/clojars-0.2.0": {
+          "target": "411f0b4763d8ded9934bc70fffa3a65dcc79ad41",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/411f0b4763d8ded9934bc70fffa3a65dcc79ad41/"
+        },
+        "refs/tags/clojars-0.3.0": {
+          "target": "2b71466fb5bc7420a6341d8e9a10d754ca216ebb",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/2b71466fb5bc7420a6341d8e9a10d754ca216ebb/"
+        },
+        "refs/tags/clojars-0.3.1": {
+          "target": "5590e66e94499d84d5222f1a503103d8e6f24d99",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/5590e66e94499d84d5222f1a503103d8e6f24d99/"
+        },
+        "refs/tags/clojars-0.3.2": {
+          "target": "a3c59e6253c67778d02025cb062a6d314dc4f7fa",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a3c59e6253c67778d02025cb062a6d314dc4f7fa/"
+        },
+        "refs/tags/clojars-0.3.3": {
+          "target": "aaf6e1d23888516db62d3e75ab88ff46befb2182",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/aaf6e1d23888516db62d3e75ab88ff46befb2182/"
+        },
+        "refs/tags/clojars-0.3.4": {
+          "target": "ad54f0b41f57597d5b3a5926c49f0d2242a555d5",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ad54f0b41f57597d5b3a5926c49f0d2242a555d5/"
+        },
+        "refs/tags/clojars-0.3.5": {
+          "target": "00001f6155aadca28e6bf5c12f486460b4329aad",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/00001f6155aadca28e6bf5c12f486460b4329aad/"
+        },
+        "refs/tags/clojars-0.3.6": {
+          "target": "244bbbfd922f20b8cf5abbe77df2fb8f04c603f3",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/244bbbfd922f20b8cf5abbe77df2fb8f04c603f3/"
+        },
+        "refs/tags/clojars-0.4.0": {
+          "target": "8964af41b557c66a5b7e426ebbe4a50141fa019f",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/8964af41b557c66a5b7e426ebbe4a50141fa019f/"
+        },
+        "refs/tags/clojars-0.4.1": {
+          "target": "27b32c9c8df14b49fe2fe7bf09c8f4fcad848a39",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/27b32c9c8df14b49fe2fe7bf09c8f4fcad848a39/"
+        },
+        "refs/tags/clojars-0.4.2": {
+          "target": "4ba02e45d43bed443d8731dce74fc7b54d909024",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/4ba02e45d43bed443d8731dce74fc7b54d909024/"
+        },
+        "refs/tags/clojars-0.4.3": {
+          "target": "a9790d37313aad5cf393c6d788a405356947d8fa",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/a9790d37313aad5cf393c6d788a405356947d8fa/"
+        },
+        "refs/tags/clojars-0.4.4": {
+          "target": "be4ada70e2c0a8a1feaeb8d16dccb271c462d1f8",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/be4ada70e2c0a8a1feaeb8d16dccb271c462d1f8/"
+        },
+        "refs/tags/clojars-0.5.0-RC1": {
+          "target": "77045c8ecbcba353c2e24a4c93776662f77e235e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/77045c8ecbcba353c2e24a4c93776662f77e235e/"
+        },
+        "refs/tags/clojars-0.5.0-alpha2": {
+          "target": "f0e592205f95fb3a29e758c488bddf0e09984824",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/f0e592205f95fb3a29e758c488bddf0e09984824/"
+        },
+        "refs/tags/clojars-0.5.0-alpha3": {
+          "target": "5168d1b45f9bf6ee1e7ed6df99d00b5fc8c5b09e",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5168d1b45f9bf6ee1e7ed6df99d00b5fc8c5b09e/"
+        },
+        "refs/tags/clojars-0.5.1": {
+          "target": "520fe0b15af6cfc7ec9102579dc96612264a9839",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/520fe0b15af6cfc7ec9102579dc96612264a9839/"
+        },
+        "refs/tags/clojars-0.5.2": {
+          "target": "28b2f8b1948f6b27757f281b9564e560d90c065b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/28b2f8b1948f6b27757f281b9564e560d90c065b/"
+        },
+        "refs/tags/clojars-0.5.3": {
+          "target": "32cadbd07c610fba627df737dae2e5fee6889e9b",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/32cadbd07c610fba627df737dae2e5fee6889e9b/"
+        },
+        "refs/tags/clojars-0.5.4": {
+          "target": "fee91be09c73b33d9a3c85dfcffad3e825f91dba",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/fee91be09c73b33d9a3c85dfcffad3e825f91dba/"
+        },
+        "refs/tags/clojars-0.5.5": {
+          "target": "5ea6ab1bb376a89179ba3a118a5e1acfeef8969d",
+          "target_type": "revision",
+          "target_url": "https://archive.softwareheritage.org/api/1/revision/5ea6ab1bb376a89179ba3a118a5e1acfeef8969d/"
+        },
+        "refs/tags/clojars-0.6.0": {
+          "target": "20a7b7fbcb3b7613bb959a652e021f7c32887238",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/20a7b7fbcb3b7613bb959a652e021f7c32887238/"
+        },
+        "refs/tags/clojars-0.6.1": {
+          "target": "8b6b9a384b772e5bd031be6f8eca31d286038cb5",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/8b6b9a384b772e5bd031be6f8eca31d286038cb5/"
+        },
+        "refs/tags/clojars-0.6.10": {
+          "target": "5dbd905e16bd83e3054b4305caed2683151a35b2",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/5dbd905e16bd83e3054b4305caed2683151a35b2/"
+        },
+        "refs/tags/clojars-0.6.11": {
+          "target": "738b25860e2ce1a50f657bab17ff2b60995d13dc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/738b25860e2ce1a50f657bab17ff2b60995d13dc/"
+        },
+        "refs/tags/clojars-0.6.12": {
+          "target": "80e090aefa84f7ed4a9bbed5865dd044b16e445c",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/80e090aefa84f7ed4a9bbed5865dd044b16e445c/"
+        },
+        "refs/tags/clojars-0.6.13": {
+          "target": "a1ef3cacaf55594681145d88a68952a98e656cb6",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a1ef3cacaf55594681145d88a68952a98e656cb6/"
+        },
+        "refs/tags/clojars-0.6.14": {
+          "target": "71c946139c46414cdb315d6a7f32a802b3a5e4c8",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/71c946139c46414cdb315d6a7f32a802b3a5e4c8/"
+        },
+        "refs/tags/clojars-0.6.15": {
+          "target": "b55c861fb1ef9e42b25640ba4e328c42b6332967",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/b55c861fb1ef9e42b25640ba4e328c42b6332967/"
+        },
+        "refs/tags/clojars-0.6.2": {
+          "target": "ebfa0500383b9ccab64275e58e40ccb72292d32a",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/ebfa0500383b9ccab64275e58e40ccb72292d32a/"
+        },
+        "refs/tags/clojars-0.6.3": {
+          "target": "d1f91eb7a5ec1641edc82c7b9ba706983d0a081a",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/d1f91eb7a5ec1641edc82c7b9ba706983d0a081a/"
+        },
+        "refs/tags/clojars-0.6.4": {
+          "target": "89090beb5ca2f063ef949ad939506153a52edb14",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/89090beb5ca2f063ef949ad939506153a52edb14/"
+        },
+        "refs/tags/clojars-0.6.5": {
+          "target": "b19ac9b84e4b80acbe8ea698990041e74b683f05",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/b19ac9b84e4b80acbe8ea698990041e74b683f05/"
+        },
+        "refs/tags/clojars-0.6.6": {
+          "target": "a55f93ee303300a16688cc55197467b1f6ba74bc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a55f93ee303300a16688cc55197467b1f6ba74bc/"
+        },
+        "refs/tags/clojars-0.6.7": {
+          "target": "366c9c170d4808a82ac322da613fc8ec2baf8a47",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/366c9c170d4808a82ac322da613fc8ec2baf8a47/"
+        },
+        "refs/tags/clojars-0.6.8": {
+          "target": "c17fd0bfd5a5732aaba09c3dfee8e4ee31465ef9",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/c17fd0bfd5a5732aaba09c3dfee8e4ee31465ef9/"
+        },
+        "refs/tags/clojars-0.6.9": {
+          "target": "a88e3cfd0cfec1936752cda87e34f1791a23bffc",
+          "target_type": "release",
+          "target_url": "https://archive.softwareheritage.org/api/1/release/a88e3cfd0cfec1936752cda87e34f1791a23bffc/"
+        }
+      },
+      "complete": true,
+      "pages": [
+        {
+          "url": "https://archive.softwareheritage.org/api/1/snapshot/b549ddd7e5da98bace75df54aa4ce4ef1eadbd92/?branches_count=1000",
+          "fetched_at": "2026-09-24T12:25:16Z",
+          "cache_file": "4015a9953967da040cd27cb29378ff8d3290538e45763fbb9ab7147210704b0d.json.gz"
+        }
+      ],
+      "selected_tags": {
+        "v1.0.0": null,
+        "v1.0.0-RC3": null
+      },
+      "head": {
+        "target": "e8ae7ea54cc082fa087bd477b47793247a853994",
+        "target_type": "revision",
+        "target_url": "https://archive.softwareheritage.org/api/1/revision/e8ae7ea54cc082fa087bd477b47793247a853994/"
+      },
+      "objects": [
+        {
+          "type": "revision",
+          "body": {
+            "message": "Use 'lein-isolate' instead of 'mranderson' directly\n",
+            "author": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "committer": {
+              "fullname": "Yannick Scherer <yannick.scherer@futurice.com>",
+              "name": "Yannick Scherer",
+              "email": "yannick.scherer@futurice.com"
+            },
+            "date": "2018-09-01T13:32:33+02:00",
+            "committer_date": "2018-09-01T13:32:33+02:00",
+            "type": "git",
+            "directory": "e72b13d2091ea711ca3ff8b6d09ee58aa0bf8817",
+            "synthetic": false,
+            "metadata": {},
+            "parents": [
+              {
+                "id": "0eacc398a655e1c2e669bdabe3caf5d064122b6f",
+                "url": "https://archive.softwareheritage.org/api/1/revision/0eacc398a655e1c2e669bdabe3caf5d064122b6f/"
+              }
+            ],
+            "id": "e8ae7ea54cc082fa087bd477b47793247a853994",
+            "extra_headers": [],
+            "merge": false,
+            "url": "https://archive.softwareheritage.org/api/1/revision/e8ae7ea54cc082fa087bd477b47793247a853994/",
+            "history_url": "https://archive.softwareheritage.org/api/1/revision/e8ae7ea54cc082fa087bd477b47793247a853994/log/",
+            "directory_url": "https://archive.softwareheritage.org/api/1/directory/e72b13d2091ea711ca3ff8b6d09ee58aa0bf8817/"
+          },
+          "evidence": {
+            "url": "https://archive.softwareheritage.org/api/1/revision/e8ae7ea54cc082fa087bd477b47793247a853994/",
+            "status": 200,
+            "fetched_at": "2026-09-24T12:25:16Z",
+            "cache_file": "a74732b5b18791c1cdf2cd5662c64315465d74460e109613163951564548ebe8.json.gz"
+          },
+          "reachable_in_current_repository": true
+        }
+      ]
+    }
+  ],
+  "scope": "Saved first visit page for each of four aliases and up to three newest distinct snapshots; Git dates are object assertions and signatures were not verified",
+  "evidence": [
+    {
+      "path": "../analysis/lein-ancient-git-tags.json",
+      "sha256": "95e82c9d367d5043fc39dc2775c2e2bff24302bcff58ecff266c6c933ee28051"
+    },
+    {
+      "path": "../analysis/release-tag-audit.json",
+      "sha256": "e701ad11457b4f54425a982e388909ad3cde89278d141952ccfae26d731cbec5"
+    },
+    {
+      "path": "cache/9a6dc715de85a452a60c02170b43b9ec6d9354d15023e2dd2df7a44ec27c1eab.json.gz",
+      "sha256": "47ec6589c867f299605ea4a80bd6f5a98b7179762d6fb790ef845a4b7388c47e"
+    },
+    {
+      "path": "cache/7d238cfcd2ee42a5cdf7a0d237595bb9078d122838868fa53db313695aee807e.json.gz",
+      "sha256": "6c00efe0cc52ed66116d38e7b6df9cf72e725c6eb024e1c51a4dd9e49a785d01"
+    },
+    {
+      "path": "cache/261afa7bf66935466a8a5b4a60260de42082b02dac24f3f04ee394255a6d62de.json.gz",
+      "sha256": "9d23110ffb313eef9ca84f6e676f7f8e16233b9ca7f09a4306f119b42f8b9316"
+    },
+    {
+      "path": "cache/da35643533e380f269fcf25a10768d0f3b7fc72ccf3353a49c69615bf708079d.json.gz",
+      "sha256": "80060e39043f0d915170fefa0b17fff1fedfe526dfe8041ac17b6bb0c84633db"
+    },
+    {
+      "path": "cache/de31e66a47071c081429c0202dbe70ae9c390a91e62505b4ed4471508dca7bb5.json.gz",
+      "sha256": "2ef999c86eaa77aede6f54c9fd3574f2191b3a176fb04c4137d6963b4eb3f84c"
+    },
+    {
+      "path": "cache/b577b626a6080ae2f747ae6823b6dc2b07cf19fe16d3a92a979c7587a1d57a1b.json.gz",
+      "sha256": "33f05483c9af889b1a5465cb92a95e04197e842d51e7a98c823c6851d9566e16"
+    },
+    {
+      "path": "cache/8069d85741ae60a7066335f6a69c6baec6febc91ff1429983da2d594931d1000.json.gz",
+      "sha256": "890c5b1d4de0eb1e7824c6c178d4f22c9869a14deb90f21b03821ccc70d0a243"
+    },
+    {
+      "path": "cache/0d8b9a57703d26131a37632d8d7d7d144d25790a7eba7a110daaa30246f88f5a.json.gz",
+      "sha256": "bbb6d0e5fc8ae4e62e833b8ba90b1117b62384591484d9832e3cf3580094cd14"
+    },
+    {
+      "path": "cache/0f56513a4c958362c93db924fabb6278f431f72b6c8c17cecba3f449571d8c2a.json.gz",
+      "sha256": "a36578997e45f746709adf2780981ad0ca566a99db36aa03e335a91fcbe1fc46"
+    },
+    {
+      "path": "cache/4015a9953967da040cd27cb29378ff8d3290538e45763fbb9ab7147210704b0d.json.gz",
+      "sha256": "46b88de888076b49a82c061afb9853cd14c895d493d29be9446c41f29ed13679"
+    },
+    {
+      "path": "cache/a74732b5b18791c1cdf2cd5662c64315465d74460e109613163951564548ebe8.json.gz",
+      "sha256": "3451c2ef1b51cdb661e142f4d7bd7140331d4f454748c9843b4429d737398819"
+    }
+  ]
+}

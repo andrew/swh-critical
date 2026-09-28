@@ -1,0 +1,149 @@
+{
+  "reported_at": "2026-09-24T08:46:46Z",
+  "cohort": "data/full",
+  "sources": {
+    "projects": {
+      "status": "complete",
+      "pages": 842,
+      "started_at": "2026-09-23T18:31:31Z",
+      "next_url": null,
+      "updated_at": "2026-09-23T20:09:26Z"
+    },
+    "dependencies": {
+      "status": "complete",
+      "pages": 99,
+      "started_at": "2026-09-23T18:31:34Z",
+      "next_url": null,
+      "updated_at": "2026-09-24T08:38:49Z"
+    }
+  },
+  "science_collection_complete": true,
+  "all": {
+    "packages": 9823,
+    "repositories": 6984,
+    "packages_without_repository": 543,
+    "current_commit_coverage": {
+      "present": 4979,
+      "missing": 1817,
+      "unknown": 132,
+      "unchecked": 56
+    },
+    "repository_coverage": {
+      "snapshot_found": 1362,
+      "unchecked": 5498,
+      "origin_not_found": 106,
+      "no_snapshot": 17,
+      "unknown": 1
+    },
+    "latest_release_tag_matching": {
+      "matched": 6958,
+      "unmatched": 2025,
+      "no_repository": 543,
+      "unknown": 241,
+      "ambiguous": 12,
+      "no_version": 44
+    },
+    "tag_target_revision_coverage": {
+      "present": 6252,
+      "revision_not_found": 706
+    },
+    "annotated_release_coverage": {
+      "present": 3108,
+      "missing": 373
+    }
+  },
+  "groups": {
+    "projects": {
+      "packages": 450,
+      "repositories": 367,
+      "packages_without_repository": 0,
+      "current_commit_coverage": {
+        "present": 245,
+        "missing": 122
+      },
+      "repository_coverage": {
+        "unchecked": 297,
+        "snapshot_found": 63,
+        "origin_not_found": 7
+      },
+      "latest_release_tag_matching": {
+        "matched": 377,
+        "unmatched": 71,
+        "unknown": 2
+      },
+      "tag_target_revision_coverage": {
+        "present": 352,
+        "revision_not_found": 25
+      },
+      "annotated_release_coverage": {
+        "present": 141,
+        "missing": 8
+      }
+    },
+    "dependencies": {
+      "packages": 924,
+      "repositories": 701,
+      "packages_without_repository": 163,
+      "current_commit_coverage": {
+        "present": 466,
+        "missing": 223,
+        "unknown": 8,
+        "unchecked": 4
+      },
+      "repository_coverage": {
+        "unchecked": 548,
+        "snapshot_found": 129,
+        "origin_not_found": 24
+      },
+      "latest_release_tag_matching": {
+        "matched": 573,
+        "no_repository": 163,
+        "unmatched": 169,
+        "unknown": 17,
+        "no_version": 2
+      },
+      "tag_target_revision_coverage": {
+        "present": 520,
+        "revision_not_found": 53
+      },
+      "annotated_release_coverage": {
+        "present": 202,
+        "missing": 19
+      }
+    }
+  },
+  "not_matched": {
+    "packages": 8803,
+    "repositories": 6252,
+    "packages_without_repository": 380,
+    "current_commit_coverage": {
+      "present": 4499,
+      "missing": 1577,
+      "unknown": 124,
+      "unchecked": 52
+    },
+    "repository_coverage": {
+      "snapshot_found": 1221,
+      "unchecked": 4931,
+      "origin_not_found": 82,
+      "no_snapshot": 17,
+      "unknown": 1
+    },
+    "latest_release_tag_matching": {
+      "matched": 6302,
+      "unmatched": 1844,
+      "no_repository": 380,
+      "unknown": 223,
+      "ambiguous": 12,
+      "no_version": 42
+    },
+    "tag_target_revision_coverage": {
+      "present": 5649,
+      "revision_not_found": 653
+    },
+    "annotated_release_coverage": {
+      "present": 2855,
+      "missing": 354
+    }
+  }
+}

@@ -1,0 +1,3601 @@
+[
+  {
+    "url": "https://codeberg.org/swsnr/gethostname.rs",
+    "observed_at": "2026-09-23T21:19:01Z",
+    "baseline_observed_at": "2026-09-23T20:15:55Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "bf4d93f997cb20aa0a6be113ede834a77bc59549",
+    "current_head": "bf4d93f997cb20aa0a6be113ede834a77bc59549",
+    "head_committed_at": "2026-04-10T13:46:54Z",
+    "first_parent_count": 143,
+    "first_parent_present": 109,
+    "missing_tip_commits": 34,
+    "nearest_present_revision": "swh:1:rev:bd32c004a28f06a7b48b761c3f5851114c0f476d",
+    "nearest_present_committed_at": "2024-05-20T09:01:02Z",
+    "commit_date_gap_days": 690.2,
+    "present_in_head_ancestry": 136,
+    "present_outside_head_ancestry": 7,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 109,
+        "oldest_sha": "0e358079edc368562d59b91207ac50ffa85b41f2",
+        "newest_sha": "bd32c004a28f06a7b48b761c3f5851114c0f476d",
+        "oldest_committed_at": "2019-01-20T14:48:44Z",
+        "newest_committed_at": "2024-05-20T09:01:02Z"
+      },
+      {
+        "status": "missing",
+        "count": 34,
+        "oldest_sha": "c31b57e16530b7a4fe66f082ed11ec9399431933",
+        "newest_sha": "bf4d93f997cb20aa0a6be113ede834a77bc59549",
+        "oldest_committed_at": "2024-06-02T09:41:01Z",
+        "newest_committed_at": "2026-04-10T13:46:54Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/codeberg-ci",
+        "tip": "bf4d93f997cb20aa0a6be113ede834a77bc59549",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 39,
+          "present": 136
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "bf4d93f997cb20aa0a6be113ede834a77bc59549",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 39,
+          "present": 136
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:28Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/ef9dd5a4d0d9824f4f32bfcc03e8b4d3220b0596b2a221af7c0ebf762589f4c1.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:02Z"
+  },
+  {
+    "url": "https://github.com/blaze-builder/blaze-builder",
+    "observed_at": "2026-09-23T21:19:02Z",
+    "baseline_observed_at": "2026-09-23T20:15:56Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "386c423e97e6faabd6722a4aa400c7fc23218610",
+    "current_head": "386c423e97e6faabd6722a4aa400c7fc23218610",
+    "head_committed_at": "2026-01-12T06:09:26Z",
+    "first_parent_count": 280,
+    "first_parent_present": 253,
+    "missing_tip_commits": 27,
+    "nearest_present_revision": "swh:1:rev:2b147634303a9d2f1b70fb5c5b9a8c4941fa1b4e",
+    "nearest_present_committed_at": "2021-10-18T21:38:30Z",
+    "commit_date_gap_days": 1546.4,
+    "present_in_head_ancestry": 324,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 253,
+        "oldest_sha": "e89e84f328cfb67c4ea0ffb77e2943d36bbfda0c",
+        "newest_sha": "2b147634303a9d2f1b70fb5c5b9a8c4941fa1b4e",
+        "oldest_committed_at": "2010-08-04T10:44:29Z",
+        "newest_committed_at": "2021-10-18T21:38:30Z"
+      },
+      {
+        "status": "missing",
+        "count": 27,
+        "oldest_sha": "6a53920a243558518bbdaccabb9e538fcff84473",
+        "newest_sha": "386c423e97e6faabd6722a4aa400c7fc23218610",
+        "oldest_committed_at": "2021-12-26T15:51:05Z",
+        "newest_committed_at": "2026-01-12T06:09:26Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/ghc-9.14.1",
+        "tip": "386c423e97e6faabd6722a4aa400c7fc23218610",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 27,
+          "present": 324
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "386c423e97e6faabd6722a4aa400c7fc23218610",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 27,
+          "present": 324
+        }
+      },
+      {
+        "name": "refs/heads/text-2.0",
+        "tip": "6a53920a243558518bbdaccabb9e538fcff84473",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 324
+        }
+      },
+      {
+        "name": "refs/heads/text-2.1",
+        "tip": "ac9c9ba83acb3652b5c8a6db905a10b463448e69",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 7,
+          "present": 324
+        }
+      },
+      {
+        "name": "refs/heads/v0.4.3",
+        "tip": "550eec0abf7bf55a23e21eb674ff99e67234a96b",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 17,
+          "present": 324
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:34Z",
+    "known_checked_at_max": "2026-09-23T21:11:28Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/d4036bc8fe6347884784181528affd9c49577f47a79f8cda5a27069197fc738d.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:04Z"
+  },
+  {
+    "url": "https://github.com/chalk/supports-hyperlinks",
+    "observed_at": "2026-09-23T21:19:04Z",
+    "baseline_observed_at": "2026-09-23T20:15:57Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "0936597637482cb188f2ad5d946eb12904a76eb7",
+    "current_head": "0936597637482cb188f2ad5d946eb12904a76eb7",
+    "head_committed_at": "2026-09-18T19:16:21Z",
+    "first_parent_count": 47,
+    "first_parent_present": 30,
+    "missing_tip_commits": 17,
+    "nearest_present_revision": "swh:1:rev:72d47d3e48c7db34926e5e0fa3ad5cda303c34d8",
+    "nearest_present_committed_at": "2025-02-02T06:53:04Z",
+    "commit_date_gap_days": 593.5,
+    "present_in_head_ancestry": 36,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 30,
+        "oldest_sha": "918bc6fb608f788c9e971c6681de3e3ff2daac15",
+        "newest_sha": "72d47d3e48c7db34926e5e0fa3ad5cda303c34d8",
+        "oldest_committed_at": "2017-11-28T00:03:44Z",
+        "newest_committed_at": "2025-02-02T06:53:04Z"
+      },
+      {
+        "status": "missing",
+        "count": 17,
+        "oldest_sha": "5225fd881480d10bf8f2bb94743fc65aa82e3db0",
+        "newest_sha": "0936597637482cb188f2ad5d946eb12904a76eb7",
+        "oldest_committed_at": "2025-04-01T14:14:24Z",
+        "newest_committed_at": "2026-09-18T19:16:21Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/main",
+        "tip": "0936597637482cb188f2ad5d946eb12904a76eb7",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 17,
+          "present": 36
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:33Z",
+    "known_checked_at_max": "2026-09-23T21:11:28Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/c9a175b3ba8b29898a0e8dfafee19e5f93d1b6b1b0e4acf5a3ab15e1558bb433.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:04Z"
+  },
+  {
+    "url": "https://github.com/christhekeele/erlex",
+    "observed_at": "2026-09-23T21:19:04Z",
+    "baseline_observed_at": "2026-09-23T20:15:58Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "662741b60611d32c68413624a8365fb9b11cc6cf",
+    "current_head": "662741b60611d32c68413624a8365fb9b11cc6cf",
+    "head_committed_at": "2026-05-31T19:09:15Z",
+    "first_parent_count": 105,
+    "first_parent_present": 69,
+    "missing_tip_commits": 36,
+    "nearest_present_revision": "swh:1:rev:3e212032e4654bd1ff9eaba1383441d96477005b",
+    "nearest_present_committed_at": "2024-06-21T18:36:09Z",
+    "commit_date_gap_days": 709.0,
+    "present_in_head_ancestry": 117,
+    "present_outside_head_ancestry": 2,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 69,
+        "oldest_sha": "3d2de6d0a4c0a4f0c2fa95d1dfa08598c5208ccc",
+        "newest_sha": "3e212032e4654bd1ff9eaba1383441d96477005b",
+        "oldest_committed_at": "2018-07-22T02:48:17Z",
+        "newest_committed_at": "2024-06-21T18:36:09Z"
+      },
+      {
+        "status": "missing",
+        "count": 36,
+        "oldest_sha": "3a3d886addc3efb983f025f3a4497e4bf196bb4e",
+        "newest_sha": "662741b60611d32c68413624a8365fb9b11cc6cf",
+        "oldest_committed_at": "2024-12-07T19:53:22Z",
+        "newest_committed_at": "2026-05-31T19:09:15Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/latest",
+        "tip": "662741b60611d32c68413624a8365fb9b11cc6cf",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 39,
+          "present": 117
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "0548765838a08583c83d72d208fde112104a3d2b",
+        "tip_status": "present",
+        "coverage": {
+          "present": 81
+        }
+      },
+      {
+        "name": "refs/heads/release",
+        "tip": "63f529a894e92b45210deacaa12a83a75bdfb4cb",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 38,
+          "present": 117
+        }
+      },
+      {
+        "name": "refs/heads/semver",
+        "tip": "eb96d6fa9f6f8e4818b091d1078a44bc2fe0430b",
+        "tip_status": "present",
+        "coverage": {
+          "present": 81
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:28Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/b5a981aa3e1434995e34ca010975e5a478567064f63ffdeb75f7a5df87aaa3e6.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:05Z"
+  },
+  {
+    "url": "https://github.com/dbunit/dbunit-extension",
+    "observed_at": "2026-09-23T21:19:05Z",
+    "baseline_observed_at": "2026-09-23T21:06:52Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "fde9497a7538983f83aae3af15571a496207c140",
+    "current_head": "fde9497a7538983f83aae3af15571a496207c140",
+    "head_committed_at": "2026-09-21T17:47:37Z",
+    "first_parent_count": 1966,
+    "first_parent_present": 1597,
+    "missing_tip_commits": 369,
+    "nearest_present_revision": "swh:1:rev:b1bb51b68873295f20316caad608885f072f1312",
+    "nearest_present_committed_at": "2026-05-15T23:47:40Z",
+    "commit_date_gap_days": 128.7,
+    "present_in_head_ancestry": 1604,
+    "present_outside_head_ancestry": 271,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 1597,
+        "oldest_sha": "41a361d5e54e9897c4287f24a20e8f59b3426659",
+        "newest_sha": "b1bb51b68873295f20316caad608885f072f1312",
+        "oldest_committed_at": "2002-03-04T15:08:32Z",
+        "newest_committed_at": "2026-05-15T23:47:40Z"
+      },
+      {
+        "status": "missing",
+        "count": 369,
+        "oldest_sha": "e7e924ae997d5f2e379d0c6a7fda432d4e2ba196",
+        "newest_sha": "fde9497a7538983f83aae3af15571a496207c140",
+        "oldest_committed_at": "2026-05-19T23:42:23Z",
+        "newest_committed_at": "2026-09-21T17:47:37Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/411-db2",
+        "tip": "222090958d6563b8fe4963a368a8f4f9491463eb",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1391
+        }
+      },
+      {
+        "name": "refs/heads/754-spring-test-execution-listener",
+        "tip": "f21bdbb28eb053c336019e8482b6ca6888dbe110",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 369,
+          "present": 1604
+        }
+      },
+      {
+        "name": "refs/heads/HEAD",
+        "tip": "de86771731313c05326d81dea42a8a759b879e55",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1548
+        }
+      },
+      {
+        "name": "refs/heads/addTables",
+        "tip": "38909522858c9dc179f0241ec9f884b35d5e8e71",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1394
+        }
+      },
+      {
+        "name": "refs/heads/aj/github-setup-build-fix",
+        "tip": "3a5427a9cba843e2bd2904d64e94db7b6388730f",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 7,
+          "present": 1550
+        }
+      },
+      {
+        "name": "refs/heads/ant-updates",
+        "tip": "ee12f4df334d13d6c177f07a2fa442351dd12d0d",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1527
+        }
+      },
+      {
+        "name": "refs/heads/branch-1-5",
+        "tip": "b172863d5e7bc604fa301b84403910bf502ac89c",
+        "tip_status": "present",
+        "coverage": {
+          "present": 199
+        }
+      },
+      {
+        "name": "refs/heads/branch-exml2sax",
+        "tip": "ae1d8e4fd982c7d3a6257fdb08efcbc097211e82",
+        "tip_status": "present",
+        "coverage": {
+          "present": 253
+        }
+      },
+      {
+        "name": "refs/heads/branch-iterator",
+        "tip": "aa0bbee76a909eef258d0b64521823123a699404",
+        "tip_status": "present",
+        "coverage": {
+          "present": 230
+        }
+      },
+      {
+        "name": "refs/heads/common-parent",
+        "tip": "15effb4788cddef7a601f309aa6f1e34ec97fd65",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1293
+        }
+      },
+      {
+        "name": "refs/heads/dataset-to-pojo-coverter",
+        "tip": "3f7fc96627ca33861f2e0100c32934a50abab89e",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1482
+        }
+      },
+      {
+        "name": "refs/heads/dbunit-3.x",
+        "tip": "56b4baa59aed87f0c4f7eb4cc576e182d8407eb2",
+        "tip_status": "present",
+        "coverage": {
+          "present": 2
+        }
+      },
+      {
+        "name": "refs/heads/docs/performance-analysis",
+        "tip": "1d49d3f27916b62be473566133dcbcd7969fbb9c",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 370,
+          "present": 1604
+        }
+      },
+      {
+        "name": "refs/heads/jj-extract-testbinding",
+        "tip": "837a84db7d9f9e08de036b96d386b80075a7d86e",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 363,
+          "present": 1604
+        }
+      },
+      {
+        "name": "refs/heads/jj-migrate-issues-to-gh",
+        "tip": "b2b66b0619cdb50c828fbe71412c107e02594e72",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1605
+        }
+      },
+      {
+        "name": "refs/heads/jj-publish-moderne",
+        "tip": "197063cfdf7984c6988d2418ff5be61d5a35dd49",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 1569
+        }
+      },
+      {
+        "name": "refs/heads/jkearns-perf-impr",
+        "tip": "7f39e967a25b11673c16541690a4d258b28d7824",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1479
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "fde9497a7538983f83aae3af15571a496207c140",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 369,
+          "present": 1604
+        }
+      },
+      {
+        "name": "refs/heads/releases/3.5.x",
+        "tip": "7383091be48abc15e88840a7c03bc36f7751c28d",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 320,
+          "present": 1604
+        }
+      },
+      {
+        "name": "refs/heads/split-repos-mssql",
+        "tip": "5f08ed6fff094bb509b53c9cf578fa309f262dfa",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1512
+        }
+      },
+      {
+        "name": "refs/heads/too-many-cursors",
+        "tip": "1ec213deb0e713cbe798559e5f3e90914f635415",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1483
+        }
+      },
+      {
+        "name": "refs/heads/vendor",
+        "tip": "0c4e42b5a5da3b360a7766772cb5b9538ac43ec3",
+        "tip_status": "present",
+        "coverage": {
+          "present": 2
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:31Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/23fa9553f0fce0fecbc3ccd606b8c94b4c1745cce3498f9fce01ff61c365470b.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:09Z"
+  },
+  {
+    "url": "https://github.com/elixir-makeup/makeup",
+    "observed_at": "2026-09-23T21:19:10Z",
+    "baseline_observed_at": "2026-09-23T20:16:04Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "5220946a5e918155ef38c2437b8bc8d392c06b9a",
+    "current_head": "5220946a5e918155ef38c2437b8bc8d392c06b9a",
+    "head_committed_at": "2026-07-27T21:42:49Z",
+    "first_parent_count": 117,
+    "first_parent_present": 101,
+    "missing_tip_commits": 16,
+    "nearest_present_revision": "swh:1:rev:0a0dd39f92511711dde7b2a7f8d5da73ce8d60a1",
+    "nearest_present_committed_at": "2024-05-11T09:43:10Z",
+    "commit_date_gap_days": 807.5,
+    "present_in_head_ancestry": 113,
+    "present_outside_head_ancestry": 31,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 101,
+        "oldest_sha": "70fbf916657509b3c55646aebf7846013ae9ef33",
+        "newest_sha": "0a0dd39f92511711dde7b2a7f8d5da73ce8d60a1",
+        "oldest_committed_at": "2017-08-01T11:41:19Z",
+        "newest_committed_at": "2024-05-11T09:43:10Z"
+      },
+      {
+        "status": "missing",
+        "count": 16,
+        "oldest_sha": "d57208a95ace8a3771216a4a2b611af83ad14525",
+        "newest_sha": "5220946a5e918155ef38c2437b8bc8d392c06b9a",
+        "oldest_committed_at": "2024-09-09T08:02:36Z",
+        "newest_committed_at": "2026-07-27T21:42:49Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/master",
+        "tip": "5220946a5e918155ef38c2437b8bc8d392c06b9a",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 16,
+          "present": 113
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:31Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/25a79505e81fc0bab1b15b4e341fcc42f24208a7a952e5764928ecb3d7d8db1d.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:10Z"
+  },
+  {
+    "url": "https://github.com/futureverse/future.apply",
+    "observed_at": "2026-09-23T21:19:10Z",
+    "baseline_observed_at": "2026-09-23T20:16:05Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "452c21fc62a338e3f30dc2111554f5ec3e6a020c",
+    "current_head": "452c21fc62a338e3f30dc2111554f5ec3e6a020c",
+    "head_committed_at": "2026-09-08T17:03:16Z",
+    "first_parent_count": 505,
+    "first_parent_present": 405,
+    "missing_tip_commits": 100,
+    "nearest_present_revision": "swh:1:rev:f1b753bd8cdab4ccb7e0fefb48332f244bd97ce3",
+    "nearest_present_committed_at": "2024-03-28T16:07:27Z",
+    "commit_date_gap_days": 894.0,
+    "present_in_head_ancestry": 492,
+    "present_outside_head_ancestry": 65,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 405,
+        "oldest_sha": "26cb15c1b54043c5f64e75bca8627031a1bee91a",
+        "newest_sha": "f1b753bd8cdab4ccb7e0fefb48332f244bd97ce3",
+        "oldest_committed_at": "2017-08-31T01:24:14Z",
+        "newest_committed_at": "2024-03-28T16:07:27Z"
+      },
+      {
+        "status": "missing",
+        "count": 100,
+        "oldest_sha": "60e2a454718b6318ea2e6484360c4e302223e5a0",
+        "newest_sha": "452c21fc62a338e3f30dc2111554f5ec3e6a020c",
+        "oldest_committed_at": "2024-10-27T00:10:27Z",
+        "newest_committed_at": "2026-09-08T17:03:16Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/develop",
+        "tip": "452c21fc62a338e3f30dc2111554f5ec3e6a020c",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 119,
+          "present": 492
+        }
+      },
+      {
+        "name": "refs/heads/feature/future.mapreduce",
+        "tip": "001e68c35d99ce0e5c4486a64d344896e693a600",
+        "tip_status": "present",
+        "coverage": {
+          "present": 450
+        }
+      },
+      {
+        "name": "refs/heads/feature/future_pvec",
+        "tip": "6f3bbc235c77fb863ce29a56305d388af37ea994",
+        "tip_status": "present",
+        "coverage": {
+          "present": 393
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "9719ee3aa12ba1089ac769ae5da04a1b4f359e80",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 37,
+          "present": 52
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "869832063f44277e8504dabc268c1c99aaad40f1",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 111,
+          "present": 492
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:34Z",
+    "known_checked_at_max": "2026-09-23T21:11:32Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/a57a1edff74a93e2d0a6b7ed3d3d14e6b36b49065d5cbf84875a4c6e7bb46e05.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:12Z"
+  },
+  {
+    "url": "https://github.com/futureverse/globals",
+    "observed_at": "2026-09-23T21:19:12Z",
+    "baseline_observed_at": "2026-09-23T20:16:07Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "ef4ff462a2b9f5c2087edda2c243a4a186313c69",
+    "current_head": "ef4ff462a2b9f5c2087edda2c243a4a186313c69",
+    "head_committed_at": "2026-09-23T04:25:40Z",
+    "first_parent_count": 131,
+    "first_parent_present": 118,
+    "missing_tip_commits": 13,
+    "nearest_present_revision": "swh:1:rev:2323bc8384cf2d74bb74db0af0c63fed0ce001e7",
+    "nearest_present_committed_at": "2026-02-01T00:17:17Z",
+    "commit_date_gap_days": 234.2,
+    "present_in_head_ancestry": 727,
+    "present_outside_head_ancestry": 63,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 118,
+        "oldest_sha": "2662b8f45b084335f8d3773ec819d6ba80c4a317",
+        "newest_sha": "2323bc8384cf2d74bb74db0af0c63fed0ce001e7",
+        "oldest_committed_at": "2015-05-19T19:53:16Z",
+        "newest_committed_at": "2026-02-01T00:17:17Z"
+      },
+      {
+        "status": "missing",
+        "count": 13,
+        "oldest_sha": "98544fe3f3968542184102ed39971bd36a1ada2e",
+        "newest_sha": "ef4ff462a2b9f5c2087edda2c243a4a186313c69",
+        "oldest_committed_at": "2026-02-01T00:21:20Z",
+        "newest_committed_at": "2026-09-23T04:25:40Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/develop",
+        "tip": "ef4ff462a2b9f5c2087edda2c243a4a186313c69",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 33,
+          "present": 727
+        }
+      },
+      {
+        "name": "refs/heads/feature/drop-non-exported-too",
+        "tip": "37d5d18269ac64bee3f202f5c0cbba32aa281d9b",
+        "tip_status": "present",
+        "coverage": {
+          "present": 462
+        }
+      },
+      {
+        "name": "refs/heads/feature/if-ambiguity",
+        "tip": "49ec7c90fc70a78e94fb23f0b08b18690b93a729",
+        "tip_status": "present",
+        "coverage": {
+          "present": 299
+        }
+      },
+      {
+        "name": "refs/heads/feature/local-s3",
+        "tip": "c0b08b9484bc7cfa42b03e317cdc4320318c21c9",
+        "tip_status": "present",
+        "coverage": {
+          "present": 118
+        }
+      },
+      {
+        "name": "refs/heads/feature/s3local",
+        "tip": "76b2e7d26d573fae5c127c8538b93e19da05d862",
+        "tip_status": "present",
+        "coverage": {
+          "present": 362
+        }
+      },
+      {
+        "name": "refs/heads/feature/s3pkgs",
+        "tip": "30485f324d3f10b34a25625589422e97dac6906e",
+        "tip_status": "present",
+        "coverage": {
+          "present": 361
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "35a0aaefce0e8b1e91d3dc15365c7a7b210e5cfc",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 101,
+          "present": 48
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "e4a958368582fc68efa0916767d6cb9cb4d882d6",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 26,
+          "present": 727
+        }
+      },
+      {
+        "name": "refs/heads/next-release",
+        "tip": "d2f818e6a8c8003581ddaf2bb934cdd5b79ee287",
+        "tip_status": "present",
+        "coverage": {
+          "present": 695
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:33Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/0961bfff42690b68a7aff46a048179395b82718745eab55ada4b3e6d55538442.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:14Z"
+  },
+  {
+    "url": "https://github.com/futureverse/listenv",
+    "observed_at": "2026-09-23T21:19:14Z",
+    "baseline_observed_at": "2026-09-23T20:16:09Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "09310e4aa3dd31d982353bceb691e6f333860591",
+    "current_head": "09310e4aa3dd31d982353bceb691e6f333860591",
+    "head_committed_at": "2026-06-22T07:41:05Z",
+    "first_parent_count": 157,
+    "first_parent_present": 119,
+    "missing_tip_commits": 38,
+    "nearest_present_revision": "swh:1:rev:3903bb380e24e283dd7e07bb4b1ab240a1d3299c",
+    "nearest_present_committed_at": "2024-10-27T02:28:05Z",
+    "commit_date_gap_days": 603.2,
+    "present_in_head_ancestry": 362,
+    "present_outside_head_ancestry": 47,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 119,
+        "oldest_sha": "35f52a1c53dcae5802d3cb89e4c07177f27845f9",
+        "newest_sha": "3903bb380e24e283dd7e07bb4b1ab240a1d3299c",
+        "oldest_committed_at": "2015-05-19T17:34:05Z",
+        "newest_committed_at": "2024-10-27T02:28:05Z"
+      },
+      {
+        "status": "missing",
+        "count": 38,
+        "oldest_sha": "f6830d65543b538fd21fdccca0925fa139699e95",
+        "newest_sha": "09310e4aa3dd31d982353bceb691e6f333860591",
+        "oldest_committed_at": "2024-12-27T21:46:27Z",
+        "newest_committed_at": "2026-06-22T07:41:05Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/develop",
+        "tip": "09310e4aa3dd31d982353bceb691e6f333860591",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 45,
+          "present": 362
+        }
+      },
+      {
+        "name": "refs/heads/feature/c",
+        "tip": "ab9faeaf04864f29243637b1ab19cf9af8e0495c",
+        "tip_status": "present",
+        "coverage": {
+          "present": 300
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "38092e1eda85bcb83cc0283dc7135febf183bbc7",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 25,
+          "present": 38
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "6a7e673e7e270bf8779b63f23a9736ffc96d55c4",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 40,
+          "present": 362
+        }
+      },
+      {
+        "name": "refs/heads/revdep/tipcc",
+        "tip": "ba7d90f5093d3ce653fc8121397eca1ce2c975de",
+        "tip_status": "present",
+        "coverage": {
+          "present": 212
+        }
+      },
+      {
+        "name": "refs/heads/revdep/wynton",
+        "tip": "c530db7fcaf7416933feb03f4f75896dde99e9eb",
+        "tip_status": "present",
+        "coverage": {
+          "present": 234
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:33Z",
+    "known_checked_at_max": "2026-09-23T21:11:33Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/25f572b9a14919638bbd735c8a35acb8810e44d83a1e046726c5868096bbef06.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:15Z"
+  },
+  {
+    "url": "https://github.com/futureverse/parallelly",
+    "observed_at": "2026-09-23T21:19:15Z",
+    "baseline_observed_at": "2026-09-23T20:16:11Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "c21b3b601f8fa1f437a65e41a67e3494464fa625",
+    "current_head": "c21b3b601f8fa1f437a65e41a67e3494464fa625",
+    "head_committed_at": "2026-09-22T16:29:33Z",
+    "first_parent_count": 1019,
+    "first_parent_present": 635,
+    "missing_tip_commits": 384,
+    "nearest_present_revision": "swh:1:rev:ab471375efcb2e53d73f09fc3ebe91c6644fa611",
+    "nearest_present_committed_at": "2024-11-07T20:13:20Z",
+    "commit_date_gap_days": 683.8,
+    "present_in_head_ancestry": 747,
+    "present_outside_head_ancestry": 207,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 635,
+        "oldest_sha": "98a1d40b7989b8c2ac4de5065efe3fb58e100017",
+        "newest_sha": "ab471375efcb2e53d73f09fc3ebe91c6644fa611",
+        "oldest_committed_at": "2020-10-04T00:43:04Z",
+        "newest_committed_at": "2024-11-07T20:13:20Z"
+      },
+      {
+        "status": "missing",
+        "count": 384,
+        "oldest_sha": "761adec7a1e30a660c0c8935ffe3a0136a00871a",
+        "newest_sha": "c21b3b601f8fa1f437a65e41a67e3494464fa625",
+        "oldest_committed_at": "2024-11-22T04:08:03Z",
+        "newest_committed_at": "2026-09-22T16:29:33Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/develop",
+        "tip": "c21b3b601f8fa1f437a65e41a67e3494464fa625",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 434,
+          "present": 747
+        }
+      },
+      {
+        "name": "refs/heads/feature/sendData_recvData_refhook",
+        "tip": "6b2ea49ea6db321f05d5006c373c5f388c5f7c2c",
+        "tip_status": "present",
+        "coverage": {
+          "present": 152
+        }
+      },
+      {
+        "name": "refs/heads/feature/uuid",
+        "tip": "b0cdbb082d421a31f4917dffebadad3241fe74aa",
+        "tip_status": "present",
+        "coverage": {
+          "present": 43
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "32478e067f9a26367f46da817b67c7181fec3566",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 159,
+          "present": 203
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "74c1e27b06a08c1d32a7b479f774979c6937bd4c",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 413,
+          "present": 747
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:34Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/560d79058bd69266f5c61d36b723625a7d990c2363de6f0b7fd27c3f93917274.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:18Z"
+  },
+  {
+    "url": "https://github.com/futureverse/progressr",
+    "observed_at": "2026-09-23T21:19:18Z",
+    "baseline_observed_at": "2026-09-23T20:16:15Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "36cd0ff3af40457a7bb2356b34c6fcbc90f0b544",
+    "current_head": "36cd0ff3af40457a7bb2356b34c6fcbc90f0b544",
+    "head_committed_at": "2026-07-04T14:54:33Z",
+    "first_parent_count": 799,
+    "first_parent_present": 734,
+    "missing_tip_commits": 65,
+    "nearest_present_revision": "swh:1:rev:b8b65103cd459db4b275450969e9bb021aae41b4",
+    "nearest_present_committed_at": "2026-01-19T18:58:29Z",
+    "commit_date_gap_days": 165.8,
+    "present_in_head_ancestry": 906,
+    "present_outside_head_ancestry": 117,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 734,
+        "oldest_sha": "1333ae661878132b9e8cfab9f285c730034353b4",
+        "newest_sha": "b8b65103cd459db4b275450969e9bb021aae41b4",
+        "oldest_committed_at": "2019-04-12T03:12:33Z",
+        "newest_committed_at": "2026-01-19T18:58:29Z"
+      },
+      {
+        "status": "missing",
+        "count": 65,
+        "oldest_sha": "dcf5cc0da1ac8e1c9744224bd5a1a6cfa316a248",
+        "newest_sha": "36cd0ff3af40457a7bb2356b34c6fcbc90f0b544",
+        "oldest_committed_at": "2026-01-28T05:16:38Z",
+        "newest_committed_at": "2026-07-04T14:54:33Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/develop",
+        "tip": "36cd0ff3af40457a7bb2356b34c6fcbc90f0b544",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 73,
+          "present": 906
+        }
+      },
+      {
+        "name": "refs/heads/feature/add_progressr",
+        "tip": "1262b1e87094af9fb1f066aba0b95bc7f4842bbe",
+        "tip_status": "present",
+        "coverage": {
+          "present": 203
+        }
+      },
+      {
+        "name": "refs/heads/feature/cli",
+        "tip": "9662d3636b637827ad3774117b98bb28d02a5ca4",
+        "tip_status": "present",
+        "coverage": {
+          "present": 617
+        }
+      },
+      {
+        "name": "refs/heads/feature/inject_progress",
+        "tip": "141e9b55fc30aa03991fad3028b410bfe24552f4",
+        "tip_status": "present",
+        "coverage": {
+          "present": 88
+        }
+      },
+      {
+        "name": "refs/heads/feature/jgauge",
+        "tip": "728a17c72e48a208b97c441242da270fe821db3f",
+        "tip_status": "present",
+        "coverage": {
+          "present": 800
+        }
+      },
+      {
+        "name": "refs/heads/feature/step_sizes",
+        "tip": "e672c18a212cbc5f4f463b124315b88440f80af6",
+        "tip_status": "present",
+        "coverage": {
+          "present": 231
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "cbbe68a011831c363b4031268fbf09efc46c83c5",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 92,
+          "present": 101
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "746df6d4c0ce67a44c067443ee596f672d1ba7fc",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 71,
+          "present": 906
+        }
+      },
+      {
+        "name": "refs/heads/remove-progress",
+        "tip": "dc5e7656740bb5b0745ca53a1ede68a0f62962e1",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 892
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:34Z",
+    "known_checked_at_max": "2026-09-23T21:11:35Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/82ebb15ed68d1a5e34179f175edd7851d91b98705bcd3a20b463cb9076d9822d.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:21Z"
+  },
+  {
+    "url": "https://github.com/haskell-party/haskell-src-meta",
+    "observed_at": "2026-09-23T21:19:21Z",
+    "baseline_observed_at": "2026-09-23T20:16:18Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "706dc18739886b617a83fff673e67ace06b2dcf8",
+    "current_head": "706dc18739886b617a83fff673e67ace06b2dcf8",
+    "head_committed_at": "2026-07-07T21:24:21Z",
+    "first_parent_count": 246,
+    "first_parent_present": 236,
+    "missing_tip_commits": 10,
+    "nearest_present_revision": "swh:1:rev:0b924b8bc4e0cf1aa254cd424d4107aa6d1bf4d7",
+    "nearest_present_committed_at": "2024-02-09T14:12:44Z",
+    "commit_date_gap_days": 879.3,
+    "present_in_head_ancestry": 311,
+    "present_outside_head_ancestry": 17,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 236,
+        "oldest_sha": "28699610aba984409671ad6b00695e444fe13d8b",
+        "newest_sha": "0b924b8bc4e0cf1aa254cd424d4107aa6d1bf4d7",
+        "oldest_committed_at": "2010-07-27T01:13:39Z",
+        "newest_committed_at": "2024-02-09T14:12:44Z"
+      },
+      {
+        "status": "missing",
+        "count": 10,
+        "oldest_sha": "e622a88e8d3f5ae65d00826937c83abfefafa708",
+        "newest_sha": "706dc18739886b617a83fff673e67ace06b2dcf8",
+        "oldest_committed_at": "2024-05-16T14:46:13Z",
+        "newest_committed_at": "2026-07-07T21:24:21Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/dan/haskell-src-exts-1-24",
+        "tip": "5f36f4e7a3a62cce816c6c341ce844168035a446",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 8,
+          "present": 311
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "706dc18739886b617a83fff673e67ace06b2dcf8",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 10,
+          "present": 311
+        }
+      },
+      {
+        "name": "refs/heads/nix-experimental",
+        "tip": "65e17c12b33220419c9878197507312e342b51e2",
+        "tip_status": "present",
+        "coverage": {
+          "present": 237
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:35Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/15b0cab765c9475c927156ba67351b83904b93254a04641569fb407e53f3e665.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:22Z"
+  },
+  {
+    "url": "https://github.com/haxml/haxml",
+    "observed_at": "2026-09-23T21:19:22Z",
+    "baseline_observed_at": "2026-09-23T20:16:21Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "81f2cf350ee3b95b7efc9623caaaca404af2938a",
+    "current_head": "81f2cf350ee3b95b7efc9623caaaca404af2938a",
+    "head_committed_at": "2026-01-06T03:40:05Z",
+    "first_parent_count": 718,
+    "first_parent_present": 698,
+    "missing_tip_commits": 20,
+    "nearest_present_revision": "swh:1:rev:d7d32106fa0ee8535fb1dfa498bc8d66f65d540a",
+    "nearest_present_committed_at": "2023-01-25T08:22:57Z",
+    "commit_date_gap_days": 1076.8,
+    "present_in_head_ancestry": 714,
+    "present_outside_head_ancestry": 27,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 698,
+        "oldest_sha": "8b7d58c287c1abd7b5b336d3885431cb46e5ff97",
+        "newest_sha": "d7d32106fa0ee8535fb1dfa498bc8d66f65d540a",
+        "oldest_committed_at": "2005-05-12T16:25:01Z",
+        "newest_committed_at": "2023-01-25T08:22:57Z"
+      },
+      {
+        "status": "missing",
+        "count": 20,
+        "oldest_sha": "cb21e22353378d13a53f8e8ff1fc208824149ea9",
+        "newest_sha": "81f2cf350ee3b95b7efc9623caaaca404af2938a",
+        "oldest_committed_at": "2023-07-13T09:53:23Z",
+        "newest_committed_at": "2026-01-06T03:40:05Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/main",
+        "tip": "81f2cf350ee3b95b7efc9623caaaca404af2938a",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 26,
+          "present": 714
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:36Z",
+    "known_checked_at_max": "2026-09-23T21:11:36Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/c60bd6af7c4227521d8e0da0d6ae3e7b6929658e13583b19759f9dccebdc12a8.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:24Z"
+  },
+  {
+    "url": "https://github.com/jcranch/cond",
+    "observed_at": "2026-09-23T21:19:24Z",
+    "baseline_observed_at": "2026-09-23T20:16:26Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "aad5e649dbc31e5a563659a2ecd7edf9fcc8a5ec",
+    "current_head": "aad5e649dbc31e5a563659a2ecd7edf9fcc8a5ec",
+    "head_committed_at": "2024-12-30T16:15:45Z",
+    "first_parent_count": 58,
+    "first_parent_present": 44,
+    "missing_tip_commits": 14,
+    "nearest_present_revision": "swh:1:rev:cd43e0f75c95ac7a0cfe8f84d3b381abc7ec9f1d",
+    "nearest_present_committed_at": "2023-09-19T18:49:10Z",
+    "commit_date_gap_days": 467.9,
+    "present_in_head_ancestry": 58,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 44,
+        "oldest_sha": "263b4de57e61a8614e3607a4e35bf71df235328b",
+        "newest_sha": "cd43e0f75c95ac7a0cfe8f84d3b381abc7ec9f1d",
+        "oldest_committed_at": "2012-05-05T01:22:34Z",
+        "newest_committed_at": "2023-09-19T18:49:10Z"
+      },
+      {
+        "status": "missing",
+        "count": 14,
+        "oldest_sha": "fcbad051c7e02c591017fe7875d2992c31390e13",
+        "newest_sha": "aad5e649dbc31e5a563659a2ecd7edf9fcc8a5ec",
+        "oldest_committed_at": "2023-11-19T10:04:08Z",
+        "newest_committed_at": "2024-12-30T16:15:45Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/master",
+        "tip": "aad5e649dbc31e5a563659a2ecd7edf9fcc8a5ec",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 14,
+          "present": 58
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:37Z",
+    "known_checked_at_max": "2026-09-23T21:11:36Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/f92a88c1d066d7983b2c17a059a687b8d1b08c2eea01f57c8a5ed030cc6a82e8.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:25Z"
+  },
+  {
+    "url": "https://github.com/juliagraphics/colorbrewer.jl",
+    "observed_at": "2026-09-23T21:19:25Z",
+    "baseline_observed_at": "2026-09-23T20:16:27Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "54b0a8be1c78fdc20462f75d00217300d73b4b71",
+    "current_head": "54b0a8be1c78fdc20462f75d00217300d73b4b71",
+    "head_committed_at": "2025-10-13T21:41:20Z",
+    "first_parent_count": 34,
+    "first_parent_present": 28,
+    "missing_tip_commits": 6,
+    "nearest_present_revision": "swh:1:rev:6661e0cbfd187c1220f9cb270bfdd27c118374eb",
+    "nearest_present_committed_at": "2018-08-24T23:12:57Z",
+    "commit_date_gap_days": 2606.9,
+    "present_in_head_ancestry": 38,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 28,
+        "oldest_sha": "ff2c2ba819bd57aded5d004075e5896c47b7ed14",
+        "newest_sha": "6661e0cbfd187c1220f9cb270bfdd27c118374eb",
+        "oldest_committed_at": "2014-11-27T13:22:21Z",
+        "newest_committed_at": "2018-08-24T23:12:57Z"
+      },
+      {
+        "status": "missing",
+        "count": 6,
+        "oldest_sha": "79e64ce24019310087463c6f41308936d6034616",
+        "newest_sha": "54b0a8be1c78fdc20462f75d00217300d73b4b71",
+        "oldest_committed_at": "2024-11-16T15:18:00Z",
+        "newest_committed_at": "2025-10-13T21:41:20Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/main",
+        "tip": "54b0a8be1c78fdc20462f75d00217300d73b4b71",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 10,
+          "present": 38
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:36Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/03225e7207db01e27d10a5ebbdb1c6702b2fd9ec9c1c63e1ee005371986a80ff.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:26Z"
+  },
+  {
+    "url": "https://github.com/keruspe/async-global-executor",
+    "observed_at": "2026-09-23T21:19:26Z",
+    "baseline_observed_at": "2026-09-23T20:16:28Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "78e8ac81c76511f133774a34182ae74ba8553574",
+    "current_head": "78e8ac81c76511f133774a34182ae74ba8553574",
+    "head_committed_at": "2025-08-13T18:35:10Z",
+    "first_parent_count": 127,
+    "first_parent_present": 107,
+    "missing_tip_commits": 20,
+    "nearest_present_revision": "swh:1:rev:34f46e07e64f9422292385bfbdad55cbdca9a436",
+    "nearest_present_committed_at": "2023-07-12T16:35:59Z",
+    "commit_date_gap_days": 763.1,
+    "present_in_head_ancestry": 113,
+    "present_outside_head_ancestry": 3,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 107,
+        "oldest_sha": "3aa1ccba3d26669abb21967bc42a3cfb95c814c2",
+        "newest_sha": "34f46e07e64f9422292385bfbdad55cbdca9a436",
+        "oldest_committed_at": "2020-08-27T14:56:36Z",
+        "newest_committed_at": "2023-07-12T16:35:59Z"
+      },
+      {
+        "status": "missing",
+        "count": 20,
+        "oldest_sha": "c49cd357daac2b5ad3a05f6f6045531614f80d3b",
+        "newest_sha": "78e8ac81c76511f133774a34182ae74ba8553574",
+        "oldest_committed_at": "2023-11-23T10:22:08Z",
+        "newest_committed_at": "2025-08-13T18:35:10Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/executor-trait",
+        "tip": "a5ac62418aa47edc53884c7a92d592d54dcbebbf",
+        "tip_status": "present",
+        "coverage": {
+          "present": 85
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "78e8ac81c76511f133774a34182ae74ba8553574",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 22,
+          "present": 113
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:36Z",
+    "known_checked_at_max": "2026-09-23T21:11:38Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/375433e7bcd8a6924975f04987975e0507cee1f9da096cc704d9313e7499d7f8.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:26Z"
+  },
+  {
+    "url": "https://github.com/ljharb/ent",
+    "observed_at": "2026-09-23T21:19:26Z",
+    "baseline_observed_at": "2026-09-23T20:16:29Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "d6e1b2a88f067c75fc5f1ff106770ea7635d8df6",
+    "current_head": "d6e1b2a88f067c75fc5f1ff106770ea7635d8df6",
+    "head_committed_at": "2024-12-16T22:48:41Z",
+    "first_parent_count": 84,
+    "first_parent_present": 60,
+    "missing_tip_commits": 24,
+    "nearest_present_revision": "swh:1:rev:a246dd30d84f8f79ab463e12a7b3673acfc3dc20",
+    "nearest_present_committed_at": "2015-02-11T19:58:44Z",
+    "commit_date_gap_days": 3596.1,
+    "present_in_head_ancestry": 64,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 60,
+        "oldest_sha": "5738d0e2b61cef5b86d6187f79b9cf0a1776ac6c",
+        "newest_sha": "a246dd30d84f8f79ab463e12a7b3673acfc3dc20",
+        "oldest_committed_at": "2011-02-16T13:42:47Z",
+        "newest_committed_at": "2015-02-11T19:58:44Z"
+      },
+      {
+        "status": "missing",
+        "count": 24,
+        "oldest_sha": "758c1323e90bfd75747e38649039fd36fef70143",
+        "newest_sha": "d6e1b2a88f067c75fc5f1ff106770ea7635d8df6",
+        "oldest_committed_at": "2024-06-11T02:35:30Z",
+        "newest_committed_at": "2024-12-16T22:48:41Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/0.x",
+        "tip": "4b4591541bcb8033380e33514e7a52011c9e9945",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 10,
+          "present": 27
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "d6e1b2a88f067c75fc5f1ff106770ea7635d8df6",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 34,
+          "present": 64
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:38Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/b917356c9b8ab4ccd0f729a002f5c7f7a8bf7e737cd5a2455072e0bcbf3b5610.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:27Z"
+  },
+  {
+    "url": "https://github.com/pointfreeco/combine-schedulers",
+    "observed_at": "2026-09-23T21:19:27Z",
+    "baseline_observed_at": "2026-09-23T20:16:32Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "114354e8c1667a2edc4993700fb9fa4f90157b56",
+    "current_head": "114354e8c1667a2edc4993700fb9fa4f90157b56",
+    "head_committed_at": "2026-08-31T20:46:02Z",
+    "first_parent_count": 98,
+    "first_parent_present": 82,
+    "missing_tip_commits": 16,
+    "nearest_present_revision": "swh:1:rev:9fa31f4403da54855f1e2aeaeff478f4f0e40b13",
+    "nearest_present_committed_at": "2024-07-24T18:29:32Z",
+    "commit_date_gap_days": 768.1,
+    "present_in_head_ancestry": 82,
+    "present_outside_head_ancestry": 129,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 82,
+        "oldest_sha": "afebf46cdc562ffb3721a2983f871905d55ca9c7",
+        "newest_sha": "9fa31f4403da54855f1e2aeaeff478f4f0e40b13",
+        "oldest_committed_at": "2020-06-14T20:55:00Z",
+        "newest_committed_at": "2024-07-24T18:29:32Z"
+      },
+      {
+        "status": "missing",
+        "count": 16,
+        "oldest_sha": "5928286acce13def418ec36d05a001a9641086f2",
+        "newest_sha": "114354e8c1667a2edc4993700fb9fa4f90157b56",
+        "oldest_committed_at": "2024-10-15T15:51:09Z",
+        "newest_committed_at": "2026-08-31T20:46:02Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/assert",
+        "tip": "fc7bde7faceb95e12b888265b98cc65185ab4a55",
+        "tip_status": "present",
+        "coverage": {
+          "present": 24
+        }
+      },
+      {
+        "name": "refs/heads/async-overloads",
+        "tip": "e850d23e1eadd52e19ee5d737b18f01f499c7f96",
+        "tip_status": "present",
+        "coverage": {
+          "present": 61
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "d3909644133d96b3ba1098b561998edb4a423972",
+        "tip_status": "present",
+        "coverage": {
+          "present": 26
+        }
+      },
+      {
+        "name": "refs/heads/internal-scheduled",
+        "tip": "b52b5be852bf3a259f2dbfd30a366a819c44ed92",
+        "tip_status": "present",
+        "coverage": {
+          "present": 51
+        }
+      },
+      {
+        "name": "refs/heads/iso",
+        "tip": "211fc13bd4e0ade19b2540f4396bb300f5e35339",
+        "tip_status": "present",
+        "coverage": {
+          "present": 54
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "114354e8c1667a2edc4993700fb9fa4f90157b56",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 16,
+          "present": 82
+        }
+      },
+      {
+        "name": "refs/heads/readme-doc-link",
+        "tip": "b53b0537cf06b10e8a7ce34eb517bcf0122014ae",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 16,
+          "present": 82
+        }
+      },
+      {
+        "name": "refs/heads/swift-testing",
+        "tip": "7fecb4c8801ea0b13141975643bc1df774576b0f",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 12,
+          "present": 80
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:33Z",
+    "known_checked_at_max": "2026-09-23T21:11:38Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/6797c0bfd3886c38a1876aa721dddced52edb5141ec3774eb3e5a7b0730b7838.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:28Z"
+  },
+  {
+    "url": "https://github.com/pointfreeco/swift-clocks",
+    "observed_at": "2026-09-23T21:19:28Z",
+    "baseline_observed_at": "2026-09-23T20:16:33Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "82440fa0a8b1c381a6d1e8e0fc7bbba53ec63204",
+    "current_head": "82440fa0a8b1c381a6d1e8e0fc7bbba53ec63204",
+    "head_committed_at": "2026-08-27T20:05:25Z",
+    "first_parent_count": 54,
+    "first_parent_present": 46,
+    "missing_tip_commits": 8,
+    "nearest_present_revision": "swh:1:rev:18f7a40eadc1f88afe0d4b65ed0d146c872fa586",
+    "nearest_present_committed_at": "2025-11-14T20:31:00Z",
+    "commit_date_gap_days": 286.0,
+    "present_in_head_ancestry": 46,
+    "present_outside_head_ancestry": 4,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 46,
+        "oldest_sha": "e8bacbba28049b18b3ccc0533b5db5f07043ad78",
+        "newest_sha": "18f7a40eadc1f88afe0d4b65ed0d146c872fa586",
+        "oldest_committed_at": "2022-10-23T20:31:49Z",
+        "newest_committed_at": "2025-11-14T20:31:00Z"
+      },
+      {
+        "status": "missing",
+        "count": 8,
+        "oldest_sha": "803db706ac3f251590db2c6057e86309e43d54eb",
+        "newest_sha": "82440fa0a8b1c381a6d1e8e0fc7bbba53ec63204",
+        "oldest_committed_at": "2026-06-01T20:10:13Z",
+        "newest_committed_at": "2026-08-27T20:05:25Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/clocks-2",
+        "tip": "77abbdd51dc05c719d5a758572e18f3643f546b7",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 15,
+          "present": 46
+        }
+      },
+      {
+        "name": "refs/heads/docc",
+        "tip": "360738fb6a4c258558ec240659036ded15737df1",
+        "tip_status": "present",
+        "coverage": {
+          "present": 4
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "7f6747faec8da727234140f0fbce2055f6187cd4",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "82440fa0a8b1c381a6d1e8e0fc7bbba53ec63204",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 8,
+          "present": 46
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:36Z",
+    "known_checked_at_max": "2026-09-23T21:11:39Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/ccf374540b1cc67fdae212f26ac892aa331bfddb801bf762437a0156911341c2.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:29Z"
+  },
+  {
+    "url": "https://github.com/pointfreeco/swift-custom-dump",
+    "observed_at": "2026-09-23T21:19:29Z",
+    "baseline_observed_at": "2026-09-23T20:16:34Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "4fb9e7cbb4b8f5a7354005db39447f570d6b3e19",
+    "current_head": "4fb9e7cbb4b8f5a7354005db39447f570d6b3e19",
+    "head_committed_at": "2026-08-28T14:38:44Z",
+    "first_parent_count": 156,
+    "first_parent_present": 126,
+    "missing_tip_commits": 30,
+    "nearest_present_revision": "swh:1:rev:93a8aa4937030b606de42f44b17870249f49af0b",
+    "nearest_present_committed_at": "2026-01-13T23:27:26Z",
+    "commit_date_gap_days": 226.6,
+    "present_in_head_ancestry": 133,
+    "present_outside_head_ancestry": 74,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 126,
+        "oldest_sha": "d6c3b5fcc1ee4bbcf4353372f3f87c9f8d0fb57f",
+        "newest_sha": "93a8aa4937030b606de42f44b17870249f49af0b",
+        "oldest_committed_at": "2021-08-23T02:30:09Z",
+        "newest_committed_at": "2026-01-13T23:27:26Z"
+      },
+      {
+        "status": "missing",
+        "count": 30,
+        "oldest_sha": "5c01e770a950382a71ef72c59955e12b8065bdd8",
+        "newest_sha": "4fb9e7cbb4b8f5a7354005db39447f570d6b3e19",
+        "oldest_committed_at": "2026-01-14T20:31:05Z",
+        "newest_committed_at": "2026-08-28T14:38:44Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/custom-diff-hashable",
+        "tip": "44f4e54ecc3fead409e8557c1a93aece98abac2f",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 127
+        }
+      },
+      {
+        "name": "refs/heads/diff-fix",
+        "tip": "777fce2f8ed22c8d21fc01c3bc8700336191cbc9",
+        "tip_status": "present",
+        "coverage": {
+          "present": 90
+        }
+      },
+      {
+        "name": "refs/heads/diffable-state",
+        "tip": "7e93bd7b0bd44ee431dc559f0a193fdeb171f588",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 48,
+          "present": 133
+        }
+      },
+      {
+        "name": "refs/heads/fix-type-name-regression",
+        "tip": "7b43dc955dbfcc2ca933b80264995fc628169ac8",
+        "tip_status": "present",
+        "coverage": {
+          "present": 83
+        }
+      },
+      {
+        "name": "refs/heads/fix-wasm-ci",
+        "tip": "10d7d9070146862c6c3363a2613b4935e0aec815",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 9,
+          "present": 125
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "a6cfcb7f48af6d6b31e177db3e33174372a3b471",
+        "tip_status": "present",
+        "coverage": {
+          "present": 27
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "4fb9e7cbb4b8f5a7354005db39447f570d6b3e19",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 30,
+          "present": 133
+        }
+      },
+      {
+        "name": "refs/heads/prerelease/1.0",
+        "tip": "0a5bff05fe01dcd513932ed338a4efad8268b803",
+        "tip_status": "present",
+        "coverage": {
+          "present": 98
+        }
+      },
+      {
+        "name": "refs/heads/speech-status",
+        "tip": "6d074d2df26692620194488f1f1336f83ab879bd",
+        "tip_status": "present",
+        "coverage": {
+          "present": 58
+        }
+      },
+      {
+        "name": "refs/heads/swift-5.10",
+        "tip": "e1972f66a6309a12463812ec828026a467bdc99b",
+        "tip_status": "present",
+        "coverage": {
+          "present": 111
+        }
+      },
+      {
+        "name": "refs/heads/swift-data",
+        "tip": "e803a5a2ec4bed0656d9835529f0b4a4ab2aeb84",
+        "tip_status": "present",
+        "coverage": {
+          "present": 114
+        }
+      },
+      {
+        "name": "refs/heads/turn-on-swift-6-mode",
+        "tip": "addb1728882e60c3be46fbccdb4aa1802b4c339f",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 3,
+          "present": 117
+        }
+      },
+      {
+        "name": "refs/heads/type-name",
+        "tip": "c330514fc807ac1054f86b1f1237923fb312e606",
+        "tip_status": "present",
+        "coverage": {
+          "present": 117
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:39Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/72c030dc3eb27626d6b7a744d75aa66f21a04e8ddfe0e7d230daed9610ddd1b8.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:30Z"
+  },
+  {
+    "url": "https://github.com/pointfreeco/swift-dependencies",
+    "observed_at": "2026-09-23T21:19:30Z",
+    "baseline_observed_at": "2026-09-23T20:16:35Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "b476cc5761057d8d857de063fe7ac8daecf5c06b",
+    "current_head": "b476cc5761057d8d857de063fe7ac8daecf5c06b",
+    "head_committed_at": "2026-08-27T20:15:14Z",
+    "first_parent_count": 271,
+    "first_parent_present": 259,
+    "missing_tip_commits": 12,
+    "nearest_present_revision": "swh:1:rev:008b012380623976ce2b9c92c5bf2bda8bcf5e55",
+    "nearest_present_committed_at": "2026-06-17T16:26:48Z",
+    "commit_date_gap_days": 71.2,
+    "present_in_head_ancestry": 259,
+    "present_outside_head_ancestry": 143,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 259,
+        "oldest_sha": "0deebf4e0aebc72b0d93ff1ffac9558a6785f9f4",
+        "newest_sha": "008b012380623976ce2b9c92c5bf2bda8bcf5e55",
+        "oldest_committed_at": "2023-01-06T16:57:55Z",
+        "newest_committed_at": "2026-06-17T16:26:48Z"
+      },
+      {
+        "status": "missing",
+        "count": 12,
+        "oldest_sha": "8dc1fbf2f6255a73dec53b4648164884898db4c5",
+        "newest_sha": "b476cc5761057d8d857de063fe7ac8daecf5c06b",
+        "oldest_committed_at": "2026-06-17T22:51:12Z",
+        "newest_committed_at": "2026-08-27T20:15:14Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/26",
+        "tip": "929e0e2a83032fa50119457ae2963ac6eb313e69",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 16,
+          "present": 248
+        }
+      },
+      {
+        "name": "refs/heads/26-dynamic",
+        "tip": "68791285ad3a3d55d6ad1af66b7117237ee213b3",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 18,
+          "present": 248
+        }
+      },
+      {
+        "name": "refs/heads/bump-swift-syntax",
+        "tip": "d76d3b2772f4a401ab4c19c82d4c48e0cb4c5943",
+        "tip_status": "present",
+        "coverage": {
+          "present": 125
+        }
+      },
+      {
+        "name": "refs/heads/compiler-plugin-message-handling",
+        "tip": "5c4f1ce0065f36ad545e37951ce8880f122c38dc",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 254
+        }
+      },
+      {
+        "name": "refs/heads/default-isolation",
+        "tip": "733d98a432a466a3467b7efae2570f1ec77b3c61",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 244
+        }
+      },
+      {
+        "name": "refs/heads/dep-client-bug",
+        "tip": "670cb7b9f8f96e7067128533d1f377f70aab7c93",
+        "tip_status": "present",
+        "coverage": {
+          "present": 117
+        }
+      },
+      {
+        "name": "refs/heads/dependency-client-protocol",
+        "tip": "6b1be048c42a74c17daa1390e335c890b6ae8b02",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 171
+        }
+      },
+      {
+        "name": "refs/heads/dependency-endpoint-fix",
+        "tip": "8f7151b3fa4d5b34e7361c6dd6c6f05c45be44bb",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 7,
+          "present": 164
+        }
+      },
+      {
+        "name": "refs/heads/dependency-object",
+        "tip": "eeca6ed1fbdea04f3c63ca743ee1f3f5a62647e7",
+        "tip_status": "present",
+        "coverage": {
+          "present": 22
+        }
+      },
+      {
+        "name": "refs/heads/escaped-identifiers",
+        "tip": "438d3e16376f81fdf085ae87096ac22975240135",
+        "tip_status": "present",
+        "coverage": {
+          "present": 130
+        }
+      },
+      {
+        "name": "refs/heads/failing-test",
+        "tip": "c9b25606c314034d18703e689e5474f5198406e7",
+        "tip_status": "present",
+        "coverage": {
+          "present": 76
+        }
+      },
+      {
+        "name": "refs/heads/fix-autoclosure-endpoints",
+        "tip": "d9b66dc37c2b500d33c88c09e0ffda6f83f80b56",
+        "tip_status": "present",
+        "coverage": {
+          "present": 97
+        }
+      },
+      {
+        "name": "refs/heads/fix-pre-6-1-throwing",
+        "tip": "18310ce183b284b889f5af83c43307b1157d2297",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 219
+        }
+      },
+      {
+        "name": "refs/heads/fix-sendable",
+        "tip": "e3f9f84969a9fc8634d5e6d31848e566e09612be",
+        "tip_status": "present",
+        "coverage": {
+          "present": 93
+        }
+      },
+      {
+        "name": "refs/heads/generic-dependencies",
+        "tip": "242e1085f4dba2cc4fdf6a9c7f750c6c1f54cb2c",
+        "tip_status": "present",
+        "coverage": {
+          "present": 80
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "1e2cd77a20926e7cb04ade046dd775b32432011e",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1
+        }
+      },
+      {
+        "name": "refs/heads/link-test-support",
+        "tip": "012a4cf47fc10d1d8785046089e07120c811ebcb",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 14,
+          "present": 171
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "b476cc5761057d8d857de063fe7ac8daecf5c06b",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 12,
+          "present": 259
+        }
+      },
+      {
+        "name": "refs/heads/memory-management-tests",
+        "tip": "699e2ea34d87cb91d894ed9858297c51e4119642",
+        "tip_status": "present",
+        "coverage": {
+          "present": 42
+        }
+      },
+      {
+        "name": "refs/heads/musl",
+        "tip": "9ec2bbc2305bced8da1e4599874f668323a4e603",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 4,
+          "present": 205
+        }
+      },
+      {
+        "name": "refs/heads/preview-testing-improvements",
+        "tip": "6a7d4ab04a717cfb771764e10d79fe4ac76faf52",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 166
+        }
+      },
+      {
+        "name": "refs/heads/swift-6-1",
+        "tip": "69c53c47701b4fb1b33c47950667f7717e0990d7",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 245
+        }
+      },
+      {
+        "name": "refs/heads/swift-issue-70383",
+        "tip": "1abcbbe642074faba4f45cb77e748acf015abe30",
+        "tip_status": "present",
+        "coverage": {
+          "present": 100
+        }
+      },
+      {
+        "name": "refs/heads/swift-syntax-604",
+        "tip": "4199db3900f0fa0fa017573da2884f8a9cdeadeb",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 245
+        }
+      },
+      {
+        "name": "refs/heads/tear-down-trait",
+        "tip": "6ce4996846bb5b2936dd3cecb82a0d51bd1fc536",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 244
+        }
+      },
+      {
+        "name": "refs/heads/tree",
+        "tip": "a71a7c9ef4942981f7f29f193e43b07553ba5668",
+        "tip_status": "present",
+        "coverage": {
+          "present": 54
+        }
+      },
+      {
+        "name": "refs/heads/tree-prep",
+        "tip": "445c518a3c95dcf2b8f02fa1060dec24e0868d62",
+        "tip_status": "present",
+        "coverage": {
+          "present": 53
+        }
+      },
+      {
+        "name": "refs/heads/uuid-copy",
+        "tip": "0cb892974cb90a5db611cd468d9f07964254f714",
+        "tip_status": "present",
+        "coverage": {
+          "present": 73
+        }
+      },
+      {
+        "name": "refs/heads/wasi",
+        "tip": "8a1052cbecddd9de88cf0de4c9fa323950d40fae",
+        "tip_status": "present",
+        "coverage": {
+          "present": 139
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:37Z",
+    "known_checked_at_max": "2026-09-23T21:11:39Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/8823f42c121e2bd59c7065deafaa6b94a0ad3634a0538fbca4b0a4fb79b4fb03.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:31Z"
+  },
+  {
+    "url": "https://github.com/pointfreeco/swift-identified-collections",
+    "observed_at": "2026-09-23T21:19:32Z",
+    "baseline_observed_at": "2026-09-23T20:16:37Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "3abaf5156efa9437192f8608fa94e6e4e7abf36a",
+    "current_head": "3abaf5156efa9437192f8608fa94e6e4e7abf36a",
+    "head_committed_at": "2026-06-08T21:36:47Z",
+    "first_parent_count": 74,
+    "first_parent_present": 65,
+    "missing_tip_commits": 9,
+    "nearest_present_revision": "swh:1:rev:ae21ccea0c7749cc3d3ad85aed3619fae21b96c9",
+    "nearest_present_committed_at": "2024-07-23T16:50:27Z",
+    "commit_date_gap_days": 685.2,
+    "present_in_head_ancestry": 65,
+    "present_outside_head_ancestry": 19,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 65,
+        "oldest_sha": "930bd6e400a30b71018385cd2853dba7b120e88e",
+        "newest_sha": "ae21ccea0c7749cc3d3ad85aed3619fae21b96c9",
+        "oldest_committed_at": "2021-07-11T22:12:07Z",
+        "newest_committed_at": "2024-07-23T16:50:27Z"
+      },
+      {
+        "status": "missing",
+        "count": 9,
+        "oldest_sha": "ac5a2c66b8cdb1f42f4eeeb6be65207da9ac4506",
+        "newest_sha": "3abaf5156efa9437192f8608fa94e6e4e7abf36a",
+        "oldest_committed_at": "2024-10-17T22:23:28Z",
+        "newest_committed_at": "2026-06-08T21:36:47Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "5e5d7ab875bbc205a2a999e8701fbc1777569eeb",
+        "tip_status": "present",
+        "coverage": {
+          "present": 1
+        }
+      },
+      {
+        "name": "refs/heads/index-constraint",
+        "tip": "b2a160f7c435c4de037677fc1c5cfb9099e0e088",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 64
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "3abaf5156efa9437192f8608fa94e6e4e7abf36a",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 9,
+          "present": 65
+        }
+      },
+      {
+        "name": "refs/heads/range-replaceable",
+        "tip": "948b5b6081f702ace3fe5664d646fa33299a6d09",
+        "tip_status": "present",
+        "coverage": {
+          "present": 31
+        }
+      },
+      {
+        "name": "refs/heads/relax-platform-requirements",
+        "tip": "903202d619b7d04600fb177953a41d8ef1ad535c",
+        "tip_status": "present",
+        "coverage": {
+          "present": 10
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:34Z",
+    "known_checked_at_max": "2026-09-23T21:11:39Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/f8a524fadbfb3428740b3d8d506062bb6fa6f6eecfb500e0b77edb2540e7d812.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:33Z"
+  },
+  {
+    "url": "https://github.com/r-lib/commonmark",
+    "observed_at": "2026-09-23T21:19:33Z",
+    "baseline_observed_at": "2026-09-23T20:16:38Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "6c29d2ceb408bef07012b69c45dc7e31ed8b2eaa",
+    "current_head": "6c29d2ceb408bef07012b69c45dc7e31ed8b2eaa",
+    "head_committed_at": "2025-07-07T12:31:35Z",
+    "first_parent_count": 164,
+    "first_parent_present": 138,
+    "missing_tip_commits": 26,
+    "nearest_present_revision": "swh:1:rev:89c6ddc9b027408f0bf86bde287027ded5176853",
+    "nearest_present_committed_at": "2023-12-28T13:16:05Z",
+    "commit_date_gap_days": 557.0,
+    "present_in_head_ancestry": 146,
+    "present_outside_head_ancestry": 9,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 138,
+        "oldest_sha": "971a2b206df345a4c14f19f2d19ee35503daf0fe",
+        "newest_sha": "89c6ddc9b027408f0bf86bde287027ded5176853",
+        "oldest_committed_at": "2015-05-24T19:00:13Z",
+        "newest_committed_at": "2023-12-28T13:16:05Z"
+      },
+      {
+        "status": "missing",
+        "count": 26,
+        "oldest_sha": "969e27ea29dce1c2d7ab9b9909640bb4643d460f",
+        "newest_sha": "6c29d2ceb408bef07012b69c45dc7e31ed8b2eaa",
+        "oldest_committed_at": "2024-01-30T11:04:07Z",
+        "newest_committed_at": "2025-07-07T12:31:35Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/latex-sourcepos",
+        "tip": "b0ef50902d62201682a3975927fd331bfe3a82dd",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 3,
+          "present": 145
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "6c29d2ceb408bef07012b69c45dc7e31ed8b2eaa",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 26,
+          "present": 146
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:41Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/0c1a02f2d9386bf9498fbad388b082a6aa279f8f05ca8ec01e6ce5f38badce76.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:34Z"
+  },
+  {
+    "url": "https://github.com/r-lib/downlit",
+    "observed_at": "2026-09-23T21:19:34Z",
+    "baseline_observed_at": "2026-09-23T20:16:39Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "a6233104d5a46d273107421c52515ed63cc912aa",
+    "current_head": "a6233104d5a46d273107421c52515ed63cc912aa",
+    "head_committed_at": "2026-07-06T21:27:37Z",
+    "first_parent_count": 256,
+    "first_parent_present": 249,
+    "missing_tip_commits": 7,
+    "nearest_present_revision": "swh:1:rev:cdaa2f13263892890b6aa4d636982e9e9e645229",
+    "nearest_present_committed_at": "2024-06-10T12:44:45Z",
+    "commit_date_gap_days": 756.4,
+    "present_in_head_ancestry": 249,
+    "present_outside_head_ancestry": 284,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 249,
+        "oldest_sha": "10b913931ae0a7afa2d638189bd871df2d932add",
+        "newest_sha": "cdaa2f13263892890b6aa4d636982e9e9e645229",
+        "oldest_committed_at": "2020-05-28T13:42:06Z",
+        "newest_committed_at": "2024-06-10T12:44:45Z"
+      },
+      {
+        "status": "missing",
+        "count": 7,
+        "oldest_sha": "b90edc041648414f534a2bb8799b71f95cffc330",
+        "newest_sha": "a6233104d5a46d273107421c52515ed63cc912aa",
+        "oldest_committed_at": "2025-11-13T22:18:34Z",
+        "newest_committed_at": "2026-07-06T21:27:37Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/b-pandoc-convert-abs-path",
+        "tip": "0a60be45f043adb23c742df6f453e93512634cf3",
+        "tip_status": "present",
+        "coverage": {
+          "present": 182
+        }
+      },
+      {
+        "name": "refs/heads/export-tokenize",
+        "tip": "b4193e14e244410fe5c620643c02fcff2eb56906",
+        "tip_status": "present",
+        "coverage": {
+          "present": 242
+        }
+      },
+      {
+        "name": "refs/heads/f-readme-document",
+        "tip": "6511c503ea3e31ee24bd2c41d79c6f869a2b817c",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 267
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "411c9eb3edc3688a46047f97ab0e28ae4dadfb5c",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 6,
+          "present": 158
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "a6233104d5a46d273107421c52515ed63cc912aa",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 7,
+          "present": 249
+        }
+      },
+      {
+        "name": "refs/heads/rdtools",
+        "tip": "7c7a8bea655b59711f9884b7220e9c13a6028db9",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 13,
+          "present": 249
+        }
+      },
+      {
+        "name": "refs/heads/update-pkgdown-v0.4.3",
+        "tip": "e168e7d9f2a4fcf6c63ee9cf15af4aed589eacde",
+        "tip_status": "present",
+        "coverage": {
+          "present": 240
+        }
+      },
+      {
+        "name": "refs/heads/use-pre",
+        "tip": "6e182e769c738444392190243da78e61f3aaf213",
+        "tip_status": "present",
+        "coverage": {
+          "present": 183
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:37Z",
+    "known_checked_at_max": "2026-09-23T21:11:41Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/089600fc80c49892555afff429d394533bc5756cc3a4f70f4069dc54a4fff903.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:36Z"
+  },
+  {
+    "url": "https://github.com/r-lib/urlchecker",
+    "observed_at": "2026-09-23T21:19:36Z",
+    "baseline_observed_at": "2026-09-23T20:16:41Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "0c0eb9c487f506443743387274e7997d2f949a61",
+    "current_head": "0c0eb9c487f506443743387274e7997d2f949a61",
+    "head_committed_at": "2026-07-09T06:07:42Z",
+    "first_parent_count": 99,
+    "first_parent_present": 61,
+    "missing_tip_commits": 38,
+    "nearest_present_revision": "swh:1:rev:e97d81e32ce5226ff4c5f4069dfe36149a9d66e8",
+    "nearest_present_committed_at": "2023-11-03T14:44:23Z",
+    "commit_date_gap_days": 978.6,
+    "present_in_head_ancestry": 85,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 61,
+        "oldest_sha": "932692445048118e5a9b3aa29d273cf5e836482f",
+        "newest_sha": "e97d81e32ce5226ff4c5f4069dfe36149a9d66e8",
+        "oldest_committed_at": "2020-10-02T13:25:54Z",
+        "newest_committed_at": "2023-11-03T14:44:23Z"
+      },
+      {
+        "status": "missing",
+        "count": 38,
+        "oldest_sha": "ac38ea46aa468dc4f6e3ae991e27ab754146314e",
+        "newest_sha": "0c0eb9c487f506443743387274e7997d2f949a61",
+        "oldest_committed_at": "2024-08-05T15:39:39Z",
+        "newest_committed_at": "2026-07-09T06:07:42Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/fix/gha-latest",
+        "tip": "de3931780a9ddbf1b501440e514d5f36e3f0da91",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 85
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "10dc4ccbc66dabfe3581c6b66941791fbb50d5bd",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 42
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "0c0eb9c487f506443743387274e7997d2f949a61",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 47,
+          "present": 85
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "02b2fb193a19cd16e39a3eb511574e56b966df36",
+        "tip_status": "present",
+        "coverage": {
+          "present": 48
+        }
+      },
+      {
+        "name": "refs/heads/timeout",
+        "tip": "f0b978c9dd22c920cdc66f6069fd97ca2d534a4c",
+        "tip_status": "present",
+        "coverage": {
+          "present": 81
+        }
+      },
+      {
+        "name": "refs/heads/update-pkgdown-1-0-1",
+        "tip": "76a5ea5e9f1c8ef47350be0829e29e7a6b7d9888",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 55
+        }
+      },
+      {
+        "name": "refs/heads/update-pkgdown-url",
+        "tip": "4c70ed9869b436293b9261797e9affed1c916034",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 71
+        }
+      },
+      {
+        "name": "refs/heads/upkeep-2023",
+        "tip": "abc4237ceb856c7d269af44ee595f0bb2650ff71",
+        "tip_status": "present",
+        "coverage": {
+          "present": 77
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:33Z",
+    "known_checked_at_max": "2026-09-23T21:11:42Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/bbd18553d936be5d420fe8ca6f4ee5232f83ed61ba375b7d3a9ef468f05ff6b0.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:37Z"
+  },
+  {
+    "url": "https://github.com/redis-rb/redis-client",
+    "observed_at": "2026-09-23T21:19:37Z",
+    "baseline_observed_at": "2026-09-23T20:16:43Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "8e0bc2fdf6a5a7c3ca7225b3eeeaab1f4692f81d",
+    "current_head": "8e0bc2fdf6a5a7c3ca7225b3eeeaab1f4692f81d",
+    "head_committed_at": "2026-09-12T11:41:40Z",
+    "first_parent_count": 472,
+    "first_parent_present": 431,
+    "missing_tip_commits": 41,
+    "nearest_present_revision": "swh:1:rev:e9d40c1dfe0c644f9a9a0588cf25c39f2702400c",
+    "nearest_present_committed_at": "2026-01-06T18:41:30Z",
+    "commit_date_gap_days": 248.7,
+    "present_in_head_ancestry": 604,
+    "present_outside_head_ancestry": 44,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 431,
+        "oldest_sha": "880289ebc3eaf340d3efada6bdec850410d9b717",
+        "newest_sha": "e9d40c1dfe0c644f9a9a0588cf25c39f2702400c",
+        "oldest_committed_at": "2022-03-09T09:45:38Z",
+        "newest_committed_at": "2026-01-06T18:41:30Z"
+      },
+      {
+        "status": "missing",
+        "count": 41,
+        "oldest_sha": "2b044dbf6266cbc0b0e52b4b9d6940dacb25ccf3",
+        "newest_sha": "8e0bc2fdf6a5a7c3ca7225b3eeeaab1f4692f81d",
+        "oldest_committed_at": "2026-01-09T07:37:54Z",
+        "newest_committed_at": "2026-09-12T11:41:40Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/benchmark-hiredis",
+        "tip": "c6c9577878960239df4b892bd833f838880a9db8",
+        "tip_status": "present",
+        "coverage": {
+          "present": 433
+        }
+      },
+      {
+        "name": "refs/heads/clear-buffer",
+        "tip": "f82caf382993dd94eb835931d575edb36f840efa",
+        "tip_status": "present",
+        "coverage": {
+          "present": 462
+        }
+      },
+      {
+        "name": "refs/heads/db-nil-url",
+        "tip": "e4bb9e5dcf40f95fcf9a24e803728193e6f423b2",
+        "tip_status": "present",
+        "coverage": {
+          "present": 563
+        }
+      },
+      {
+        "name": "refs/heads/debug-ensure-connected",
+        "tip": "59422bd21080dd2955ea5ff748f6a5d5ba1eae37",
+        "tip_status": "present",
+        "coverage": {
+          "present": 322
+        }
+      },
+      {
+        "name": "refs/heads/debug-hiredis-client",
+        "tip": "556cf25f7da06aaafa74920c25e8f96cead0d263",
+        "tip_status": "present",
+        "coverage": {
+          "present": 384
+        }
+      },
+      {
+        "name": "refs/heads/debug-ssl-block",
+        "tip": "474f5756eec2ac0b1e45402a53b6038660d0dca7",
+        "tip_status": "present",
+        "coverage": {
+          "present": 169
+        }
+      },
+      {
+        "name": "refs/heads/debug-unknown-sigil",
+        "tip": "7b7a320aaeac97b9a986ed57f6a29eff56cf2002",
+        "tip_status": "present",
+        "coverage": {
+          "present": 456
+        }
+      },
+      {
+        "name": "refs/heads/fix-compatibility-with-connection-pool-3.x",
+        "tip": "ec6dacecbf5b38a462c95f17b39d8ad5e75f8153",
+        "tip_status": "present",
+        "coverage": {
+          "present": 586
+        }
+      },
+      {
+        "name": "refs/heads/fix-hiredis-with-clang-21",
+        "tip": "e632d9ae213511e9638cbff2296da47c120e20c5",
+        "tip_status": "present",
+        "coverage": {
+          "present": 560
+        }
+      },
+      {
+        "name": "refs/heads/fix-setinfo-sentinel",
+        "tip": "205b60de274ab5bcfbf7c23b6166e40b6ad80f2e",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 40,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/handle-io-error",
+        "tip": "2a74dc55deb25dd4cd9ab760c1e0d856d97e0a1f",
+        "tip_status": "present",
+        "coverage": {
+          "present": 601
+        }
+      },
+      {
+        "name": "refs/heads/hash-ring",
+        "tip": "cc40958bc2ee65ecac363675e382f694f8431b49",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 23,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/hash-ring-2",
+        "tip": "06e865c9336aff15c37bdb7a122e918f5944a403",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 27,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/hash-ring-iteration",
+        "tip": "52f4e4b8a62beb1d26d5f13f1cce936eb6c331f2",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 25,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/hide-password",
+        "tip": "02cd89d401910217bf10515dcb2911682697b644",
+        "tip_status": "present",
+        "coverage": {
+          "present": 520
+        }
+      },
+      {
+        "name": "refs/heads/hiredis-release-gvl",
+        "tip": "913cf4fe9a44bafe6b42f62edc2ade86c5dbbdd3",
+        "tip_status": "present",
+        "coverage": {
+          "present": 167
+        }
+      },
+      {
+        "name": "refs/heads/hiredis-type-check",
+        "tip": "ebb57c2ade1d8758399fe29749cf9d9b114651ce",
+        "tip_status": "present",
+        "coverage": {
+          "present": 360
+        }
+      },
+      {
+        "name": "refs/heads/improve-hiredis-errors",
+        "tip": "fc4ee68ef2095c34bbecbe7468de75b37af8a4a2",
+        "tip_status": "present",
+        "coverage": {
+          "present": 221
+        }
+      },
+      {
+        "name": "refs/heads/investigate-fd-leak",
+        "tip": "ce75598db5d869399d4961fde4f06eae469eaa9e",
+        "tip_status": "present",
+        "coverage": {
+          "present": 360
+        }
+      },
+      {
+        "name": "refs/heads/io-timeout",
+        "tip": "77a39cb038857071c8f318925c5f53ab9dc5705a",
+        "tip_status": "present",
+        "coverage": {
+          "present": 370
+        }
+      },
+      {
+        "name": "refs/heads/linter-group",
+        "tip": "1aa7147d1b16d89e90a6139e12145c19385d6056",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 21,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "8e0bc2fdf6a5a7c3ca7225b3eeeaab1f4692f81d",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 72,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/middleware-final-errors",
+        "tip": "1befb5a8c3f2af4063502416ba8c66a77dfa83c7",
+        "tip_status": "present",
+        "coverage": {
+          "present": 568
+        }
+      },
+      {
+        "name": "refs/heads/pipeline-next-error",
+        "tip": "9e61a8d1034ed77576b1c94b50eb7b201816f2a2",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 36,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/refactor-test-suite",
+        "tip": "52526411d20948306c91ad5cf6e0616d648f339d",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 3,
+          "present": 482
+        }
+      },
+      {
+        "name": "refs/heads/resp2-client",
+        "tip": "f80eaff1c89f213a42967e99c9ea3929de841554",
+        "tip_status": "present",
+        "coverage": {
+          "present": 159
+        }
+      },
+      {
+        "name": "refs/heads/revalidate-in-connected",
+        "tip": "2106ae2c8d5986d0784cd237d1724bf17502f766",
+        "tip_status": "present",
+        "coverage": {
+          "present": 377
+        }
+      },
+      {
+        "name": "refs/heads/so-keep-alive",
+        "tip": "b8254d0e4ae1c3e221a36419aba54c13c82bc0c9",
+        "tip_status": "present",
+        "coverage": {
+          "present": 281
+        }
+      },
+      {
+        "name": "refs/heads/test-megatest",
+        "tip": "0a75e871b745a4f9864b20fd1a4daa95e6dd4cba",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 32,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/test-redis-7.2",
+        "tip": "01efacb97f1e3ae327b650406362129475dfcfec",
+        "tip_status": "present",
+        "coverage": {
+          "present": 350
+        }
+      },
+      {
+        "name": "refs/heads/trigger-build",
+        "tip": "cfdb948979d2128c9b3b116e0a9e31a70c9ee298",
+        "tip_status": "present",
+        "coverage": {
+          "present": 267
+        }
+      },
+      {
+        "name": "refs/heads/update-ci-certs",
+        "tip": "9b89367d2fc3bb922c5b0e35462a9a36e991d7af",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 35,
+          "present": 604
+        }
+      },
+      {
+        "name": "refs/heads/update-dl",
+        "tip": "631354d6d0a68ba4c7753769ef6d8460d3d81c42",
+        "tip_status": "present",
+        "coverage": {
+          "present": 526
+        }
+      },
+      {
+        "name": "refs/heads/update-hiredis",
+        "tip": "8c6aed8852bff65ec78c92254f7b2313183be5fe",
+        "tip_status": "present",
+        "coverage": {
+          "present": 354
+        }
+      },
+      {
+        "name": "refs/heads/update-jruby",
+        "tip": "931289d84b49dfc70222ea0eadae3d97f563ce8d",
+        "tip_status": "present",
+        "coverage": {
+          "present": 245
+        }
+      },
+      {
+        "name": "refs/heads/update-test-certs",
+        "tip": "fef68fd5fea00f6df0ea8b6e45c2e1d43ca27577",
+        "tip_status": "present",
+        "coverage": {
+          "present": 321
+        }
+      },
+      {
+        "name": "refs/heads/write-barrier",
+        "tip": "963f1936473d550a4ef0388fe5a3bb72e2b49df0",
+        "tip_status": "present",
+        "coverage": {
+          "present": 287
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:36Z",
+    "known_checked_at_max": "2026-09-23T21:11:42Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/7b004c8ee3aa882fef983597656f365c00dea46b7d84ac01847ec2e0cd751048.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:38Z"
+  },
+  {
+    "url": "https://github.com/robertdober/earmark_parser",
+    "observed_at": "2026-09-23T21:19:38Z",
+    "baseline_observed_at": "2026-09-23T20:16:45Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "d8b5bd910bd227a5f5d16f4587147cdf349a6769",
+    "current_head": "d8b5bd910bd227a5f5d16f4587147cdf349a6769",
+    "head_committed_at": "2026-07-17T18:39:04Z",
+    "first_parent_count": 240,
+    "first_parent_present": 205,
+    "missing_tip_commits": 35,
+    "nearest_present_revision": "swh:1:rev:c19c0171bb86b73dbfccefac8d6e7e3a6fce3297",
+    "nearest_present_committed_at": "2024-07-02T17:29:11Z",
+    "commit_date_gap_days": 745.0,
+    "present_in_head_ancestry": 244,
+    "present_outside_head_ancestry": 79,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 205,
+        "oldest_sha": "11cfdffa8f1e54d5dc64c8f8ef8060c2e91de2a0",
+        "newest_sha": "c19c0171bb86b73dbfccefac8d6e7e3a6fce3297",
+        "oldest_committed_at": "2020-06-29T07:33:22Z",
+        "newest_committed_at": "2024-07-02T17:29:11Z"
+      },
+      {
+        "status": "missing",
+        "count": 35,
+        "oldest_sha": "b93955f9b80b57be3c84cb84b64565c4fbdbc516",
+        "newest_sha": "d8b5bd910bd227a5f5d16f4587147cdf349a6769",
+        "oldest_committed_at": "2024-07-02T21:19:41Z",
+        "newest_committed_at": "2026-07-17T18:39:04Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/check-strucutural",
+        "tip": "a3e41295d8d0b0166d16ea1f376c056b32747b54",
+        "tip_status": "present",
+        "coverage": {
+          "present": 158
+        }
+      },
+      {
+        "name": "refs/heads/fix-list-parser",
+        "tip": "ebabe4d69707428ab8b52103e17e0ede8b2ad7f2",
+        "tip_status": "present",
+        "coverage": {
+          "present": 150
+        }
+      },
+      {
+        "name": "refs/heads/i161-gfm-compliant-indent",
+        "tip": "2ff26edd206c518af151b1b787d5a7d35539b88b",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 11,
+          "present": 244
+        }
+      },
+      {
+        "name": "refs/heads/i169-refacto-html-parser",
+        "tip": "f1e219134f4ddfa9924f3e8f058964f5c057f049",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 34,
+          "present": 244
+        }
+      },
+      {
+        "name": "refs/heads/i169-trying-nimble-parsec",
+        "tip": "5e8a4a61705ce0612c59216b1e54e25d84c4957c",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 41,
+          "present": 244
+        }
+      },
+      {
+        "name": "refs/heads/i173-lazy-line-scanning",
+        "tip": "2a0afbb0dab3de5c7ea559dd7d0ad54734d47825",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 36,
+          "present": 244
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "d8b5bd910bd227a5f5d16f4587147cdf349a6769",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 38,
+          "present": 244
+        }
+      },
+      {
+        "name": "refs/heads/peg-parsing",
+        "tip": "cf19b2fa971f53fa15ca59f99b092908071ce1c2",
+        "tip_status": "present",
+        "coverage": {
+          "present": 127
+        }
+      },
+      {
+        "name": "refs/heads/rel-1.4.40",
+        "tip": "385b874071f2cdce0c0f77b5d8225f38c3e46ce0",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 235
+        }
+      },
+      {
+        "name": "refs/heads/rel-1.5.0",
+        "tip": "6a9832acdb589dbc134eb637ef20abc9e61a77bc",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 3,
+          "present": 183
+        }
+      },
+      {
+        "name": "refs/heads/rel-1.5.0-pre1",
+        "tip": "a13231854f210d81701890090c283f997904e3a1",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 2,
+          "present": 224
+        }
+      },
+      {
+        "name": "refs/heads/v15",
+        "tip": "395aea03657ede4252a3ed937416f55bcfb1e832",
+        "tip_status": "present",
+        "coverage": {
+          "present": 167
+        }
+      },
+      {
+        "name": "refs/heads/v2",
+        "tip": "9206aa3c675190dadd71e09f51de0894be4a44b1",
+        "tip_status": "present",
+        "coverage": {
+          "present": 37
+        }
+      },
+      {
+        "name": "refs/heads/with-list-parse-info",
+        "tip": "94ca0107d4de41c2aaffaa0f19dcb7cdfc5fcf63",
+        "tip_status": "present",
+        "coverage": {
+          "present": 154
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:42Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/a40863a17d2a2295a18b794ad13e8bed856a3bf5c10072b0b8531b7328570f45.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:39Z"
+  },
+  {
+    "url": "https://github.com/rust-cli/termtree",
+    "observed_at": "2026-09-23T21:19:39Z",
+    "baseline_observed_at": "2026-09-23T20:16:46Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "d9ebc6d9cf880c9123d3864de455848226a05aa4",
+    "current_head": "d9ebc6d9cf880c9123d3864de455848226a05aa4",
+    "head_committed_at": "2026-09-15T01:51:52Z",
+    "first_parent_count": 134,
+    "first_parent_present": 65,
+    "missing_tip_commits": 69,
+    "nearest_present_revision": "swh:1:rev:90dee79540dc38305b0f69681749de790e7180ba",
+    "nearest_present_committed_at": "2023-10-06T20:20:57Z",
+    "commit_date_gap_days": 1074.2,
+    "present_in_head_ancestry": 390,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 65,
+        "oldest_sha": "65990c1165496ef179231d559e7d9d41cf4e64d1",
+        "newest_sha": "90dee79540dc38305b0f69681749de790e7180ba",
+        "oldest_committed_at": "2015-10-19T03:49:01Z",
+        "newest_committed_at": "2023-10-06T20:20:57Z"
+      },
+      {
+        "status": "missing",
+        "count": 69,
+        "oldest_sha": "ee54e89c803bfa59027a0becca447d782f781223",
+        "newest_sha": "d9ebc6d9cf880c9123d3864de455848226a05aa4",
+        "oldest_committed_at": "2023-12-04T17:05:30Z",
+        "newest_committed_at": "2026-09-15T01:51:52Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/main",
+        "tip": "d9ebc6d9cf880c9123d3864de455848226a05aa4",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 111,
+          "present": 390
+        }
+      },
+      {
+        "name": "refs/heads/template-update",
+        "tip": "b70ab77edc072755022dc69ad8a4fc934515a5d5",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 76,
+          "present": 277
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:42Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/b9ae465e061ff9df8e9b6d7db3bb50be26ca0855d552c0c463968ad9665edcc8.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:40Z"
+  },
+  {
+    "url": "https://github.com/smol-rs/event-listener-strategy",
+    "observed_at": "2026-09-23T21:19:40Z",
+    "baseline_observed_at": "2026-09-23T20:16:50Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "be0f536e7a18776978b03a6079eb823ee3aa9b34",
+    "current_head": "be0f536e7a18776978b03a6079eb823ee3aa9b34",
+    "head_committed_at": "2025-07-06T07:44:01Z",
+    "first_parent_count": 31,
+    "first_parent_present": 20,
+    "missing_tip_commits": 11,
+    "nearest_present_revision": "swh:1:rev:50d49e741a264f4f9eb252fbd4b779413ef73b05",
+    "nearest_present_committed_at": "2024-03-30T15:04:12Z",
+    "commit_date_gap_days": 462.7,
+    "present_in_head_ancestry": 24,
+    "present_outside_head_ancestry": 0,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 20,
+        "oldest_sha": "1f111eec22dedefb41e4a6d7d6439d1271d5f7b2",
+        "newest_sha": "50d49e741a264f4f9eb252fbd4b779413ef73b05",
+        "oldest_committed_at": "2023-09-04T15:37:00Z",
+        "newest_committed_at": "2024-03-30T15:04:12Z"
+      },
+      {
+        "status": "missing",
+        "count": 11,
+        "oldest_sha": "b2dc417a5f0e86e250f4732d473e28e19f4de154",
+        "newest_sha": "be0f536e7a18776978b03a6079eb823ee3aa9b34",
+        "oldest_committed_at": "2024-04-24T03:45:06Z",
+        "newest_committed_at": "2025-07-06T07:44:01Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/main",
+        "tip": "be0f536e7a18776978b03a6079eb823ee3aa9b34",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 11,
+          "present": 24
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:43Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/209aa77743cb96f2fb962df8c1295db6a94529f3704116f1bc74de79bcdc74e5.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:41Z"
+  },
+  {
+    "url": "https://github.com/sobelow/sobelow",
+    "observed_at": "2026-09-23T21:19:41Z",
+    "baseline_observed_at": "2026-09-23T20:16:50Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "4eb7d16dc09a9fe26b388c30797cc0b8fb386808",
+    "current_head": "4eb7d16dc09a9fe26b388c30797cc0b8fb386808",
+    "head_committed_at": "2026-08-05T20:59:52Z",
+    "first_parent_count": 539,
+    "first_parent_present": 515,
+    "missing_tip_commits": 24,
+    "nearest_present_revision": "swh:1:rev:93ab93fe10e2d403b017645cc24c6507a9dce3be",
+    "nearest_present_committed_at": "2025-10-14T00:38:18Z",
+    "commit_date_gap_days": 295.8,
+    "present_in_head_ancestry": 618,
+    "present_outside_head_ancestry": 7,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 515,
+        "oldest_sha": "998a3f897402bdd2a3f5c6017e82d28f61f64a12",
+        "newest_sha": "93ab93fe10e2d403b017645cc24c6507a9dce3be",
+        "oldest_committed_at": "2017-04-05T22:15:54Z",
+        "newest_committed_at": "2025-10-14T00:38:18Z"
+      },
+      {
+        "status": "missing",
+        "count": 24,
+        "oldest_sha": "711023703686a50b130d94f835d05de91527b335",
+        "newest_sha": "4eb7d16dc09a9fe26b388c30797cc0b8fb386808",
+        "oldest_committed_at": "2025-10-14T00:51:27Z",
+        "newest_committed_at": "2026-08-05T20:59:52Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/main",
+        "tip": "4eb7d16dc09a9fe26b388c30797cc0b8fb386808",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 24,
+          "present": 618
+        }
+      },
+      {
+        "name": "refs/heads/release",
+        "tip": "ab044b56e1d283387f9fbe0613d5199a47e349db",
+        "tip_status": "present",
+        "coverage": {
+          "present": 547
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:43Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/01377801d368be1a2083297f51b460cd38127468340cabb8723d6389e98d4867.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:43Z"
+  },
+  {
+    "url": "https://github.com/sval-rs/value-bag",
+    "observed_at": "2026-09-23T21:19:43Z",
+    "baseline_observed_at": "2026-09-23T20:16:52Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "f089141eca03d0b8ef2237162b0df547decade16",
+    "current_head": "f089141eca03d0b8ef2237162b0df547decade16",
+    "head_committed_at": "2026-08-31T23:53:43Z",
+    "first_parent_count": 99,
+    "first_parent_present": 37,
+    "missing_tip_commits": 62,
+    "nearest_present_revision": "swh:1:rev:313cd1d59301708ddb3f980cc25af79e2e218e61",
+    "nearest_present_committed_at": "2022-04-08T11:02:13Z",
+    "commit_date_gap_days": 1606.5,
+    "present_in_head_ancestry": 61,
+    "present_outside_head_ancestry": 2,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 37,
+        "oldest_sha": "a313dc52745fd43a80d259e6307c8ad97e1d6962",
+        "newest_sha": "313cd1d59301708ddb3f980cc25af79e2e218e61",
+        "oldest_committed_at": "2020-08-18T03:54:07Z",
+        "newest_committed_at": "2022-04-08T11:02:13Z"
+      },
+      {
+        "status": "missing",
+        "count": 62,
+        "oldest_sha": "5ce744a9bbe66f5af2c5225246936cdea96ae02a",
+        "newest_sha": "f089141eca03d0b8ef2237162b0df547decade16",
+        "oldest_committed_at": "2023-03-28T21:46:48Z",
+        "newest_committed_at": "2026-08-31T23:53:43Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/main",
+        "tip": "f089141eca03d0b8ef2237162b0df547decade16",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 129,
+          "present": 61
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:44Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/47e6c901014aa5a4587a62f53df174d3eda0197ca1860cac19348999d6793cfe.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:43Z"
+  },
+  {
+    "url": "https://github.com/tidyverse/googlesheets4",
+    "observed_at": "2026-09-23T21:19:43Z",
+    "baseline_observed_at": "2026-09-23T20:16:53Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "55cd9fdbf9c74c20de1eeb9ec2629a7d16c76aa4",
+    "current_head": "55cd9fdbf9c74c20de1eeb9ec2629a7d16c76aa4",
+    "head_committed_at": "2025-09-08T20:08:34Z",
+    "first_parent_count": 910,
+    "first_parent_present": 898,
+    "missing_tip_commits": 12,
+    "nearest_present_revision": "swh:1:rev:4d7f23dcc479b314f96eda11fea695571693697e",
+    "nearest_present_committed_at": "2023-11-24T19:25:47Z",
+    "commit_date_gap_days": 654.0,
+    "present_in_head_ancestry": 899,
+    "present_outside_head_ancestry": 1883,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 898,
+        "oldest_sha": "10d3e606b19f26732dcfd8d99ce5c81dd44789ed",
+        "newest_sha": "4d7f23dcc479b314f96eda11fea695571693697e",
+        "oldest_committed_at": "2017-04-28T02:03:33Z",
+        "newest_committed_at": "2023-11-24T19:25:47Z"
+      },
+      {
+        "status": "missing",
+        "count": 12,
+        "oldest_sha": "c24fdbbca4591e358d74db4f216ffda2349c18de",
+        "newest_sha": "55cd9fdbf9c74c20de1eeb9ec2629a7d16c76aa4",
+        "oldest_committed_at": "2024-07-22T19:17:30Z",
+        "newest_committed_at": "2025-09-08T20:08:34Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/CellData-and-formulas",
+        "tip": "61299a3069ac2558824f63c247c9db8b92849c27",
+        "tip_status": "present",
+        "coverage": {
+          "present": 543
+        }
+      },
+      {
+        "name": "refs/heads/dont-import-this",
+        "tip": "b3eeecf680f7864a39930b76d156e0310029d8aa",
+        "tip_status": "present",
+        "coverage": {
+          "present": 898
+        }
+      },
+      {
+        "name": "refs/heads/gh-pages",
+        "tip": "a30fa8c7fd2eb54f50f3bc7a9916986e46569b63",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 816,
+          "present": 1681
+        }
+      },
+      {
+        "name": "refs/heads/main",
+        "tip": "55cd9fdbf9c74c20de1eeb9ec2629a7d16c76aa4",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 12,
+          "present": 899
+        }
+      },
+      {
+        "name": "refs/heads/update-discovery-doc",
+        "tip": "8aaba215b61891e79ce8ca55a51cbbd32cd43da6",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 12,
+          "present": 899
+        }
+      },
+      {
+        "name": "refs/heads/update-pkgdown-1-0-0",
+        "tip": "5bfecfca6237ee57082bcc32ca8522bf61a3f678",
+        "tip_status": "present",
+        "coverage": {
+          "present": 797
+        }
+      },
+      {
+        "name": "refs/heads/update-pkgdown-1-0-1",
+        "tip": "c2c3692028f8dbcdd74b6a698405b610a78c2533",
+        "tip_status": "present",
+        "coverage": {
+          "present": 845
+        }
+      },
+      {
+        "name": "refs/heads/v0.1.1",
+        "tip": "ec3946b99711999ba7126537948646812f7a88cc",
+        "tip_status": "present",
+        "coverage": {
+          "present": 337
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:47Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/e0fa30919cff10e4c15164e5f0ab45e418665030cc242370627b7b0d987b9248.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:56Z"
+  },
+  {
+    "url": "https://github.com/unkindpartition/ansi-terminal",
+    "observed_at": "2026-09-23T21:19:56Z",
+    "baseline_observed_at": "2026-09-23T20:17:07Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "d468adc1d4b1ff5f00102616eba82ad5f17666d4",
+    "current_head": "d468adc1d4b1ff5f00102616eba82ad5f17666d4",
+    "head_committed_at": "2026-01-22T21:36:50Z",
+    "first_parent_count": 311,
+    "first_parent_present": 306,
+    "missing_tip_commits": 5,
+    "nearest_present_revision": "swh:1:rev:015e8b3cf2b21192256917a56676167bb63580d5",
+    "nearest_present_committed_at": "2025-09-27T21:23:38Z",
+    "commit_date_gap_days": 117.0,
+    "present_in_head_ancestry": 311,
+    "present_outside_head_ancestry": 76,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 306,
+        "oldest_sha": "95a9329c69baeed53f1bf4d0aeb3280aeb119264",
+        "newest_sha": "015e8b3cf2b21192256917a56676167bb63580d5",
+        "oldest_committed_at": "2008-08-30T15:39:35Z",
+        "newest_committed_at": "2025-09-27T21:23:38Z"
+      },
+      {
+        "status": "missing",
+        "count": 5,
+        "oldest_sha": "86bc87534b12edf702d801d229db5fe648a50c4c",
+        "newest_sha": "d468adc1d4b1ff5f00102616eba82ad5f17666d4",
+        "oldest_committed_at": "2025-12-07T19:23:36Z",
+        "newest_committed_at": "2026-01-22T21:36:50Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/ci",
+        "tip": "6cc02316ba6148a4b8015f3527c6840cac927681",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 1,
+          "present": 301
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "d468adc1d4b1ff5f00102616eba82ad5f17666d4",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 5,
+          "present": 311
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:48Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/f5255b9bb4e003241395720c6e5f4d25a32791c6d1206a00482165286436a257.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:57Z"
+  },
+  {
+    "url": "https://github.com/vlix/http-types",
+    "observed_at": "2026-09-23T21:19:57Z",
+    "baseline_observed_at": "2026-09-23T20:17:08Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "652b2c71434abafd7a0d0898eeb4348d125b87d9",
+    "current_head": "652b2c71434abafd7a0d0898eeb4348d125b87d9",
+    "head_committed_at": "2026-09-23T11:21:28Z",
+    "first_parent_count": 183,
+    "first_parent_present": 174,
+    "missing_tip_commits": 9,
+    "nearest_present_revision": "swh:1:rev:e4c017fdd2e309b7e88e7178b760cfd6ac2f6bb6",
+    "nearest_present_committed_at": "2024-09-18T04:06:45Z",
+    "commit_date_gap_days": 735.3,
+    "present_in_head_ancestry": 319,
+    "present_outside_head_ancestry": 8,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 174,
+        "oldest_sha": "81ff2ca183318bcfd0f6fc71444a3237d03be161",
+        "newest_sha": "e4c017fdd2e309b7e88e7178b760cfd6ac2f6bb6",
+        "oldest_committed_at": "2011-02-02T20:11:54Z",
+        "newest_committed_at": "2024-09-18T04:06:45Z"
+      },
+      {
+        "status": "missing",
+        "count": 9,
+        "oldest_sha": "f83941e3da17dad9054117c43532bc0f28765f51",
+        "newest_sha": "652b2c71434abafd7a0d0898eeb4348d125b87d9",
+        "oldest_committed_at": "2026-05-18T23:10:46Z",
+        "newest_committed_at": "2026-09-23T11:21:28Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/experimental",
+        "tip": "227cc7405ed2bf8758200f2d532ad188cb4db2a2",
+        "tip_status": "present",
+        "coverage": {
+          "present": 238
+        }
+      },
+      {
+        "name": "refs/heads/experimental-headers",
+        "tip": "7b6e623df04196a94f89d9d69f96fddc2358965a",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 69,
+          "present": 319
+        }
+      },
+      {
+        "name": "refs/heads/http-types-0.13-milestone",
+        "tip": "7e7faee1d04722a2033150bd519b670d7c67b4c5",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 61,
+          "present": 319
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "652b2c71434abafd7a0d0898eeb4348d125b87d9",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 63,
+          "present": 319
+        }
+      },
+      {
+        "name": "refs/heads/overhaul-without-breaking-existing-functionality",
+        "tip": "1afde27deca14231ce41c45b9e83791916d3e00a",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 19,
+          "present": 319
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:35Z",
+    "known_checked_at_max": "2026-09-23T21:11:48Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/b2897a5ecc649c8d410b21198ac41fff809fe1f347b8679d62f9764243e46691.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:58Z"
+  },
+  {
+    "url": "https://github.com/wolph/portalocker",
+    "observed_at": "2026-09-23T21:19:58Z",
+    "baseline_observed_at": "2026-09-23T20:17:09Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "c490bea3973b9840a3c18610edac5d00700075dd",
+    "current_head": "c490bea3973b9840a3c18610edac5d00700075dd",
+    "head_committed_at": "2026-09-19T12:38:48Z",
+    "first_parent_count": 306,
+    "first_parent_present": 204,
+    "missing_tip_commits": 102,
+    "nearest_present_revision": "swh:1:rev:4d5905f14015dfa1561b9f3efff9e59ed03df5ba",
+    "nearest_present_committed_at": "2024-07-13T23:15:13Z",
+    "commit_date_gap_days": 797.6,
+    "present_in_head_ancestry": 413,
+    "present_outside_head_ancestry": 3,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 204,
+        "oldest_sha": "d6f76c8804f2e053e0e1070e8e5865c7545ee126",
+        "newest_sha": "4d5905f14015dfa1561b9f3efff9e59ed03df5ba",
+        "oldest_committed_at": "2011-02-23T15:12:46Z",
+        "newest_committed_at": "2024-07-13T23:15:13Z"
+      },
+      {
+        "status": "missing",
+        "count": 102,
+        "oldest_sha": "582adc26d8f9980999081e900a81608fec0b590e",
+        "newest_sha": "c490bea3973b9840a3c18610edac5d00700075dd",
+        "oldest_committed_at": "2024-11-18T12:12:08Z",
+        "newest_committed_at": "2026-09-19T12:38:48Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/ci/ruff-autofix",
+        "tip": "a7d1d7621041bb9983e7eb6e968ebafae833fcba",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 414,
+          "present": 413
+        }
+      },
+      {
+        "name": "refs/heads/develop",
+        "tip": "c490bea3973b9840a3c18610edac5d00700075dd",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 413,
+          "present": 413
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "c490bea3973b9840a3c18610edac5d00700075dd",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 413,
+          "present": 413
+        }
+      },
+      {
+        "name": "refs/heads/release/4.3.1-refresh",
+        "tip": "3901b65961b888b4788f130c5b64d1dd11fda059",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 394,
+          "present": 413
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:38Z",
+    "known_checked_at_max": "2026-09-23T21:11:49Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/524147f62be8c9928e8b4a0a893770adc28f4894cddb7b40544cbd91eeb7a4bb.json.gz",
+    "graph_observed_at": "2026-09-23T21:19:59Z"
+  },
+  {
+    "url": "https://github.com/wolph/python-progressbar",
+    "observed_at": "2026-09-23T21:19:59Z",
+    "baseline_observed_at": "2026-09-23T20:17:10Z",
+    "pattern": "continuous_older_first_parent_history",
+    "head": "0451a4203397bdcdc1b6ea27d8a1ad0077d8b95e",
+    "current_head": "0451a4203397bdcdc1b6ea27d8a1ad0077d8b95e",
+    "head_committed_at": "2026-09-20T01:20:45Z",
+    "first_parent_count": 760,
+    "first_parent_present": 710,
+    "missing_tip_commits": 50,
+    "nearest_present_revision": "swh:1:rev:e9c8ae84e95b7500a2ab904df76c1ff08645d115",
+    "nearest_present_committed_at": "2026-07-10T16:09:32Z",
+    "commit_date_gap_days": 71.4,
+    "present_in_head_ancestry": 1286,
+    "present_outside_head_ancestry": 63,
+    "present_to_missing_parent_edges": 0,
+    "missing_parent_examples": [],
+    "first_parent_runs": [
+      {
+        "status": "present",
+        "count": 710,
+        "oldest_sha": "3327465af27d4e9315f1c4c915187b1d235b3996",
+        "newest_sha": "e9c8ae84e95b7500a2ab904df76c1ff08645d115",
+        "oldest_committed_at": "2008-12-22T02:26:58Z",
+        "newest_committed_at": "2026-07-10T16:09:32Z"
+      },
+      {
+        "status": "missing",
+        "count": 50,
+        "oldest_sha": "01b86f6b4c36f99768d972824b9332b9ce966587",
+        "newest_sha": "0451a4203397bdcdc1b6ea27d8a1ad0077d8b95e",
+        "oldest_committed_at": "2026-08-02T10:46:05Z",
+        "newest_committed_at": "2026-09-20T01:20:45Z"
+      }
+    ],
+    "branches": [
+      {
+        "name": "refs/heads/autofix-rollout",
+        "tip": "2e30059028a8df808fd22fe13e9d6a9c574f2cf9",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 64,
+          "present": 1286
+        }
+      },
+      {
+        "name": "refs/heads/develop",
+        "tip": "0451a4203397bdcdc1b6ea27d8a1ad0077d8b95e",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 65,
+          "present": 1286
+        }
+      },
+      {
+        "name": "refs/heads/docs/showcase",
+        "tip": "1441ce0bf53c572106ddabc8c26298f0d7ab4a9d",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 50,
+          "present": 1286
+        }
+      },
+      {
+        "name": "refs/heads/fix/deprecation-stacklevel",
+        "tip": "837be153e13e70e23ea5bb340d750b659732cc52",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 30,
+          "present": 1286
+        }
+      },
+      {
+        "name": "refs/heads/master",
+        "tip": "4e99763a84f240961466d3e915ac15416b749d54",
+        "tip_status": "missing",
+        "coverage": {
+          "missing": 62,
+          "present": 1286
+        }
+      }
+    ],
+    "known_checked_at_min": "2026-09-23T17:10:33Z",
+    "known_checked_at_max": "2026-09-23T21:11:51Z",
+    "status": "complete",
+    "evidence_file": "history-evidence/5384a7723f5091d1e8332857209f1e7219ba78e4cac8cf36aa32fc4616190ab0.json.gz",
+    "graph_observed_at": "2026-09-23T21:20:01Z"
+  }
+]

@@ -1,0 +1,458 @@
+{
+  "cohort": {
+    "created_at": "2026-09-23T15:22:37Z",
+    "reported_at": "2026-09-24T10:26:24Z",
+    "registries_discovered": true,
+    "registries": {
+      "complete": 110
+    },
+    "packages": 9823,
+    "packages_without_repository": 543,
+    "packages_with_recovered_repository": 254,
+    "repositories": 6984,
+    "repository_coverage": {
+      "no_snapshot": 17,
+      "origin_not_found": 114,
+      "snapshot_found": 1923,
+      "unchecked": 4930
+    },
+    "current_commit_coverage": {
+      "missing": 1817,
+      "present": 4979,
+      "unchecked": 56,
+      "unknown": 132
+    },
+    "missing_heads_repository_coverage": {
+      "no_snapshot": 9,
+      "origin_not_found": 80,
+      "snapshot_found": 1728
+    },
+    "distinct_objects": {
+      "missing": 10098,
+      "present": 30600
+    },
+    "latest_release_tag_matching": {
+      "ambiguous": 12,
+      "matched": 6958,
+      "no_repository": 543,
+      "no_version": 44,
+      "unknown": 241,
+      "unmatched": 2025
+    },
+    "tag_target_revision_coverage": {
+      "present": 6252,
+      "revision_not_found": 706
+    },
+    "annotated_release_coverage": {
+      "missing": 373,
+      "present": 3108
+    },
+    "cohort_complete": true,
+    "release_gap_repositories": {
+      "repositories": 534,
+      "archive_status": {
+        "no_snapshot_at_checked_origins": 46,
+        "archived_evidence_found": 488
+      },
+      "repository_coverage": {
+        "origin_not_found": 44,
+        "snapshot_found": 467,
+        "no_snapshot": 2,
+        "unchecked": 21
+      },
+      "missing_tag_target_revision": 502,
+      "missing_annotated_release": 277
+    }
+  },
+  "freshness": {
+    "reported_at": "2026-09-24T12:57:39Z",
+    "scope": "Current-origin URLs normalize to the stored repository URL; other aliases may include historical URLs or mirrors. Top-level dates cover all checked aliases. Untried aliases and uncached pages remain unresolved. Ages are days since visits, not source freshness or commit ingestion lag.",
+    "missing_heads": {
+      "repositories": 1817,
+      "packages": 3279,
+      "with_candidate_aliases": 1817,
+      "with_checked_aliases": 1817,
+      "checked_aliases_complete": 1817,
+      "all_aliases_checked": 185,
+      "with_incomplete_lookups": 0,
+      "with_unread_visit_pages": 1029,
+      "local_git_status": {
+        "observed": 1817
+      },
+      "local_git_errors": 0,
+      "head_object_status": {
+        "missing": 1817
+      },
+      "latest_attempt_status": {
+        "full": 999,
+        "not_found": 715,
+        "failed": 19,
+        "partial": 2
+      },
+      "latest_snapshot_status": {
+        "full": 1728
+      },
+      "latest_attempt_age_days": {
+        "n": 1735,
+        "min": 0.17,
+        "median": 15.89,
+        "max": 2911.66
+      },
+      "latest_snapshot_age_days": {
+        "n": 1728,
+        "min": 0.17,
+        "median": 23.24,
+        "max": 2939.89
+      },
+      "attempt_snapshot_gap_days": {
+        "n": 1728,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 1083.79
+      },
+      "latest_attempt_after_snapshot": 729,
+      "evidence_fetched_at": {
+        "first": "2026-09-23T15:33:00Z",
+        "last": "2026-09-24T12:13:01Z"
+      },
+      "current_origin": {
+        "repositories": 1817,
+        "packages": 3279,
+        "with_candidate_aliases": 1817,
+        "with_checked_aliases": 1616,
+        "checked_aliases_complete": 1616,
+        "all_aliases_checked": 207,
+        "with_incomplete_lookups": 0,
+        "with_unread_visit_pages": 974,
+        "local_git_status": {
+          "observed": 1817
+        },
+        "local_git_errors": 0,
+        "head_object_status": {
+          "missing": 1817
+        },
+        "latest_attempt_status": {
+          "full": 821,
+          "failed": 25,
+          "not_found": 652,
+          "partial": 1
+        },
+        "latest_snapshot_status": {
+          "full": 1490
+        },
+        "latest_attempt_age_days": {
+          "n": 1499,
+          "min": 0.17,
+          "median": 13.49,
+          "max": 2831.01
+        },
+        "latest_snapshot_age_days": {
+          "n": 1490,
+          "min": 0.17,
+          "median": 21.8,
+          "max": 2899.3
+        },
+        "attempt_snapshot_gap_days": {
+          "n": 1490,
+          "min": 0.0,
+          "median": 0.0,
+          "max": 1370.43
+        },
+        "latest_attempt_after_snapshot": 669,
+        "evidence_fetched_at": {
+          "first": "2026-09-23T15:33:00Z",
+          "last": "2026-09-24T12:13:00Z"
+        }
+      },
+      "other_aliases": {
+        "repositories": 1817,
+        "packages": 3279,
+        "with_candidate_aliases": 533,
+        "with_checked_aliases": 325,
+        "checked_aliases_complete": 325,
+        "all_aliases_checked": 96,
+        "with_incomplete_lookups": 0,
+        "with_unread_visit_pages": 56,
+        "local_git_status": {
+          "observed": 1817
+        },
+        "local_git_errors": 0,
+        "head_object_status": {
+          "missing": 1817
+        },
+        "latest_attempt_status": {
+          "full": 188,
+          "not_found": 65,
+          "partial": 3,
+          "failed": 1
+        },
+        "latest_snapshot_status": {
+          "full": 254
+        },
+        "latest_attempt_age_days": {
+          "n": 257,
+          "min": 0.3,
+          "median": 286.43,
+          "max": 2911.66
+        },
+        "latest_snapshot_age_days": {
+          "n": 254,
+          "min": 0.3,
+          "median": 420.82,
+          "max": 2939.89
+        },
+        "attempt_snapshot_gap_days": {
+          "n": 254,
+          "min": 0.0,
+          "median": 0.0,
+          "max": 1151.29
+        },
+        "latest_attempt_after_snapshot": 66,
+        "evidence_fetched_at": {
+          "first": "2026-09-23T15:33:19Z",
+          "last": "2026-09-24T12:13:01Z"
+        }
+      }
+    }
+  },
+  "go_pseudo_versions": {
+    "unmatched_go_versions": 132,
+    "pseudo_versions": 84,
+    "other_unmatched_versions": 48,
+    "distinct_revisions": 84,
+    "resolution_counts": {
+      "resolved": 84
+    },
+    "resolution_methods": {
+      "go_proxy_origin": 28,
+      "saved_git_ref_and_archived_revision": 52,
+      "github_commit_metadata": 1,
+      "cloned_git_commit": 3
+    },
+    "archive_counts": {
+      "present": 82,
+      "missing": 2
+    },
+    "scope": "Go proxy or GitHub metadata, saved Git refs verified against archived revisions, or cloned commits. Full hashes and commit timestamps checked before known queries. Original tag matching and cohort object statuses remain unchanged.",
+    "observed_at": [
+      "2026-09-24T15:26:20Z"
+    ]
+  },
+  "science": {
+    "reported_at": "2026-09-24T08:46:46Z",
+    "groups": {
+      "projects": {
+        "packages": 450,
+        "repositories": 367,
+        "packages_without_repository": 0,
+        "current_commit_coverage": {
+          "present": 245,
+          "missing": 122
+        },
+        "repository_coverage": {
+          "unchecked": 297,
+          "snapshot_found": 63,
+          "origin_not_found": 7
+        },
+        "latest_release_tag_matching": {
+          "matched": 377,
+          "unmatched": 71,
+          "unknown": 2
+        },
+        "tag_target_revision_coverage": {
+          "present": 352,
+          "revision_not_found": 25
+        },
+        "annotated_release_coverage": {
+          "present": 141,
+          "missing": 8
+        },
+        "rates": {
+          "head_missing_among_resolved": {
+            "count": 122,
+            "denominator": 367,
+            "percent": 33.2
+          },
+          "head_unresolved_among_repositories": {
+            "count": 0,
+            "denominator": 367,
+            "percent": 0.0
+          },
+          "packages_without_repository": {
+            "count": 0,
+            "denominator": 450,
+            "percent": 0.0
+          },
+          "tag_matched_among_packages": {
+            "count": 377,
+            "denominator": 450,
+            "percent": 83.8
+          },
+          "tag_revision_missing_among_resolved": {
+            "count": 25,
+            "denominator": 377,
+            "percent": 6.6
+          },
+          "annotated_release_missing_among_resolved": {
+            "count": 8,
+            "denominator": 149,
+            "percent": 5.4
+          }
+        }
+      },
+      "dependencies": {
+        "packages": 924,
+        "repositories": 701,
+        "packages_without_repository": 163,
+        "current_commit_coverage": {
+          "present": 466,
+          "missing": 223,
+          "unknown": 8,
+          "unchecked": 4
+        },
+        "repository_coverage": {
+          "unchecked": 548,
+          "snapshot_found": 129,
+          "origin_not_found": 24
+        },
+        "latest_release_tag_matching": {
+          "matched": 573,
+          "no_repository": 163,
+          "unmatched": 169,
+          "unknown": 17,
+          "no_version": 2
+        },
+        "tag_target_revision_coverage": {
+          "present": 520,
+          "revision_not_found": 53
+        },
+        "annotated_release_coverage": {
+          "present": 202,
+          "missing": 19
+        },
+        "rates": {
+          "head_missing_among_resolved": {
+            "count": 223,
+            "denominator": 689,
+            "percent": 32.4
+          },
+          "head_unresolved_among_repositories": {
+            "count": 12,
+            "denominator": 701,
+            "percent": 1.7
+          },
+          "packages_without_repository": {
+            "count": 163,
+            "denominator": 924,
+            "percent": 17.6
+          },
+          "tag_matched_among_packages": {
+            "count": 573,
+            "denominator": 924,
+            "percent": 62.0
+          },
+          "tag_revision_missing_among_resolved": {
+            "count": 53,
+            "denominator": 573,
+            "percent": 9.2
+          },
+          "annotated_release_missing_among_resolved": {
+            "count": 19,
+            "denominator": 221,
+            "percent": 8.6
+          }
+        }
+      },
+      "not_matched": {
+        "packages": 8803,
+        "repositories": 6252,
+        "packages_without_repository": 380,
+        "current_commit_coverage": {
+          "present": 4499,
+          "missing": 1577,
+          "unknown": 124,
+          "unchecked": 52
+        },
+        "repository_coverage": {
+          "snapshot_found": 1221,
+          "unchecked": 4931,
+          "origin_not_found": 82,
+          "no_snapshot": 17,
+          "unknown": 1
+        },
+        "latest_release_tag_matching": {
+          "matched": 6302,
+          "unmatched": 1844,
+          "no_repository": 380,
+          "unknown": 223,
+          "ambiguous": 12,
+          "no_version": 42
+        },
+        "tag_target_revision_coverage": {
+          "present": 5649,
+          "revision_not_found": 653
+        },
+        "annotated_release_coverage": {
+          "present": 2855,
+          "missing": 354
+        },
+        "rates": {
+          "head_missing_among_resolved": {
+            "count": 1577,
+            "denominator": 6076,
+            "percent": 26.0
+          },
+          "head_unresolved_among_repositories": {
+            "count": 176,
+            "denominator": 6252,
+            "percent": 2.8
+          },
+          "packages_without_repository": {
+            "count": 380,
+            "denominator": 8803,
+            "percent": 4.3
+          },
+          "tag_matched_among_packages": {
+            "count": 6302,
+            "denominator": 8803,
+            "percent": 71.6
+          },
+          "tag_revision_missing_among_resolved": {
+            "count": 653,
+            "denominator": 6302,
+            "percent": 10.4
+          },
+          "annotated_release_missing_among_resolved": {
+            "count": 354,
+            "denominator": 3209,
+            "percent": 11.0
+          }
+        }
+      }
+    },
+    "overlap": {
+      "packages": 354,
+      "repositories": 336,
+      "package_union": 1020,
+      "repository_union": 732
+    },
+    "project_match_basis": {
+      "purl_supported": 441,
+      "repository_only": 9
+    }
+  },
+  "extrinsic_metadata": {
+    "status": "complete",
+    "targets": 15,
+    "targets_with_metadata": 3,
+    "records": 8
+  },
+  "limits": [
+    "Reports retain their separate observation dates; science uses its earlier cutoff.",
+    "Current-origin aliases match the stored repository URL; other aliases may be historical names or mirrors. Scope samples overlap.",
+    "Visit ages do not measure commit ingestion lag. Untried aliases can have other evidence.",
+    "Pseudo-version results supplement the frozen cohort and do not change tag classifications.",
+    "Release-tag examples were selected for investigation and do not estimate prevalence.",
+    "Evidence paths refer to this checkout; this export does not bundle the raw cache."
+  ]
+}

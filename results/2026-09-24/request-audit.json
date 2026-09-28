@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "hosts": [
+    "archive.softwareheritage.org",
+    "packages.ecosyste.ms"
+  ],
+  "cached_responses": 20,
+  "raw_content_responses": 10,
+  "files": 10,
+  "bytes": 9698,
+  "independent_directory_swhid": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+  "requests": [
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:5285efa4046b81159f8f57003341817776a5fa75/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:32Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:3b5d9e90ec405f85dd7f9066656efccc51193697/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:26Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/directory/e5d5c07c20b31497719c679cfb315c33c13c5024/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:26Z"
+    },
+    {
+      "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/versions/1.1.0",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:55Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:7afce20a601453355c418aa338f7065b6159518d/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:27Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/directory/bec2fca52dc8cafad9c60e5d9fda6498982bedc1/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:33Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:4e940905aca80584442a169936c89e8645ff78bd/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:35Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:9213159650b64548b763b9a7af695bef5d860151/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:30Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:0580d2f7102cb88d0d49e8686d145e338e208166/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:29Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:5551ab60218825c866c50a2dce4397f630825ecc/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:31Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/directory/2224eb0c85c64270e131646d16081d5174493411/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:58Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/release/79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:57Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/directory/1699d70237ee0c610b97ae94741aa7a5247ec690/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:57Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/known/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:55Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:e115695a454f3a96733d8169760d7759cbd09a9d/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:34Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/snapshot/c27c32c37a55e02e1c715db23a66eefa3b1fe61f/?branches_count=1000",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:56Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:e3bf2a10ce2b10f40fbcd6fb6087ae1f7fb074ad/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:28Z",
+      "encoding": "base64"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fpossible-typed-array-names/visits/?per_page=100",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:56Z"
+    },
+    {
+      "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:29:55Z"
+    },
+    {
+      "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:f82f38963b0d282b529f64def2bcd40be3a9a947/raw/",
+      "status": 200,
+      "fetched_at": "2026-09-23T22:38:29Z",
+      "encoding": "base64"
+    }
+  ]
+}

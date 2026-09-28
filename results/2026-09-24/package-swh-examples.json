@@ -1,0 +1,1218 @@
+{
+  "generated_at": "2026-09-24T11:47:05Z",
+  "extrinsic_metadata": {
+    "status": "complete",
+    "report": {
+      "path": "data/full/out/extrinsic_metadata.json",
+      "sha256": "33843e2b7ac181022b860bce08e210e9529f46793a9bde40401e0448c131c5a2"
+    },
+    "targets": [
+      {
+        "target": "swh:1:snp:c27c32c37a55e02e1c715db23a66eefa3b1fe61f",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/344208e810624df6ff9724219b2a908730be2cbe78b345c2c4e885c8e2b00aed.json.gz",
+          "sha256": "85a2bd84e9c9be209c8859bc827b04fa9133f28ac2640d91503430de4f9b498a",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:snp:c27c32c37a55e02e1c715db23a66eefa3b1fe61f/authorities/",
+          "fetched_at": "2026-09-24T11:44:32Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:rel:79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/91138cf1578cb9a9932cb5697a44bd3bfa0cc2817893fd0ed891c32617f9c26e.json.gz",
+          "sha256": "bb8911ac0c7b53849274793c0ca2c7fffe5f70e58ae818b461fba351bf71928e",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:rel:79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2/authorities/",
+          "fetched_at": "2026-09-24T11:44:33Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/eb0de0aa0b32524a7ed820a5032bccfeffc32c49b3c163c06ea5d3872e3f46a8.json.gz",
+          "sha256": "cc5ea98be1cbd1c8c168fae3d66eaa20273a0cb6b9549908c9401f377be3398b",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/authorities/",
+          "fetched_at": "2026-09-24T11:44:33Z"
+        },
+        "authorities": [
+          {
+            "type": "forge",
+            "url": "https://npmjs.com/",
+            "records": [
+              {
+                "target": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+                "discovery_date": "2025-03-27T07:15:05+00:00",
+                "authority": {
+                  "type": "forge",
+                  "url": "https://npmjs.com/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.npm.loader.NpmLoader",
+                  "version": "5.21.1"
+                },
+                "format": "replicate-npm-package-json",
+                "origin": "https://www.npmjs.com/package/possible-typed-array-names",
+                "release": "swh:1:rel:79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/32f58b0bc719480f8d4e919393aaa1bdc075cc09/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                "evidence": {
+                  "path": "data/full/cache/e72a506809fd22ecee788fb34ad1a9676084051d7252ce27878ef8ebda4921b1.json.gz",
+                  "sha256": "7e5817778bae5b059053c28a48da5d396b879f0535da501aaaa1d4e9d2c4a10f",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=forge+https%3A%2F%2Fnpmjs.com%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:34Z"
+                },
+                "payload": {
+                  "sha256": "6c9c1242aaa3dccbc4e3e87ebbd5508e78837ea2494135c9adcbf4c901ec29f7",
+                  "bytes": 3110,
+                  "evidence": {
+                    "path": "data/full/cache/ff80718aa5f2f3c074e2e6a208e46c4b42933a8e038e63772f9ef2b20e1f0751.json.gz",
+                    "sha256": "9d933dc8d4f5bde4e93ad3a007b3ee68881ac3fac1b39ffa2ec6195cebf86864",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/32f58b0bc719480f8d4e919393aaa1bdc075cc09/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                    "fetched_at": "2026-09-24T11:44:34Z"
+                  }
+                }
+              }
+            ],
+            "pages": [
+              {
+                "path": "data/full/cache/e72a506809fd22ecee788fb34ad1a9676084051d7252ce27878ef8ebda4921b1.json.gz",
+                "sha256": "7e5817778bae5b059053c28a48da5d396b879f0535da501aaaa1d4e9d2c4a10f",
+                "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=forge+https%3A%2F%2Fnpmjs.com%2F&limit=10",
+                "fetched_at": "2026-09-24T11:44:34Z"
+              }
+            ]
+          },
+          {
+            "type": "registry",
+            "url": "https://softwareheritage.org/",
+            "records": [
+              {
+                "target": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+                "discovery_date": "2025-03-27T07:15:05+00:00",
+                "authority": {
+                  "type": "registry",
+                  "url": "https://softwareheritage.org/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.npm.loader.NpmLoader",
+                  "version": "5.21.1"
+                },
+                "format": "original-artifacts-json",
+                "origin": "https://www.npmjs.com/package/possible-typed-array-names",
+                "release": "swh:1:rel:79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/7d588d1215470fa2e7aaf7eb4666d58d36333d7b/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                "evidence": {
+                  "path": "data/full/cache/9771ea61be97ee0eea9db620deb82346452aa29bae00cc0539f68d79baf210ef.json.gz",
+                  "sha256": "4657aec412cfbf0bb22f43da5a04098f470f1ff38ef6aac41059cfc9c08eb55e",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=registry+https%3A%2F%2Fsoftwareheritage.org%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:35Z"
+                },
+                "payload": {
+                  "sha256": "5c74d107712e2444d9bf7722c5766bde24a4074240be6c2936769e990815364d",
+                  "bytes": 318,
+                  "evidence": {
+                    "path": "data/full/cache/36217416d02779a57af3bc2e0633ffaedecf6d52e5be6934162cbe7f4b927504.json.gz",
+                    "sha256": "a7eb5b54776a97e9962416253393e6a19573a2806fb80e6ee1d0d4088e9f7fdf",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/7d588d1215470fa2e7aaf7eb4666d58d36333d7b/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                    "fetched_at": "2026-09-24T11:44:35Z"
+                  }
+                }
+              },
+              {
+                "target": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+                "discovery_date": "2026-01-11T15:00:20+00:00",
+                "authority": {
+                  "type": "registry",
+                  "url": "https://softwareheritage.org/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.maven.loader.MavenLoader",
+                  "version": "5.24.2"
+                },
+                "format": "original-artifacts-json",
+                "origin": "https://repo1.maven.org/maven2/org/mvnpm/possible-typed-array-names",
+                "release": "swh:1:rel:46bc045368e85c269474d0c4d266163f628a7fbd",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/cb232941f4fc97669ba68730eb41d871007e8511/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                "evidence": {
+                  "path": "data/full/cache/9771ea61be97ee0eea9db620deb82346452aa29bae00cc0539f68d79baf210ef.json.gz",
+                  "sha256": "4657aec412cfbf0bb22f43da5a04098f470f1ff38ef6aac41059cfc9c08eb55e",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=registry+https%3A%2F%2Fsoftwareheritage.org%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:35Z"
+                },
+                "payload": {
+                  "sha256": "6c8d082f8c8c54cbdc64e4d1fb31576cde18679007f2b69447389d9d6e3634e0",
+                  "bytes": 352,
+                  "evidence": {
+                    "path": "data/full/cache/9a5be23c0a180d3888c72174057ea031b40b709b70ade4d10314636fd31c98c0.json.gz",
+                    "sha256": "9ab479efdfc232b0fb5b0c84394e434d15e1f963f1c2bb209feb7a884333c7f8",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/cb232941f4fc97669ba68730eb41d871007e8511/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                    "fetched_at": "2026-09-24T11:44:36Z"
+                  }
+                }
+              }
+            ],
+            "pages": [
+              {
+                "path": "data/full/cache/9771ea61be97ee0eea9db620deb82346452aa29bae00cc0539f68d79baf210ef.json.gz",
+                "sha256": "4657aec412cfbf0bb22f43da5a04098f470f1ff38ef6aac41059cfc9c08eb55e",
+                "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=registry+https%3A%2F%2Fsoftwareheritage.org%2F&limit=10",
+                "fetched_at": "2026-09-24T11:44:35Z"
+              }
+            ]
+          },
+          {
+            "type": "forge",
+            "url": "https://repo1.maven.org/maven2/",
+            "records": [
+              {
+                "target": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+                "discovery_date": "2026-01-11T15:00:20+00:00",
+                "authority": {
+                  "type": "forge",
+                  "url": "https://repo1.maven.org/maven2/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.maven.loader.MavenLoader",
+                  "version": "5.24.2"
+                },
+                "format": "maven-pom",
+                "origin": "https://repo1.maven.org/maven2/org/mvnpm/possible-typed-array-names",
+                "release": "swh:1:rel:46bc045368e85c269474d0c4d266163f628a7fbd",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/61e424c367b40a4949379908535f35cfe7f49d79/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                "evidence": {
+                  "path": "data/full/cache/5fbd1d178bc28fa2b907cd1baf381217582f2c2f84c7ab8d7108940c77baf720.json.gz",
+                  "sha256": "5b92e84d868601ee84792e0582d7f0e40061c476a1ba7ac0bbdd5248d53aa86c",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=forge+https%3A%2F%2Frepo1.maven.org%2Fmaven2%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:36Z"
+                },
+                "payload": {
+                  "sha256": "b6dc08dd1aa34003d9fd1a0c947219f48f307d415af527e800ded5fe7b7d6123",
+                  "bytes": 1338,
+                  "evidence": {
+                    "path": "data/full/cache/c685e494c6b8a7f7805a043982af0a53e6e639a67575364f217ac10297d8f19a.json.gz",
+                    "sha256": "09a5ae274f2b7009ab7a481dbcf0dba979d1ec7d27e857d850cf001106b324d2",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/61e424c367b40a4949379908535f35cfe7f49d79/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                    "fetched_at": "2026-09-24T11:44:37Z"
+                  }
+                }
+              },
+              {
+                "target": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+                "discovery_date": "2026-01-11T15:00:20+00:00",
+                "authority": {
+                  "type": "forge",
+                  "url": "https://repo1.maven.org/maven2/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.maven.loader.MavenLoader",
+                  "version": "5.24.2"
+                },
+                "format": "maven-json",
+                "origin": "https://repo1.maven.org/maven2/org/mvnpm/possible-typed-array-names",
+                "release": "swh:1:rel:46bc045368e85c269474d0c4d266163f628a7fbd",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/a791212f1157b286c570f53c5b2f13818cfdf671/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                "evidence": {
+                  "path": "data/full/cache/5fbd1d178bc28fa2b907cd1baf381217582f2c2f84c7ab8d7108940c77baf720.json.gz",
+                  "sha256": "5b92e84d868601ee84792e0582d7f0e40061c476a1ba7ac0bbdd5248d53aa86c",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=forge+https%3A%2F%2Frepo1.maven.org%2Fmaven2%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:36Z"
+                },
+                "payload": {
+                  "sha256": "83a32c9a0fab98a0b4337f0514d2eeefb76206c2b9637996c0b660853036407d",
+                  "bytes": 307,
+                  "evidence": {
+                    "path": "data/full/cache/dccfd625271b81de9e2fcb27179c0064a913d515918acfcddb22f8dc359d1c36.json.gz",
+                    "sha256": "1a6e526df9c83c52f933dcf816e2f3d165d0aa0b989a2ea23515b5e99615b860",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/a791212f1157b286c570f53c5b2f13818cfdf671/?filename=swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690_metadata",
+                    "fetched_at": "2026-09-24T11:44:37Z"
+                  }
+                }
+              }
+            ],
+            "pages": [
+              {
+                "path": "data/full/cache/5fbd1d178bc28fa2b907cd1baf381217582f2c2f84c7ab8d7108940c77baf720.json.gz",
+                "sha256": "5b92e84d868601ee84792e0582d7f0e40061c476a1ba7ac0bbdd5248d53aa86c",
+                "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690/?authority=forge+https%3A%2F%2Frepo1.maven.org%2Fmaven2%2F&limit=10",
+                "fetched_at": "2026-09-24T11:44:36Z"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target": "swh:1:rev:2f74e2d3a02309b48fa6d6d48f8fd3359681707f",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/5e2a94033ef31289224742c6c8faf4fd3b23259da804c4ea80ab69d4ae4ab55c.json.gz",
+          "sha256": "b10f2501f5b9e38d823c08b6673c947d6b862e0fe9c119efbbb9d3093f307764",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:rev:2f74e2d3a02309b48fa6d6d48f8fd3359681707f/authorities/",
+          "fetched_at": "2026-09-24T11:44:38Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:snp:36ba012e6415c841c7fdc55717b29a0086626845",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/4c052d8cf2ede64b97d4ec12356d472d841813080e0cce4ac138c319283fbb5c.json.gz",
+          "sha256": "703760a48989738dc894759917568205829aec7ff1973f3686db34edfc4aff84",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:snp:36ba012e6415c841c7fdc55717b29a0086626845/authorities/",
+          "fetched_at": "2026-09-24T11:44:38Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:rel:0a445320bd99d6de8c2d0d84ae589941898096af",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/d424c0be8ed97cb2d5441a8847900c286be113b3b0c224c79e25eb23918763e3.json.gz",
+          "sha256": "84128aab4a9069bfc7334c0b2ba3b5b76d1655b614da1484ed07ddddb342d2c6",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:rel:0a445320bd99d6de8c2d0d84ae589941898096af/authorities/",
+          "fetched_at": "2026-09-24T11:44:39Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/a6690ada15577477cc33701e8cc753804cc761978af57b6802644dfc198f938d.json.gz",
+          "sha256": "c61efbf91f92ec4544735fe8582cce5f4e09afbd688b161df1d27a2ee31f2868",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043/authorities/",
+          "fetched_at": "2026-09-24T11:44:39Z"
+        },
+        "authorities": [
+          {
+            "type": "registry",
+            "url": "https://softwareheritage.org/",
+            "records": [
+              {
+                "target": "swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043",
+                "discovery_date": "2026-04-28T18:26:36+00:00",
+                "authority": {
+                  "type": "registry",
+                  "url": "https://softwareheritage.org/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.golang.loader.GolangLoader",
+                  "version": "5.24.2"
+                },
+                "format": "original-artifacts-json",
+                "origin": "https://pkg.go.dev/github.com/inspect-js/is-data-view",
+                "release": "swh:1:rel:0a445320bd99d6de8c2d0d84ae589941898096af",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/e6dac3a88b4b62aa2d51d19da937726475598394/?filename=swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043_metadata",
+                "evidence": {
+                  "path": "data/full/cache/5b4649f3d9c0e22032eaa9fd0e860ddab5bbaf4e5ae038454b18e65389eec01f.json.gz",
+                  "sha256": "f90d7fbe10bf0cb8c80758988f8871f57586d8ea210da54e418be14153247ea6",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043/?authority=registry+https%3A%2F%2Fsoftwareheritage.org%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:40Z"
+                },
+                "payload": {
+                  "sha256": "130b0f681e763aa958713ccfa2eae4e0eca8ba75f59bec049434819700737a8e",
+                  "bytes": 311,
+                  "evidence": {
+                    "path": "data/full/cache/cf3ea3dfc95ac245f5a49fb8aa17391bdcbd5c7b12f6235d0594ff1ce80345b5.json.gz",
+                    "sha256": "8ede44177f31c14b7d4b7aeb855047c63bdedc25bc219f8679a46d3246aa716e",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/e6dac3a88b4b62aa2d51d19da937726475598394/?filename=swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043_metadata",
+                    "fetched_at": "2026-09-24T11:44:40Z"
+                  }
+                }
+              }
+            ],
+            "pages": [
+              {
+                "path": "data/full/cache/5b4649f3d9c0e22032eaa9fd0e860ddab5bbaf4e5ae038454b18e65389eec01f.json.gz",
+                "sha256": "f90d7fbe10bf0cb8c80758988f8871f57586d8ea210da54e418be14153247ea6",
+                "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043/?authority=registry+https%3A%2F%2Fsoftwareheritage.org%2F&limit=10",
+                "fetched_at": "2026-09-24T11:44:40Z"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target": "swh:1:dir:363a1fa7d91709660f518a25bceaed92efea8881",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/4898a681de366d79f5418f7f222c809d1cedf90cdb1d1aec6478dbc3c55b6021.json.gz",
+          "sha256": "d4b4eec86502b7e983d1d85dc68537af7ed1817f1d3f4495fc1a5970551b8cba",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:363a1fa7d91709660f518a25bceaed92efea8881/authorities/",
+          "fetched_at": "2026-09-24T11:44:41Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:dir:7f90a00db94d5049c20802cc8952213b12143575",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/baf786f13e5f478758328571c958232a8eb5da0f49b7478a9510c438e6fa0c86.json.gz",
+          "sha256": "5561c1a01921fdcadf442c73322e0d36a68b663abaf271e8d24523ffbd8aa2ad",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:7f90a00db94d5049c20802cc8952213b12143575/authorities/",
+          "fetched_at": "2026-09-24T11:44:41Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:dir:7dd2b2f20c7362335254037437e619ffd2655073",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/798ad1fc9168f6e4aefe70640aae56cf02f35040bae2881628652d16d574b746.json.gz",
+          "sha256": "15cef531755b198666a19792c92b8df47eaad86a36482ccf4c2b76f3850c4233",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:7dd2b2f20c7362335254037437e619ffd2655073/authorities/",
+          "fetched_at": "2026-09-24T11:44:42Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:rev:e8a4943b72a33a075c6f9fd31f4e9e8a53e15b02",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/162d7f7007d88ac14e4a879e594fd4ec44f68f7bc582892d606fdb897af1914b.json.gz",
+          "sha256": "aaa66b6e4c23ca306ba6b04cae1bf21e1eee0061c65094e0e91999335fa6a319",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:rev:e8a4943b72a33a075c6f9fd31f4e9e8a53e15b02/authorities/",
+          "fetched_at": "2026-09-24T11:44:42Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:snp:45f765ddc59c8d9c920812f7cf366a9a0c11e618",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/bed7002812ff0845afc5ff050d143124ab09fab1ca84fd1286ec294226f5b067.json.gz",
+          "sha256": "b12f2b42e8edb8acadc952a7f20dd42a3afc5e1b8b21e3d995be30dd0fe57b7a",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:snp:45f765ddc59c8d9c920812f7cf366a9a0c11e618/authorities/",
+          "fetched_at": "2026-09-24T11:44:43Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:rel:c397873eae99c3ae4873cbbb70e9a7ab97a15639",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/e18e19618e6b2ef444c34f45910acac2ad9b9221f8b3ca753eec3a5b91f67503.json.gz",
+          "sha256": "43a9ccd87286c57ca9a5a01d4ea7e557b5b65cc5435b83bc25bc61325a09f240",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:rel:c397873eae99c3ae4873cbbb70e9a7ab97a15639/authorities/",
+          "fetched_at": "2026-09-24T11:44:43Z"
+        },
+        "authorities": []
+      },
+      {
+        "target": "swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/27cc46ec5418200cea7e3674112e51edfe0945b194a68e802b605fceee4bccd8.json.gz",
+          "sha256": "72ab2e88fae2236276bd5a14324d0148712bccf725ba39ecb8f4d826e2f4d2d7",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d/authorities/",
+          "fetched_at": "2026-09-24T11:44:44Z"
+        },
+        "authorities": [
+          {
+            "type": "registry",
+            "url": "https://softwareheritage.org/",
+            "records": [
+              {
+                "target": "swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d",
+                "discovery_date": "2026-09-06T01:43:08+00:00",
+                "authority": {
+                  "type": "registry",
+                  "url": "https://softwareheritage.org/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.npm.loader.NpmLoader",
+                  "version": "5.24.2"
+                },
+                "format": "original-artifacts-json",
+                "origin": "https://www.npmjs.com/package/bare-events",
+                "release": "swh:1:rel:c397873eae99c3ae4873cbbb70e9a7ab97a15639",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/a82b354f0096451ed9f441045a7673f86bf6f774/?filename=swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d_metadata",
+                "evidence": {
+                  "path": "data/full/cache/d5dc60aeab5571fe3e620fc8235c382c6de3bbbf905b6e68f7a42baca197f8f8.json.gz",
+                  "sha256": "0ae0bb6ec243f4443fb2a8a1e7c16a58fac372c678aac02feb5ca1caa460105f",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d/?authority=registry+https%3A%2F%2Fsoftwareheritage.org%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:44Z"
+                },
+                "payload": {
+                  "sha256": "8f858d2f85de9e1bdddb277b58cac9ea4cd55546aef9f9d8bcad2c9f5c0a3d0e",
+                  "bytes": 273,
+                  "evidence": {
+                    "path": "data/full/cache/a8b15f067e77a30ba7d72e8fab1e55798e87287dba762c97bc69664e565a77a7.json.gz",
+                    "sha256": "a500ef98c723953622ca7b986204b240c453cb2b1e84615eb0f48716cdfb9b3b",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/a82b354f0096451ed9f441045a7673f86bf6f774/?filename=swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d_metadata",
+                    "fetched_at": "2026-09-24T11:44:45Z"
+                  }
+                }
+              }
+            ],
+            "pages": [
+              {
+                "path": "data/full/cache/d5dc60aeab5571fe3e620fc8235c382c6de3bbbf905b6e68f7a42baca197f8f8.json.gz",
+                "sha256": "0ae0bb6ec243f4443fb2a8a1e7c16a58fac372c678aac02feb5ca1caa460105f",
+                "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d/?authority=registry+https%3A%2F%2Fsoftwareheritage.org%2F&limit=10",
+                "fetched_at": "2026-09-24T11:44:44Z"
+              }
+            ]
+          },
+          {
+            "type": "forge",
+            "url": "https://npmjs.com/",
+            "records": [
+              {
+                "target": "swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d",
+                "discovery_date": "2026-09-06T01:43:08+00:00",
+                "authority": {
+                  "type": "forge",
+                  "url": "https://npmjs.com/"
+                },
+                "fetcher": {
+                  "name": "swh.loader.package.npm.loader.NpmLoader",
+                  "version": "5.24.2"
+                },
+                "format": "replicate-npm-package-json",
+                "origin": "https://www.npmjs.com/package/bare-events",
+                "release": "swh:1:rel:c397873eae99c3ae4873cbbb70e9a7ab97a15639",
+                "metadata_url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/615b61675a130d743881633e61ebd9ae2032b465/?filename=swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d_metadata",
+                "evidence": {
+                  "path": "data/full/cache/95be40d0e15e431d70f42f1dee54692c5c269db6ba1266e4a745729cb3f80b2b.json.gz",
+                  "sha256": "ad670305574d12646d8d3dea5c6b3d69dd396d788b0a71684be6bc6604327c2c",
+                  "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d/?authority=forge+https%3A%2F%2Fnpmjs.com%2F&limit=10",
+                  "fetched_at": "2026-09-24T11:44:45Z"
+                },
+                "payload": {
+                  "sha256": "d4240efc0c12f7146b1c1a80837b4185dc23f5aa078b0fd705d4f06369867d71",
+                  "bytes": 2600,
+                  "evidence": {
+                    "path": "data/full/cache/0f081017de3734e2bc9ca640d3d146c9512e0b862e71f4f722615f84450c3e47.json.gz",
+                    "sha256": "a30cb9539080d91e4d8a0beae9957b92609c437e75a38a28619aa7c5af732f4a",
+                    "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/get/615b61675a130d743881633e61ebd9ae2032b465/?filename=swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d_metadata",
+                    "fetched_at": "2026-09-24T11:44:46Z"
+                  }
+                }
+              }
+            ],
+            "pages": [
+              {
+                "path": "data/full/cache/95be40d0e15e431d70f42f1dee54692c5c269db6ba1266e4a745729cb3f80b2b.json.gz",
+                "sha256": "ad670305574d12646d8d3dea5c6b3d69dd396d788b0a71684be6bc6604327c2c",
+                "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d/?authority=forge+https%3A%2F%2Fnpmjs.com%2F&limit=10",
+                "fetched_at": "2026-09-24T11:44:45Z"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "target": "swh:1:rev:d3bb6aba4fc1e0e1a395832a2967a11540d18efd",
+        "status": "complete",
+        "authorities_evidence": {
+          "path": "data/full/cache/13aa255df77b3d93cbcdffe9c3c17571c202f2ca2fd2da6a799e311593ea637a.json.gz",
+          "sha256": "a14f1fa277c7e2a142c643046829b749e02a88c01ff0dd057f4ebc83158fba11",
+          "url": "https://archive.softwareheritage.org/api/1/raw-extrinsic-metadata/swhid/swh:1:rev:d3bb6aba4fc1e0e1a395832a2967a11540d18efd/authorities/",
+          "fetched_at": "2026-09-24T11:44:46Z"
+        },
+        "authorities": []
+      }
+    ],
+    "scope": "Requested core objects only; origin-level metadata and PURL lookup were not sampled. Empty authority lists do not establish absence of links elsewhere."
+  },
+  "examples": [
+    {
+      "name": "possible-typed-array-names",
+      "registry": "npmjs.org",
+      "version": "1.1.0",
+      "purl": "pkg:npm/possible-typed-array-names@1.1.0",
+      "purl_basis": "version_metadata",
+      "repository_url": "https://github.com/ljharb/possible-typed-array-names",
+      "repository_link_basis": "package_metadata",
+      "metadata_evidence": {
+        "path": "data/full/cache/bf811fc5de7ecc30e6d5b09af0597f2c66f242c8e7265b42dd548e2c939e9c4b.json.gz",
+        "sha256": "58fd32fb3b6cffa8e5bb0e1f8a51cb6df313db451691131037d32b3927d1303c",
+        "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages?critical=true&per_page=50&sort=name&order=asc&page=30",
+        "fetched_at": "2026-09-23T15:29:07Z"
+      },
+      "git_tag": {
+        "tag_name": "v1.1.0",
+        "match_status": "matched",
+        "target_swhid": "swh:1:rev:2f74e2d3a02309b48fa6d6d48f8fd3359681707f",
+        "release_swhid": "swh:1:rel:8c52c93f61f6f9c1879225d06b52293047956d90"
+      },
+      "git_tag_evidence": {
+        "path": "data/full/git-tags/d7c0c61c363ed069fc5a88c3aeece3f7d2555aa99c062f9f5408b44f14ec4cd3.txt.gz",
+        "sha256": "3d1b99fa6b309b340cc5c7aa01e1c6b184ec0fb3ff8b8e4d9fa732c550c3bf40"
+      },
+      "archive": {
+        "origin_url": "https://www.npmjs.com/package/possible-typed-array-names",
+        "visit": {
+          "visit": 3,
+          "date": "2026-08-16T02:22:24.140000+00:00",
+          "status": "full",
+          "type": "npm"
+        },
+        "snapshot_swhid": "swh:1:snp:c27c32c37a55e02e1c715db23a66eefa3b1fe61f",
+        "snapshot_complete": true,
+        "branch": "releases/1.1.0",
+        "release_swhid": "swh:1:rel:79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2",
+        "release_synthetic": true,
+        "directory_swhids": [
+          "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690"
+        ],
+        "evidence": [
+          {
+            "path": "data/recovery-demo/cache/9c98489f2a0fe8a42c6a6df3909057f7e240a9be1455744702dfb992ff2160d4.json.gz",
+            "sha256": "e24f23598ead550dd0ef5db4fbc4311b010045b43dbbc9adad3539b02e86f0c7",
+            "url": "https://archive.softwareheritage.org/api/1/snapshot/c27c32c37a55e02e1c715db23a66eefa3b1fe61f/?branches_count=1000",
+            "fetched_at": "2026-09-23T22:29:56Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/70e19af28e655194dfea25669378a4cbbc64a09d9730e47e0d1b01504b82a60f.json.gz",
+            "sha256": "bc30bec6a7f2160bded1f7b3564fb3d7974ce5ab7e5c32ace07e8438e0f05a77",
+            "url": "https://archive.softwareheritage.org/api/1/release/79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2/",
+            "fetched_at": "2026-09-23T22:29:57Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/e43114085851b85d034a7a43cd1a7dc08825445a869805d24daecfb11da58e03.json.gz",
+            "sha256": "45578af37caae544555d0c23425653dbe7c876e172c30ec849d7b9d9415d676d",
+            "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names",
+            "fetched_at": "2026-09-23T22:29:55Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/336fd49c1ca6d4cc6c5951458005f9cf7947430080515dc64abad57a79b64de4.json.gz",
+            "sha256": "12090cd56623ce27f7cbb083721f43e8214ccb82239a84513af5c59a7902e02d",
+            "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages/possible-typed-array-names/versions/1.1.0",
+            "fetched_at": "2026-09-23T22:29:55Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/c5eda59291baa8dbf4a2c1ab75b61b250fefcd23321873d414aa8cbc992e11b9.json.gz",
+            "sha256": "09b37cd47154dcc23a3d1c7723fd75cf162ce2d752d05c1b6093aa7b15d9a086",
+            "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fpossible-typed-array-names/visits/?per_page=100",
+            "fetched_at": "2026-09-23T22:29:56Z"
+          }
+        ]
+      },
+      "match_strength": "versioned_native_package_snapshot",
+      "discovery_method": "package_metadata_to_native_origin_to_snapshot_branch",
+      "git_revision": {
+        "swhid": "swh:1:rev:2f74e2d3a02309b48fa6d6d48f8fd3359681707f",
+        "status": "missing",
+        "evidence": {
+          "path": "data/full/cache/2a65e17c0e9a3176111ec537e8acf36234402e64197092b8167d505e330042cf.json.gz",
+          "sha256": "72fb66bcae7126097a5074f723f8686cb7ae230d583cf52c26f780851d972a7b",
+          "url": "https://archive.softwareheritage.org/api/1/known/",
+          "fetched_at": "2026-09-23T18:25:26Z"
+        }
+      },
+      "bytes": {
+        "status": "retrieved_and_hash_verified",
+        "files": 10,
+        "total": 9698,
+        "verified_directory_swhid": "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+        "completed_at": "2026-09-23T22:41:56Z",
+        "independent_verification": {
+          "path": "data/recovery-demo/out/independent-directory.swhid",
+          "sha256": "c957c66524ce0fa3a49709331ff3853cb73ea8bd84b6f25711cf9dcf5af58a1f"
+        },
+        "evidence": [
+          {
+            "path": "data/recovery-demo/cache/23abe62e640565d6c97cfb5a78c1dfb205b3805014de537ab1d81e31ea4e603a.json.gz",
+            "sha256": "602f4cdf02187544a362d4758e9686952a39ccf010b8437380664e4b8cf85ee6",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:3b5d9e90ec405f85dd7f9066656efccc51193697/raw/",
+            "fetched_at": "2026-09-23T22:38:26Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/3cd22294797e18970397f2400acf9df291862680fe1a35acf4b77326d90bfb8f.json.gz",
+            "sha256": "f5508aaab1a66cfa2804f7aa9944f4b80c40bf79be593080f01803da3880617c",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:7afce20a601453355c418aa338f7065b6159518d/raw/",
+            "fetched_at": "2026-09-23T22:38:27Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/b8032ac03d5a5bdd5e5e526340d4c50d33ae348e10bf7ef1f4b116a7065b526f.json.gz",
+            "sha256": "b588ecdc55d99b129d40615453b015aa6e4978b045c8434ac23da74c2047420b",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:e3bf2a10ce2b10f40fbcd6fb6087ae1f7fb074ad/raw/",
+            "fetched_at": "2026-09-23T22:38:28Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/f9f613f1071e31d0bcfcc363eff332c253c6cfc7ccf7ab0419724449beac543d.json.gz",
+            "sha256": "5fd375b21b4d5ed53935e0de3a0bdee6375e262efcc906db5f0478fb0f797d47",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:f82f38963b0d282b529f64def2bcd40be3a9a947/raw/",
+            "fetched_at": "2026-09-23T22:38:29Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/61f5833660f4a9947b4246eb07a3884e46c2d8a47e8a7e604292b0ffcb3664bb.json.gz",
+            "sha256": "ee5d76698c5a5864ace2ab4cc89a1ac3f97a224112cfc3ae7bebf015f77c9a4f",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:0580d2f7102cb88d0d49e8686d145e338e208166/raw/",
+            "fetched_at": "2026-09-23T22:38:29Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/4f662e105789dd4153fc7e23413aa64c61d9e1f87355757b5102919d46139273.json.gz",
+            "sha256": "ba88161fff3401e97bbac82bed86a7359938eaab4aa6741afaa0c58e0665621e",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:9213159650b64548b763b9a7af695bef5d860151/raw/",
+            "fetched_at": "2026-09-23T22:38:30Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/6a73ba9e158f406bc134df01ae30517a7c52b6dec8bdcc17382b39ef3c4d2402.json.gz",
+            "sha256": "228c619b8e5e857d87fce014ab5159879de3e37dab26f71e4d879bc62afcfdec",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:5551ab60218825c866c50a2dce4397f630825ecc/raw/",
+            "fetched_at": "2026-09-23T22:38:31Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/0d68e99cd4354d1d06e9c80059ee9602e08ea668d8a164c71d7ad44ea4e79ade.json.gz",
+            "sha256": "c86622d5130fd23dea21224202431def03935f30a5878afc1765d4effcdbac9c",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:5285efa4046b81159f8f57003341817776a5fa75/raw/",
+            "fetched_at": "2026-09-23T22:38:32Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/967ea5a94647626a03b17102be9c0d724e3c24b8650c00974f7c1ffa48254fdc.json.gz",
+            "sha256": "bf38b62227ef8efe0fd7ec784b2f98b401b704a0ec1be3b075980c353fb75b46",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:e115695a454f3a96733d8169760d7759cbd09a9d/raw/",
+            "fetched_at": "2026-09-23T22:38:34Z"
+          },
+          {
+            "path": "data/recovery-demo/cache/4abfa7744128de182085a8c7e9caee4091fecc9611daed11e180c076e588ff82.json.gz",
+            "sha256": "1d24f6e8f9a39f376f2127099d524ff7f9e13e481e49cfe1f7dc752b78b2cb2d",
+            "url": "https://archive.softwareheritage.org/api/1/content/sha1_git:4e940905aca80584442a169936c89e8645ff78bd/raw/",
+            "fetched_at": "2026-09-23T22:38:35Z"
+          }
+        ]
+      },
+      "limitations": [
+        "Git history and original tarball bytes were not recovered."
+      ],
+      "extrinsic_metadata_targets": [
+        "swh:1:snp:c27c32c37a55e02e1c715db23a66eefa3b1fe61f",
+        "swh:1:rel:79aa8792a5b80ac11c5811e3635ab2a88b0b1bf2",
+        "swh:1:dir:1699d70237ee0c610b97ae94741aa7a5247ec690",
+        "swh:1:rev:2f74e2d3a02309b48fa6d6d48f8fd3359681707f"
+      ]
+    },
+    {
+      "name": "is-data-view",
+      "registry": "npmjs.org",
+      "version": "1.0.2",
+      "purl": "pkg:npm/is-data-view@1.0.2",
+      "purl_basis": "cohort_identity_and_version",
+      "repository_url": "https://github.com/inspect-js/is-data-view",
+      "repository_link_basis": "package_metadata",
+      "metadata_evidence": {
+        "path": "data/full/cache/ccd4c033cee9bdfa458e1619bfb4d75eb7b3196b0b37036fa0243cf057b40d2b.json.gz",
+        "sha256": "676aad4af8f5a7d1df4d507bd09b64be46410a7ba240503b465f1eed3c03ff28",
+        "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages?critical=true&per_page=50&sort=name&order=asc&page=20",
+        "fetched_at": "2026-09-23T15:28:58Z"
+      },
+      "git_tag": {
+        "tag_name": "v1.0.2",
+        "match_status": "matched",
+        "target_swhid": "swh:1:rev:e8a4943b72a33a075c6f9fd31f4e9e8a53e15b02",
+        "release_swhid": "swh:1:rel:ccf89aec807154d861731c6b88f0364e9dbbef31"
+      },
+      "git_tag_evidence": {
+        "path": "data/full/git-tags/19b5a7bdd90ceb2a712d8f632d459444551c90da1743f99d1d62852d29ca6632.txt.gz",
+        "sha256": "3eb06db31ff1030c7597afb56532120c4d1c656e4eb809a87eed402bd2db59b5"
+      },
+      "archive": {
+        "origin_url": "https://pkg.go.dev/github.com/inspect-js/is-data-view",
+        "visit": {
+          "visit": 1,
+          "date": "2026-04-28T18:26:36.430000+00:00",
+          "status": "full",
+          "type": "golang"
+        },
+        "snapshot_swhid": "swh:1:snp:36ba012e6415c841c7fdc55717b29a0086626845",
+        "snapshot_complete": true,
+        "branch": "releases/v1.0.2",
+        "release_swhid": "swh:1:rel:0a445320bd99d6de8c2d0d84ae589941898096af",
+        "release_synthetic": true,
+        "directory_swhids": [
+          "swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043",
+          "swh:1:dir:363a1fa7d91709660f518a25bceaed92efea8881",
+          "swh:1:dir:7f90a00db94d5049c20802cc8952213b12143575",
+          "swh:1:dir:7dd2b2f20c7362335254037437e619ffd2655073"
+        ],
+        "evidence": [
+          {
+            "path": "data/full/cache/b083baf32b5cf193e01f6b26f8949e7dab61ae075968de1ca462ed7f58137454.json.gz",
+            "sha256": "6c2b935eacf3095355a261c8403aca5f47f2299dc545a9af856c29d103934947",
+            "url": "https://archive.softwareheritage.org/api/1/snapshot/36ba012e6415c841c7fdc55717b29a0086626845/?branches_count=1000",
+            "fetched_at": "2026-09-23T21:31:28Z"
+          },
+          {
+            "path": "data/full/cache/e88520916c6684f2f0199583829b533037c5cfa47eaa4a46fc6ff4bd9d6c2708.json.gz",
+            "sha256": "3413c986793fbf2c11c2b5c3741bc350a24222b7e09724218b8a076634902f63",
+            "url": "https://archive.softwareheritage.org/api/1/release/0a445320bd99d6de8c2d0d84ae589941898096af/",
+            "fetched_at": "2026-09-23T21:47:10Z"
+          },
+          {
+            "path": "data/full/cache/daa92cccd3d5c908e02d0426965010ffb110ad36a4f6c593f9a6004c13af93dd.json.gz",
+            "sha256": "2ee1ba3a68dd31875dbd574f95ce336e1fc57f03b32a02b05449be1853dc00f1",
+            "url": "https://archive.softwareheritage.org/api/1/directory/638a06bd2a1fecf4a8af5f82776b5be3b6a55043/",
+            "fetched_at": "2026-09-23T21:47:10Z"
+          },
+          {
+            "path": "data/full/cache/510f98786fc2cd749f252b0a7abbdb5617104e6c7b1c20e2ab558e7caa38ee97.json.gz",
+            "sha256": "8cd92a8ef474e40dd8117e38141e57ed3050ee2b16d3a76f4f75220b272b824a",
+            "url": "https://archive.softwareheritage.org/api/1/directory/363a1fa7d91709660f518a25bceaed92efea8881/",
+            "fetched_at": "2026-09-23T21:47:11Z"
+          },
+          {
+            "path": "data/full/cache/a019260843539143dd0601a6bb1d637567d820c2ac452190b051e80b2fddff29.json.gz",
+            "sha256": "5c7c53e3347346e62fcfe2e58b0765de217993aaf66b7552d8d38008c7c16efe",
+            "url": "https://archive.softwareheritage.org/api/1/directory/7f90a00db94d5049c20802cc8952213b12143575/",
+            "fetched_at": "2026-09-23T21:47:11Z"
+          }
+        ]
+      },
+      "match_strength": "exact_git_root_tree",
+      "discovery_method": "repository_origin_search_then_package_directory_comparison",
+      "git_revision_matches": [
+        {
+          "swhid": "swh:1:rev:e8a4943b72a33a075c6f9fd31f4e9e8a53e15b02",
+          "status": "missing",
+          "evidence": {
+            "path": "data/full/cache/314f3c4010135c5d127cce7ca42f0c2eed8b26ff6050c4441448fe6766f57fb9.json.gz",
+            "sha256": "01e2eea5b11dded825b5351169bd4e6fb10558f6a7538f5d5d8da6785487bba4",
+            "url": "https://archive.softwareheritage.org/api/1/known/",
+            "fetched_at": "2026-09-23T18:25:30Z"
+          }
+        }
+      ],
+      "git_tree_evidence": {
+        "path": "data/full/tree-evidence/19b5a7bdd90ceb2a712d8f632d459444551c90da1743f99d1d62852d29ca6632.json.gz",
+        "sha256": "1bc3321356475a36de76b38b1f80c0d2263390f4592244dc10d7076c6a28ab66"
+      },
+      "saved_head_tree_matches": false,
+      "comparison_observed_at": "2026-09-23T21:47:08Z",
+      "native_npm_origin_observation": null,
+      "bytes": {
+        "status": "not_retrieved"
+      },
+      "package_association": "candidate_npm_version_via_matching_git_tag_and_tree",
+      "limitations": [
+        "The observed origin is pkg.go.dev; equivalence to the published npm artifact is not verified.",
+        "A tree match does not identify unique Git history."
+      ],
+      "extrinsic_metadata_targets": [
+        "swh:1:snp:36ba012e6415c841c7fdc55717b29a0086626845",
+        "swh:1:rel:0a445320bd99d6de8c2d0d84ae589941898096af",
+        "swh:1:dir:638a06bd2a1fecf4a8af5f82776b5be3b6a55043",
+        "swh:1:dir:363a1fa7d91709660f518a25bceaed92efea8881",
+        "swh:1:dir:7f90a00db94d5049c20802cc8952213b12143575",
+        "swh:1:dir:7dd2b2f20c7362335254037437e619ffd2655073",
+        "swh:1:rev:e8a4943b72a33a075c6f9fd31f4e9e8a53e15b02"
+      ]
+    },
+    {
+      "name": "bare-events",
+      "registry": "npmjs.org",
+      "version": "2.9.2",
+      "purl": "pkg:npm/bare-events@2.9.2",
+      "purl_basis": "cohort_identity_and_version",
+      "repository_url": "https://github.com/holepunchto/bare-events",
+      "repository_link_basis": "package_metadata",
+      "metadata_evidence": {
+        "path": "data/full/cache/e2979dbf78c6ee6c230f520bce7d4d5410ecaa546353ecbfe02da98e0e6ab477.json.gz",
+        "sha256": "270ba2b4094611d187bb1fb00639f799da71df3249e6e4c28c37d18a1d25673c",
+        "url": "https://packages.ecosyste.ms/api/v1/registries/npmjs.org/packages?critical=true&per_page=50&sort=name&order=asc&page=6",
+        "fetched_at": "2026-09-23T15:28:47Z"
+      },
+      "git_tag": {
+        "tag_name": "v2.9.2",
+        "match_status": "matched",
+        "target_swhid": "swh:1:rev:d3bb6aba4fc1e0e1a395832a2967a11540d18efd",
+        "release_swhid": "swh:1:rel:575a04e80827731b9c57b74cf919897954b55e3c"
+      },
+      "git_tag_evidence": {
+        "path": "data/full/git-tags/7eedb613d7c7acfac8d422838e75cea36579f90cee11274d7439577584eac2ce.txt.gz",
+        "sha256": "b4fd135a9ba8c4ef8b0e5a743426de9b446f9b2458329f339b1619b431d75900"
+      },
+      "archive": {
+        "origin_url": "https://www.npmjs.com/package/bare-events",
+        "visit": {
+          "visit": 12,
+          "date": "2026-09-06T01:43:08.973000+00:00",
+          "status": "full",
+          "type": "npm"
+        },
+        "snapshot_swhid": "swh:1:snp:45f765ddc59c8d9c920812f7cf366a9a0c11e618",
+        "snapshot_complete": true,
+        "branch": "releases/2.9.2",
+        "release_swhid": "swh:1:rel:c397873eae99c3ae4873cbbb70e9a7ab97a15639",
+        "release_synthetic": true,
+        "directory_swhids": [
+          "swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d"
+        ],
+        "evidence": [
+          {
+            "path": "data/full/cache/d521a702684a03806c0392ae0c9a6509dafecb980d6f4b710b7e7032b73e21b8.json.gz",
+            "sha256": "db972c9b3cd18cd8498bbcd21a39cc9507b46299ac94e019e98fecab92438027",
+            "url": "https://archive.softwareheritage.org/api/1/snapshot/45f765ddc59c8d9c920812f7cf366a9a0c11e618/?branches_count=1000",
+            "fetched_at": "2026-09-23T22:12:41Z"
+          },
+          {
+            "path": "data/full/cache/d1fa12eb970f8de307d9451925f8b9c569296cb525348fb5af7a3120c909673f.json.gz",
+            "sha256": "a0ed5fa8d54ec9f90192d543f48cb6127b0ea18bd11e99ad968de7f881bdaad6",
+            "url": "https://archive.softwareheritage.org/api/1/release/c397873eae99c3ae4873cbbb70e9a7ab97a15639/",
+            "fetched_at": "2026-09-23T22:12:42Z"
+          },
+          {
+            "path": "data/full/cache/8f7f74150fb19d5cec46900492510957f5fc1cfb00886089b0e03e62880f5ae5.json.gz",
+            "sha256": "f1e8af7fb6c72bc1a462dc3ad58cff887b1a41e2d2c32a9f9b5c971599d28ea3",
+            "url": "https://archive.softwareheritage.org/api/1/origin/https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fbare-events/visits/?per_page=100",
+            "fetched_at": "2026-09-23T22:12:41Z"
+          }
+        ]
+      },
+      "match_strength": "file_contents_only_for_git_comparison",
+      "discovery_method": "native_package_origin_then_directory_walk_and_git_content_comparison",
+      "git_revision": {
+        "swhid": "swh:1:rev:d3bb6aba4fc1e0e1a395832a2967a11540d18efd",
+        "status": "missing",
+        "evidence": {
+          "path": "data/full/cache/309db4d5940f5979cb3cacb4896d88fd3e7a24b1a827e9a35ac5b00594650773.json.gz",
+          "sha256": "908653221674fa6a11143c1ee3845a1d4be8e477a1cbbdedf924fc6fcc545674",
+          "url": "https://archive.softwareheritage.org/api/1/known/",
+          "fetched_at": "2026-09-23T18:25:29Z"
+        }
+      },
+      "git_comparison": {
+        "scope": "saved_head_ancestry",
+        "saved_head_swhid": "swh:1:rev:5f9e241eaccc6a86f60dcbe80f2fac819b4d2939",
+        "root_tree_matches": {},
+        "matched_head_files": [
+          {
+            "path": "LICENSE",
+            "swhid": "swh:1:cnt:261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64"
+          },
+          {
+            "path": "global.d.ts",
+            "swhid": "swh:1:cnt:92ea0d6e92ae0817c4ae3f1c8e9eb03ce9e453e9"
+          },
+          {
+            "path": "global.js",
+            "swhid": "swh:1:cnt:d8caa0bf47fcb26c789f7e61205ea10869f3c393"
+          },
+          {
+            "path": "index.js",
+            "swhid": "swh:1:cnt:d52f96388a1b06ae9f8dbe8fdb9e2af7ba6984de"
+          },
+          {
+            "path": "lib/errors.js",
+            "swhid": "swh:1:cnt:12419420daafd9f1eb190c58f2fd91ee6f652700"
+          },
+          {
+            "path": "package.json",
+            "swhid": "swh:1:cnt:3b641942769a2367a2ec986650a9a833b656824f"
+          },
+          {
+            "path": "web.js",
+            "swhid": "swh:1:cnt:1183bd6afb747f3e451b5850388e038ee6486ccf"
+          }
+        ],
+        "head_files": 19,
+        "selected_directory_file_count": 10,
+        "walk_complete": true
+      },
+      "git_content_evidence": {
+        "path": "data/full/content-evidence/7eedb613d7c7acfac8d422838e75cea36579f90cee11274d7439577584eac2ce.json.gz",
+        "sha256": "4046eb166c3ef2886c11c4dd1c521c749bd93f122988aa04d7f0f9835384ae19"
+      },
+      "bytes": {
+        "status": "not_retrieved"
+      },
+      "comparison_observed_at": "2026-09-23T22:12:40Z",
+      "limitations": [
+        "No exact Git root matched in the checked ancestry.",
+        "File matching ignores paths and modes; unmatched files may exist elsewhere."
+      ],
+      "extrinsic_metadata_targets": [
+        "swh:1:snp:45f765ddc59c8d9c920812f7cf366a9a0c11e618",
+        "swh:1:rel:c397873eae99c3ae4873cbbb70e9a7ab97a15639",
+        "swh:1:dir:ee7365ff1f2cad99a02359f51e5558d6c69c009d",
+        "swh:1:rev:d3bb6aba4fc1e0e1a395832a2967a11540d18efd"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "path": "data/full/out/packages.csv",
+      "sha256": "a67df7009c88a7728acdbd9f2dc0ea4b9c022e7c8e7b76fddcbb377fff9f65fe"
+    },
+    {
+      "path": "data/full/out/release_tags.csv",
+      "sha256": "6edfc45f87035391c61c6ca8ec29a11c814ab2d66ba698dfcc507294b95a8e91"
+    },
+    {
+      "path": "data/recovery-demo/out/recovery.json",
+      "sha256": "7b09c438635f2f1af194aa4dc06a20668363b7983e88185432476f327b769eac"
+    },
+    {
+      "path": "data/recovery-demo/cache/23abe62e640565d6c97cfb5a78c1dfb205b3805014de537ab1d81e31ea4e603a.json.gz",
+      "sha256": "602f4cdf02187544a362d4758e9686952a39ccf010b8437380664e4b8cf85ee6"
+    },
+    {
+      "path": "data/recovery-demo/cache/3cd22294797e18970397f2400acf9df291862680fe1a35acf4b77326d90bfb8f.json.gz",
+      "sha256": "f5508aaab1a66cfa2804f7aa9944f4b80c40bf79be593080f01803da3880617c"
+    },
+    {
+      "path": "data/recovery-demo/cache/b8032ac03d5a5bdd5e5e526340d4c50d33ae348e10bf7ef1f4b116a7065b526f.json.gz",
+      "sha256": "b588ecdc55d99b129d40615453b015aa6e4978b045c8434ac23da74c2047420b"
+    },
+    {
+      "path": "data/recovery-demo/cache/f9f613f1071e31d0bcfcc363eff332c253c6cfc7ccf7ab0419724449beac543d.json.gz",
+      "sha256": "5fd375b21b4d5ed53935e0de3a0bdee6375e262efcc906db5f0478fb0f797d47"
+    },
+    {
+      "path": "data/recovery-demo/cache/61f5833660f4a9947b4246eb07a3884e46c2d8a47e8a7e604292b0ffcb3664bb.json.gz",
+      "sha256": "ee5d76698c5a5864ace2ab4cc89a1ac3f97a224112cfc3ae7bebf015f77c9a4f"
+    },
+    {
+      "path": "data/recovery-demo/cache/4f662e105789dd4153fc7e23413aa64c61d9e1f87355757b5102919d46139273.json.gz",
+      "sha256": "ba88161fff3401e97bbac82bed86a7359938eaab4aa6741afaa0c58e0665621e"
+    },
+    {
+      "path": "data/recovery-demo/cache/6a73ba9e158f406bc134df01ae30517a7c52b6dec8bdcc17382b39ef3c4d2402.json.gz",
+      "sha256": "228c619b8e5e857d87fce014ab5159879de3e37dab26f71e4d879bc62afcfdec"
+    },
+    {
+      "path": "data/recovery-demo/cache/0d68e99cd4354d1d06e9c80059ee9602e08ea668d8a164c71d7ad44ea4e79ade.json.gz",
+      "sha256": "c86622d5130fd23dea21224202431def03935f30a5878afc1765d4effcdbac9c"
+    },
+    {
+      "path": "data/recovery-demo/cache/967ea5a94647626a03b17102be9c0d724e3c24b8650c00974f7c1ffa48254fdc.json.gz",
+      "sha256": "bf38b62227ef8efe0fd7ec784b2f98b401b704a0ec1be3b075980c353fb75b46"
+    },
+    {
+      "path": "data/recovery-demo/cache/4abfa7744128de182085a8c7e9caee4091fecc9611daed11e180c076e588ff82.json.gz",
+      "sha256": "1d24f6e8f9a39f376f2127099d524ff7f9e13e481e49cfe1f7dc752b78b2cb2d"
+    },
+    {
+      "path": "data/full/cache/bf811fc5de7ecc30e6d5b09af0597f2c66f242c8e7265b42dd548e2c939e9c4b.json.gz",
+      "sha256": "58fd32fb3b6cffa8e5bb0e1f8a51cb6df313db451691131037d32b3927d1303c"
+    },
+    {
+      "path": "data/full/git-tags/d7c0c61c363ed069fc5a88c3aeece3f7d2555aa99c062f9f5408b44f14ec4cd3.txt.gz",
+      "sha256": "3d1b99fa6b309b340cc5c7aa01e1c6b184ec0fb3ff8b8e4d9fa732c550c3bf40"
+    },
+    {
+      "path": "data/recovery-demo/cache/9c98489f2a0fe8a42c6a6df3909057f7e240a9be1455744702dfb992ff2160d4.json.gz",
+      "sha256": "e24f23598ead550dd0ef5db4fbc4311b010045b43dbbc9adad3539b02e86f0c7"
+    },
+    {
+      "path": "data/recovery-demo/cache/70e19af28e655194dfea25669378a4cbbc64a09d9730e47e0d1b01504b82a60f.json.gz",
+      "sha256": "bc30bec6a7f2160bded1f7b3564fb3d7974ce5ab7e5c32ace07e8438e0f05a77"
+    },
+    {
+      "path": "data/full/cache/2a65e17c0e9a3176111ec537e8acf36234402e64197092b8167d505e330042cf.json.gz",
+      "sha256": "72fb66bcae7126097a5074f723f8686cb7ae230d583cf52c26f780851d972a7b"
+    },
+    {
+      "path": "data/recovery-demo/out/independent-directory.swhid",
+      "sha256": "c957c66524ce0fa3a49709331ff3853cb73ea8bd84b6f25711cf9dcf5af58a1f"
+    },
+    {
+      "path": "data/recovery-demo/cache/e43114085851b85d034a7a43cd1a7dc08825445a869805d24daecfb11da58e03.json.gz",
+      "sha256": "45578af37caae544555d0c23425653dbe7c876e172c30ec849d7b9d9415d676d"
+    },
+    {
+      "path": "data/recovery-demo/cache/336fd49c1ca6d4cc6c5951458005f9cf7947430080515dc64abad57a79b64de4.json.gz",
+      "sha256": "12090cd56623ce27f7cbb083721f43e8214ccb82239a84513af5c59a7902e02d"
+    },
+    {
+      "path": "data/recovery-demo/cache/c5eda59291baa8dbf4a2c1ab75b61b250fefcd23321873d414aa8cbc992e11b9.json.gz",
+      "sha256": "09b37cd47154dcc23a3d1c7723fd75cf162ce2d752d05c1b6093aa7b15d9a086"
+    },
+    {
+      "path": "data/full/out/package_contents.json",
+      "sha256": "a129c3fde5fd66e836c55ec261e71682479f740cbc5d43cd99b9f292d84b1614"
+    },
+    {
+      "path": "data/full/tree-evidence/19b5a7bdd90ceb2a712d8f632d459444551c90da1743f99d1d62852d29ca6632.json.gz",
+      "sha256": "1bc3321356475a36de76b38b1f80c0d2263390f4592244dc10d7076c6a28ab66"
+    },
+    {
+      "path": "data/full/cache/ccd4c033cee9bdfa458e1619bfb4d75eb7b3196b0b37036fa0243cf057b40d2b.json.gz",
+      "sha256": "676aad4af8f5a7d1df4d507bd09b64be46410a7ba240503b465f1eed3c03ff28"
+    },
+    {
+      "path": "data/full/git-tags/19b5a7bdd90ceb2a712d8f632d459444551c90da1743f99d1d62852d29ca6632.txt.gz",
+      "sha256": "3eb06db31ff1030c7597afb56532120c4d1c656e4eb809a87eed402bd2db59b5"
+    },
+    {
+      "path": "data/full/cache/b083baf32b5cf193e01f6b26f8949e7dab61ae075968de1ca462ed7f58137454.json.gz",
+      "sha256": "6c2b935eacf3095355a261c8403aca5f47f2299dc545a9af856c29d103934947"
+    },
+    {
+      "path": "data/full/cache/e88520916c6684f2f0199583829b533037c5cfa47eaa4a46fc6ff4bd9d6c2708.json.gz",
+      "sha256": "3413c986793fbf2c11c2b5c3741bc350a24222b7e09724218b8a076634902f63"
+    },
+    {
+      "path": "data/full/cache/daa92cccd3d5c908e02d0426965010ffb110ad36a4f6c593f9a6004c13af93dd.json.gz",
+      "sha256": "2ee1ba3a68dd31875dbd574f95ce336e1fc57f03b32a02b05449be1853dc00f1"
+    },
+    {
+      "path": "data/full/cache/510f98786fc2cd749f252b0a7abbdb5617104e6c7b1c20e2ab558e7caa38ee97.json.gz",
+      "sha256": "8cd92a8ef474e40dd8117e38141e57ed3050ee2b16d3a76f4f75220b272b824a"
+    },
+    {
+      "path": "data/full/cache/a019260843539143dd0601a6bb1d637567d820c2ac452190b051e80b2fddff29.json.gz",
+      "sha256": "5c7c53e3347346e62fcfe2e58b0765de217993aaf66b7552d8d38008c7c16efe"
+    },
+    {
+      "path": "data/full/cache/314f3c4010135c5d127cce7ca42f0c2eed8b26ff6050c4441448fe6766f57fb9.json.gz",
+      "sha256": "01e2eea5b11dded825b5351169bd4e6fb10558f6a7538f5d5d8da6785487bba4"
+    },
+    {
+      "path": "data/full/out/origin_contents.json",
+      "sha256": "7b4d29b9e05591e0542716e9c9b09eb5513f37bf3d38dd7603d83c44a6071f24"
+    },
+    {
+      "path": "data/full/content-evidence/7eedb613d7c7acfac8d422838e75cea36579f90cee11274d7439577584eac2ce.json.gz",
+      "sha256": "4046eb166c3ef2886c11c4dd1c521c749bd93f122988aa04d7f0f9835384ae19"
+    },
+    {
+      "path": "data/full/cache/e2979dbf78c6ee6c230f520bce7d4d5410ecaa546353ecbfe02da98e0e6ab477.json.gz",
+      "sha256": "270ba2b4094611d187bb1fb00639f799da71df3249e6e4c28c37d18a1d25673c"
+    },
+    {
+      "path": "data/full/git-tags/7eedb613d7c7acfac8d422838e75cea36579f90cee11274d7439577584eac2ce.txt.gz",
+      "sha256": "b4fd135a9ba8c4ef8b0e5a743426de9b446f9b2458329f339b1619b431d75900"
+    },
+    {
+      "path": "data/full/cache/d521a702684a03806c0392ae0c9a6509dafecb980d6f4b710b7e7032b73e21b8.json.gz",
+      "sha256": "db972c9b3cd18cd8498bbcd21a39cc9507b46299ac94e019e98fecab92438027"
+    },
+    {
+      "path": "data/full/cache/d1fa12eb970f8de307d9451925f8b9c569296cb525348fb5af7a3120c909673f.json.gz",
+      "sha256": "a0ed5fa8d54ec9f90192d543f48cb6127b0ea18bd11e99ad968de7f881bdaad6"
+    },
+    {
+      "path": "data/full/cache/309db4d5940f5979cb3cacb4896d88fd3e7a24b1a827e9a35ac5b00594650773.json.gz",
+      "sha256": "908653221674fa6a11143c1ee3845a1d4be8e477a1cbbdedf924fc6fcc545674"
+    },
+    {
+      "path": "data/full/cache/8f7f74150fb19d5cec46900492510957f5fc1cfb00886089b0e03e62880f5ae5.json.gz",
+      "sha256": "f1e8af7fb6c72bc1a462dc3ad58cff887b1a41e2d2c32a9f9b5c971599d28ea3"
+    },
+    {
+      "path": "data/full/out/extrinsic_metadata.json",
+      "sha256": "33843e2b7ac181022b860bce08e210e9529f46793a9bde40401e0448c131c5a2"
+    },
+    {
+      "path": "data/full/cache/344208e810624df6ff9724219b2a908730be2cbe78b345c2c4e885c8e2b00aed.json.gz",
+      "sha256": "85a2bd84e9c9be209c8859bc827b04fa9133f28ac2640d91503430de4f9b498a"
+    },
+    {
+      "path": "data/full/cache/91138cf1578cb9a9932cb5697a44bd3bfa0cc2817893fd0ed891c32617f9c26e.json.gz",
+      "sha256": "bb8911ac0c7b53849274793c0ca2c7fffe5f70e58ae818b461fba351bf71928e"
+    },
+    {
+      "path": "data/full/cache/eb0de0aa0b32524a7ed820a5032bccfeffc32c49b3c163c06ea5d3872e3f46a8.json.gz",
+      "sha256": "cc5ea98be1cbd1c8c168fae3d66eaa20273a0cb6b9549908c9401f377be3398b"
+    },
+    {
+      "path": "data/full/cache/e72a506809fd22ecee788fb34ad1a9676084051d7252ce27878ef8ebda4921b1.json.gz",
+      "sha256": "7e5817778bae5b059053c28a48da5d396b879f0535da501aaaa1d4e9d2c4a10f"
+    },
+    {
+      "path": "data/full/cache/ff80718aa5f2f3c074e2e6a208e46c4b42933a8e038e63772f9ef2b20e1f0751.json.gz",
+      "sha256": "9d933dc8d4f5bde4e93ad3a007b3ee68881ac3fac1b39ffa2ec6195cebf86864"
+    },
+    {
+      "path": "data/full/cache/9771ea61be97ee0eea9db620deb82346452aa29bae00cc0539f68d79baf210ef.json.gz",
+      "sha256": "4657aec412cfbf0bb22f43da5a04098f470f1ff38ef6aac41059cfc9c08eb55e"
+    },
+    {
+      "path": "data/full/cache/36217416d02779a57af3bc2e0633ffaedecf6d52e5be6934162cbe7f4b927504.json.gz",
+      "sha256": "a7eb5b54776a97e9962416253393e6a19573a2806fb80e6ee1d0d4088e9f7fdf"
+    },
+    {
+      "path": "data/full/cache/9a5be23c0a180d3888c72174057ea031b40b709b70ade4d10314636fd31c98c0.json.gz",
+      "sha256": "9ab479efdfc232b0fb5b0c84394e434d15e1f963f1c2bb209feb7a884333c7f8"
+    },
+    {
+      "path": "data/full/cache/5fbd1d178bc28fa2b907cd1baf381217582f2c2f84c7ab8d7108940c77baf720.json.gz",
+      "sha256": "5b92e84d868601ee84792e0582d7f0e40061c476a1ba7ac0bbdd5248d53aa86c"
+    },
+    {
+      "path": "data/full/cache/c685e494c6b8a7f7805a043982af0a53e6e639a67575364f217ac10297d8f19a.json.gz",
+      "sha256": "09a5ae274f2b7009ab7a481dbcf0dba979d1ec7d27e857d850cf001106b324d2"
+    },
+    {
+      "path": "data/full/cache/dccfd625271b81de9e2fcb27179c0064a913d515918acfcddb22f8dc359d1c36.json.gz",
+      "sha256": "1a6e526df9c83c52f933dcf816e2f3d165d0aa0b989a2ea23515b5e99615b860"
+    },
+    {
+      "path": "data/full/cache/5e2a94033ef31289224742c6c8faf4fd3b23259da804c4ea80ab69d4ae4ab55c.json.gz",
+      "sha256": "b10f2501f5b9e38d823c08b6673c947d6b862e0fe9c119efbbb9d3093f307764"
+    },
+    {
+      "path": "data/full/cache/4c052d8cf2ede64b97d4ec12356d472d841813080e0cce4ac138c319283fbb5c.json.gz",
+      "sha256": "703760a48989738dc894759917568205829aec7ff1973f3686db34edfc4aff84"
+    },
+    {
+      "path": "data/full/cache/d424c0be8ed97cb2d5441a8847900c286be113b3b0c224c79e25eb23918763e3.json.gz",
+      "sha256": "84128aab4a9069bfc7334c0b2ba3b5b76d1655b614da1484ed07ddddb342d2c6"
+    },
+    {
+      "path": "data/full/cache/a6690ada15577477cc33701e8cc753804cc761978af57b6802644dfc198f938d.json.gz",
+      "sha256": "c61efbf91f92ec4544735fe8582cce5f4e09afbd688b161df1d27a2ee31f2868"
+    },
+    {
+      "path": "data/full/cache/5b4649f3d9c0e22032eaa9fd0e860ddab5bbaf4e5ae038454b18e65389eec01f.json.gz",
+      "sha256": "f90d7fbe10bf0cb8c80758988f8871f57586d8ea210da54e418be14153247ea6"
+    },
+    {
+      "path": "data/full/cache/cf3ea3dfc95ac245f5a49fb8aa17391bdcbd5c7b12f6235d0594ff1ce80345b5.json.gz",
+      "sha256": "8ede44177f31c14b7d4b7aeb855047c63bdedc25bc219f8679a46d3246aa716e"
+    },
+    {
+      "path": "data/full/cache/4898a681de366d79f5418f7f222c809d1cedf90cdb1d1aec6478dbc3c55b6021.json.gz",
+      "sha256": "d4b4eec86502b7e983d1d85dc68537af7ed1817f1d3f4495fc1a5970551b8cba"
+    },
+    {
+      "path": "data/full/cache/baf786f13e5f478758328571c958232a8eb5da0f49b7478a9510c438e6fa0c86.json.gz",
+      "sha256": "5561c1a01921fdcadf442c73322e0d36a68b663abaf271e8d24523ffbd8aa2ad"
+    },
+    {
+      "path": "data/full/cache/798ad1fc9168f6e4aefe70640aae56cf02f35040bae2881628652d16d574b746.json.gz",
+      "sha256": "15cef531755b198666a19792c92b8df47eaad86a36482ccf4c2b76f3850c4233"
+    },
+    {
+      "path": "data/full/cache/162d7f7007d88ac14e4a879e594fd4ec44f68f7bc582892d606fdb897af1914b.json.gz",
+      "sha256": "aaa66b6e4c23ca306ba6b04cae1bf21e1eee0061c65094e0e91999335fa6a319"
+    },
+    {
+      "path": "data/full/cache/bed7002812ff0845afc5ff050d143124ab09fab1ca84fd1286ec294226f5b067.json.gz",
+      "sha256": "b12f2b42e8edb8acadc952a7f20dd42a3afc5e1b8b21e3d995be30dd0fe57b7a"
+    },
+    {
+      "path": "data/full/cache/e18e19618e6b2ef444c34f45910acac2ad9b9221f8b3ca753eec3a5b91f67503.json.gz",
+      "sha256": "43a9ccd87286c57ca9a5a01d4ea7e557b5b65cc5435b83bc25bc61325a09f240"
+    },
+    {
+      "path": "data/full/cache/27cc46ec5418200cea7e3674112e51edfe0945b194a68e802b605fceee4bccd8.json.gz",
+      "sha256": "72ab2e88fae2236276bd5a14324d0148712bccf725ba39ecb8f4d826e2f4d2d7"
+    },
+    {
+      "path": "data/full/cache/d5dc60aeab5571fe3e620fc8235c382c6de3bbbf905b6e68f7a42baca197f8f8.json.gz",
+      "sha256": "0ae0bb6ec243f4443fb2a8a1e7c16a58fac372c678aac02feb5ca1caa460105f"
+    },
+    {
+      "path": "data/full/cache/a8b15f067e77a30ba7d72e8fab1e55798e87287dba762c97bc69664e565a77a7.json.gz",
+      "sha256": "a500ef98c723953622ca7b986204b240c453cb2b1e84615eb0f48716cdfb9b3b"
+    },
+    {
+      "path": "data/full/cache/95be40d0e15e431d70f42f1dee54692c5c269db6ba1266e4a745729cb3f80b2b.json.gz",
+      "sha256": "ad670305574d12646d8d3dea5c6b3d69dd396d788b0a71684be6bc6604327c2c"
+    },
+    {
+      "path": "data/full/cache/0f081017de3734e2bc9ca640d3d146c9512e0b862e71f4f722615f84450c3e47.json.gz",
+      "sha256": "a30cb9539080d91e4d8a0beae9957b92609c437e75a38a28619aa7c5af732f4a"
+    },
+    {
+      "path": "data/full/cache/13aa255df77b3d93cbcdffe9c3c17571c202f2ca2fd2da6a799e311593ea637a.json.gz",
+      "sha256": "a14f1fa277c7e2a142c643046829b749e02a88c01ff0dd057f4ebc83158fba11"
+    }
+  ]
+}
